@@ -7,19 +7,16 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 
 import com.example.nwidc.huibo.LoginActivity;
 import com.example.nwidc.huibo.LoginChenge;
-import com.example.nwidc.huibo.MainActivity;
-import com.example.nwidc.huibo.MyorderActivity;
 import com.example.nwidc.huibo.R;
 
 /**
- * Created by hello on 2017/5/31.
+ * Created by hello on 2017/6/14.
  */
 
-public class MemberFragment  extends Fragment {
+public class Sign_Fragment extends Fragment {
     View view;
     View sign;
     String result;
@@ -28,7 +25,7 @@ public class MemberFragment  extends Fragment {
 
         result = LoginChenge.getInstance().getLoginInfo();
 
-        view = inflater.inflate(R.layout.fragment_member,null);
+            view = inflater.inflate(R.layout.fragment_sign,null);
 
 
 //        RelativeLayout myorder = (RelativeLayout) view.findViewById(R.id.my_order);

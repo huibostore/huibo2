@@ -51,6 +51,7 @@ import com.example.nwidc.huibo.fragment.IdleFragment;
 import com.example.nwidc.huibo.fragment.MemberFragment;
 import com.example.nwidc.huibo.fragment.NearbyFragment;
 import com.example.nwidc.huibo.fragment.PurchaseFragment;
+import com.example.nwidc.huibo.fragment.Sign_Fragment;
 import com.example.nwidc.huibo.fragment.SnakeFragment;
 import com.example.nwidc.huibo.fragment.SortFragment;
 import com.example.nwidc.huibo.fragment.TakeFragment;
@@ -79,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private HomeMenuFragment fg1;
     private ChartFragment fg3;
     private MemberFragment fg4;
+    private Sign_Fragment fg45;
     private SortFragment fg5;
     private CollectFragment fg2;
     private PurchaseFragment PurchaseFragment;
@@ -95,10 +97,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         fManager = getSupportFragmentManager();
-        mContext = getApplicationContext();
-        sh = new SharedHelper(mContext);
+
         bindViews();
-        //LoginId();
+
         txt_channel.performClick();   //模拟一次点击，既进去后选择第一项
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             //透明状态栏
@@ -106,42 +107,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
 
-        autoLogin();
+
     }
 
 
 
-    //自动登陆
-    protected void autoLogin() {
-        Map<String,String> data = sh.read();
-        String id = data.get("passwd");
-        if(id != "" && id.length() > 10){
-            new Thread() {
-                public void run() {
-                    Map<String,String> data = sh.read();
-                    String id = data.get("passwd");
-                    result = PostUtils.LoginSessionId(id);
-
-                    handler.sendEmptyMessage(0x123);
-                    String Login = "Login";
-                    LoginChenge.getInstance().setLoginInfo(Login);
 
 
-                }
-            }.start();
-        }else{
-            result = "登陆失败，请稍后再试";
 
-            handler.sendEmptyMessage(0x123);
-        }
-    }
-
-
-    private Handler handler = new Handler() {
-        public void handleMessage(android.os.Message msg) {
-            Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
-        };
-    };
 
     //UI组件初始化与事件绑定
     private void bindViews() {
@@ -346,8 +319,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setSelected();
                 txt_setting.setSelected(true);
                 if(fg4 == null){
-                    fg4 = new MemberFragment();
-                    fTransaction.add(R.id.ly_content,fg4);
+                    result = LoginChenge.getInstance().getLoginInfo();
+                    if(result == "null"){
+                        fg45 = new Sign_Fragment();
+                        fTransaction.add(R.id.ly_content,fg45);
+                    }else{
+                        fg4 = new MemberFragment();
+                        fTransaction.add(R.id.ly_content,fg4);
+                    }
+
                 }else{
                     fTransaction.show(fg4);
                 }

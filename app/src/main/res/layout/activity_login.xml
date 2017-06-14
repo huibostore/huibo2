@@ -16,6 +16,7 @@
             android:layout_height="match_parent">
 
             <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/btn_back"
                 android:layout_alignParentLeft="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -198,6 +199,7 @@
                 android:orientation="horizontal">
 
                 <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:id="@+id/other"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -230,6 +232,8 @@
                     android:textSize="60sp" />
 
             </LinearLayout>
+
+
 
 
         </LinearLayout>
