@@ -27,11 +27,14 @@ public class SharedHelper {
     public void save(String username, String passwd) {
         SharedPreferences sp = mContext.getSharedPreferences("mysp", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
-        editor.putString("username", username);
-        editor.putString("passwd", passwd);
-        editor.commit();
-        //Toast.makeText(mContext, "信息已写入SharedPreference中", Toast.LENGTH_SHORT).show();
+
+            editor.putString("username", username);
+            editor.putString("passwd", passwd);
+
+
+        editor.commit();//Toast.makeText(mContext, "信息已写入SharedPreference中", Toast.LENGTH_SHORT).show();
     }
+
 
     //定义一个读取SP文件的方法
     public Map<String, String> read() {
@@ -39,6 +42,8 @@ public class SharedHelper {
         SharedPreferences sp = mContext.getSharedPreferences("mysp", Context.MODE_PRIVATE);
         data.put("username", sp.getString("username", ""));
         data.put("passwd", sp.getString("passwd", ""));
+        data.put("state", sp.getString("state", ""));
         return data;
     }
+
 }

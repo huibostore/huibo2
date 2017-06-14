@@ -41,6 +41,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.nwidc.huibo.Util.PostUtils;
 import com.example.nwidc.huibo.fragment.BookingFragment;
 import com.example.nwidc.huibo.fragment.ChartFragment;
 import com.example.nwidc.huibo.fragment.CloudpayFragment;
@@ -55,6 +56,10 @@ import com.example.nwidc.huibo.fragment.SortFragment;
 import com.example.nwidc.huibo.fragment.TakeFragment;
 import com.example.nwidc.huibo.fragment.WholesaleFragment;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 import java.util.Map;
 
 
@@ -82,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String Login;
     private FragmentManager fManager;
     private SharedHelper sh;
-    private String result = "登陆失败";
+    private String result = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,23 +106,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
 
-
-
-
+        autoLogin();
     }
 
+
+
     //自动登陆
-    @Override
-    protected void onStart() {
-        super.onStart();
+    protected void autoLogin() {
         Map<String,String> data = sh.read();
         String id = data.get("passwd");
+        if(id != "" && id.length() > 10){
+            new Thread() {
+                public void run() {
+                    Map<String,String> data = sh.read();
+                    String id = data.get("passwd");
+                    result = PostUtils.LoginSessionId(id);
 
-        if(id != ""){
-            result = LoginInspect.LoginSessionId(id);
+                    handler.sendEmptyMessage(0x123);
+                    String Login = "Login";
+                    LoginChenge.getInstance().setLoginInfo(Login);
+
+
+                }
+            }.start();
+        }else{
+            result = "登陆失败，请稍后再试";
+
             handler.sendEmptyMessage(0x123);
-            String Login = result;
-            LoginChenge.getInstance().setLoginInfo(Login);
         }
     }
 

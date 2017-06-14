@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.nwidc.huibo.Util.PostUtils;
+
 import java.util.Map;
 
 
@@ -76,8 +78,8 @@ public class LoginActivity extends AppCompatActivity {
 
 
                             strpasswd = LoginInspect.LoginByPost(strname, strpasswd);
-
-                            if("".equals(strpasswd)){
+                            //strpasswd = PostUtils.LoginSessionId(strpasswd);
+                            if("false".equals(strpasswd)){
 
                                 result = "用户名或密码错误";
                                 handler.sendEmptyMessage(0x123);
