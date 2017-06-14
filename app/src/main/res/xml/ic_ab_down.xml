@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-icon
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:text="@string/fa_down"
+    app:textSize="20dp"
+    app:textColor="#000000"/>

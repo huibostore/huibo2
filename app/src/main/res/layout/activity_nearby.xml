@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="43dp"
+            android:paddingBottom="70dp"
+            android:background="#F5F5F5">
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E4E4"
+                android:orientation="vertical">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/xinxiang">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+
+                        <LinearLayout
+                            android:id="@+id/mearby_banner_text"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#ffff"
+                                android:textSize="36sp"
+                                android:text="新乡"/>
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#ffff"
+                                android:textSize="18sp"
+                                android:layout_gravity="center"
+                                android:text="&#xe661;"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:text="xinxiang"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alpha"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="45dp"
+                            android:paddingRight="45dp">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:text="&#xe65c; "/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:text="搜索附近商家"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="10dp">
+                <TableLayout
+                    android:rowCount="2"
+                    android:columnCount="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TableRow
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <com.example.nwidc.huibo.View.AwsomeIconFont android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:text="&#xe70b;"
+                                android:background="@drawable/steal"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="美食"
+                                android:layout_weight="20"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <com.example.nwidc.huibo.View.AwsomeIconFont android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:text="&#xe719;"
+                                android:background="@drawable/groupbuy"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"                       android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="电影"
+                                android:layout_weight="20"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:id="@+id/zhi"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:text="&#xe7b8;"
+                                android:background="@drawable/cloudbuy"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="酒店"
+                                android:layout_weight="20"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <com.example.nwidc.huibo.View.AwsomeIconFont android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:text="&#xe6b2;"
+                                android:background="@drawable/beforesale"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp" android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="KTV"
+                                android:layout_weight="20"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:text="&#xe753;"
+                                android:background="@drawable/wholesale"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"        android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="休闲娱乐"
+                                android:layout_weight="20"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <com.example.nwidc.huibo.View.AwsomeIconFont android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:text="&#xe814;"
+                                android:background="@drawable/idle"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="旅游"
+                                android:layout_weight="20"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <com.example.nwidc.huibo.View.AwsomeIconFont android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:text="&#xe671;"
+                                android:background="@drawable/takeout"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"                       android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="生活服务"
+                                android:layout_weight="20"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:text="&#xe651;"
+                                android:background="@drawable/nearshop"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="丽人"
+                                android:layout_weight="20"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <com.example.nwidc.huibo.View.AwsomeIconFont android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:text="&#xe765;"
+                                android:background="@drawable/shake"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp" android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="购物"
+                                android:layout_weight="20"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:text="&#xe69f;"
+                                android:background="@drawable/down"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"        android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="母婴亲子"
+                                android:layout_weight="20"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#ddd"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#ffffff">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="&#xe651; 附近商场"
+                    android:gravity="center"
+                    android:textColor="#ff4965"
+                    android:textSize="20sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#ddd"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/supercenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="百货大楼"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="平原路沿线\u003C100m"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/supercenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="百货大楼"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="平原路沿线\u003C100m"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/supercenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="百货大楼"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="平原路沿线\u003C100m"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/supercenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="百货大楼"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="平原路沿线\u003C100m"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/border_left"
+                    android:padding="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部"/>
+
+                    <com.example.nwidc.huibo.View.AwsomeIconFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="&#xe79b;"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/border_left"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部"/>
+
+                    <com.example.nwidc.huibo.View.AwsomeIconFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="&#xe79b;"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/border_left"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部"/>
+
+                    <com.example.nwidc.huibo.View.AwsomeIconFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="&#xe79b;"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/border_left"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部"/>
+
+                    <com.example.nwidc.huibo.View.AwsomeIconFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="&#xe79b;"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/nearby"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:padding="5dp"
+                        android:layout_weight="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="糖果氧吧KTV"
+                            android:padding="5dp"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="#ff4965"
+                                android:text="&#xe80a;&#xe80a;&#xe80a;&#xe80a;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 0.001人评价"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentLeft="true"
+                                android:paddingBottom="5dp"
+                                android:text="距离你500m"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:paddingBottom="5dp"
+                                android:textColor="#ff4965"
+                                android:text="好评指数4颗星"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="&#xe651;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="胜利路与人民率交叉口新都汇4楼"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/nearby"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:padding="5dp"
+                        android:layout_weight="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="糖果氧吧KTV"
+                            android:padding="5dp"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="#ff4965"
+                                android:text="&#xe80a;&#xe80a;&#xe80a;&#xe80a;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 0.001人评价"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentLeft="true"
+                                android:paddingBottom="5dp"
+                                android:text="距离你500m"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:paddingBottom="5dp"
+                                android:textColor="#ff4965"
+                                android:text="好评指数4颗星"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="&#xe651;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="胜利路与人民率交叉口新都汇4楼"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/nearby"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:padding="5dp"
+                        android:layout_weight="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="糖果氧吧KTV"
+                            android:padding="5dp"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="#ff4965"
+                                android:text="&#xe80a;&#xe80a;&#xe80a;&#xe80a;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 0.001人评价"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentLeft="true"
+                                android:paddingBottom="5dp"
+                                android:text="距离你500m"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:paddingBottom="5dp"
+                                android:textColor="#ff4965"
+                                android:text="好评指数4颗星"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="&#xe651;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="胜利路与人民率交叉口新都汇4楼"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nearby_ad"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/nearby"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:padding="5dp"
+                        android:layout_weight="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="糖果氧吧KTV"
+                            android:padding="5dp"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="#ff4965"
+                                android:text="&#xe80a;&#xe80a;&#xe80a;&#xe80a;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 0.001人评价"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentLeft="true"
+                                android:paddingBottom="5dp"
+                                android:text="距离你500m"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:paddingBottom="5dp"
+                                android:textColor="#ff4965"
+                                android:text="好评指数4颗星"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="&#xe651;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="胜利路与人民率交叉口新都汇4楼"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/nearby"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:padding="5dp"
+                        android:layout_weight="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="糖果氧吧KTV"
+                            android:padding="5dp"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="#ff4965"
+                                android:text="&#xe80a;&#xe80a;&#xe80a;&#xe80a;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 0.001人评价"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentLeft="true"
+                                android:paddingBottom="5dp"
+                                android:text="距离你500m"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:paddingBottom="5dp"
+                                android:textColor="#ff4965"
+                                android:text="好评指数4颗星"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="&#xe651;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="胜利路与人民率交叉口新都汇4楼"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/nearby"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:padding="5dp"
+                        android:layout_weight="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="糖果氧吧KTV"
+                            android:padding="5dp"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="#ff4965"
+                                android:text="&#xe80a;&#xe80a;&#xe80a;&#xe80a;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 0.001人评价"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentLeft="true"
+                                android:paddingBottom="5dp"
+                                android:text="距离你500m"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:paddingBottom="5dp"
+                                android:textColor="#ff4965"
+                                android:text="好评指数4颗星"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="&#xe651;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="胜利路与人民率交叉口新都汇4楼"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/nearby"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:padding="5dp"
+                        android:layout_weight="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="糖果氧吧KTV"
+                            android:padding="5dp"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="#ff4965"
+                                android:text="&#xe80a;&#xe80a;&#xe80a;&#xe80a;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 0.001人评价"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentLeft="true"
+                                android:paddingBottom="5dp"
+                                android:text="距离你500m"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:paddingBottom="5dp"
+                                android:textColor="#ff4965"
+                                android:text="好评指数4颗星"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="&#xe651;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="胜利路与人民率交叉口新都汇4楼"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <include layout="@layout/activity_front_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"/>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
+
+
+
+
