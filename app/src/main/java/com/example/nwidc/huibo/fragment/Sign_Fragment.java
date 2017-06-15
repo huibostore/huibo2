@@ -18,7 +18,6 @@ import com.example.nwidc.huibo.R;
 
 public class Sign_Fragment extends Fragment {
     View view;
-    View sign;
     String result;
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
         //view = inflater.inflate(R.layout.fragment_member,null);
