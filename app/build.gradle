@@ -17,6 +17,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    //    配置百度SO
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.example.baidu"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
 }
 
 dependencies {
@@ -40,4 +60,8 @@ dependencies {
 
     compile "com.android.support:support-v13:21.0.0"
     testCompile 'junit:junit:4.12'
+    compile 'com.zaaach:citypicker:1.1'
+    //百度包
+    compile files('libs/locSDK_6.23.jar')
+    compile files('libs/baidumapapi_v3_5_0.jar')
 }

@@ -25,8 +25,11 @@
 //
 package com.example.nwidc.huibo;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Handler;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
@@ -56,9 +59,11 @@ import com.example.nwidc.huibo.fragment.SnakeFragment;
 import com.example.nwidc.huibo.fragment.SortFragment;
 import com.example.nwidc.huibo.fragment.TakeFragment;
 import com.example.nwidc.huibo.fragment.WholesaleFragment;
+import com.zaaach.citypicker.CityPickerActivity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -90,6 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FragmentManager fManager;
     private SharedHelper sh;
     private String result = "";
+    private static final int REQUEST_CODE_PICK_CITY = 233;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +103,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         fManager = getSupportFragmentManager();
-
+        mContext = getApplicationContext();
+        sh = new SharedHelper(mContext);
         bindViews();
 
         txt_channel.performClick();   //模拟一次点击，既进去后选择第一项
@@ -107,8 +114,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
 
-
     }
+
 
 
 
@@ -147,16 +154,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(fg2 != null)fragmentTransaction.hide(fg2);
         if(fg3 != null)fragmentTransaction.hide(fg3);
         if(fg4 != null)fragmentTransaction.hide(fg4);
+        if(fg45 != null)fragmentTransaction.hide(fg45);
         if(fg5 != null)fragmentTransaction.hide(fg5);
         if(PurchaseFragment != null)fragmentTransaction.hide(PurchaseFragment);
     }
+
+    //城市切换
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_CODE_PICK_CITY && resultCode == RESULT_OK){
+            if (data != null){
+                String city = data.getStringExtra(CityPickerActivity.KEY_PICKED_CITY);
+                TextView a= (TextView) getSupportFragmentManager().findFragmentById(R.id.ly_content).getView().findViewById(R.id.city);
+                a.setText(city);
+                //保存选择
+                sh.savecity(city);
+            }
+        }
+    }
+
+
 
     //抢购
 
     public void onClickSnap(View v){
 
         Intent intent = new Intent();
-        intent.setClass(MainActivity.this, LoginActivity.class);
+        intent.setClass(MainActivity.this, CityActivity.class);
         startActivity(intent);
     }
 
@@ -290,7 +313,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 txt_channel.setSelected(true);
                 if(fg1 == null){
                     fg1 = new HomeMenuFragment();
+
                     fTransaction.add(R.id.ly_content,fg1);
+
                 }else{
                     fTransaction.show(fg1);
                 }
@@ -364,5 +389,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return super.onKeyDown(keyCode, event);
     }
+
+    //城市
+    public void onClickcity(View v) {
+        startActivityForResult(new Intent(MainActivity.this, CityPickerActivity.class), REQUEST_CODE_PICK_CITY);
+
+    }
+
+
+
+
 
 }

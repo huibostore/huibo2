@@ -1,4 +1,5 @@
 package com.example.nwidc.huibo.fragment;
+import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -6,20 +7,31 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.nwidc.huibo.LoginActivity;
+import com.example.nwidc.huibo.MainActivity;
 import com.example.nwidc.huibo.R;
 import com.example.nwidc.huibo.Adapter.HomeFragmentAdapter;
+import com.example.nwidc.huibo.SharedHelper;
 import com.youth.banner.loader.ImageLoader;
+import com.zaaach.citypicker.CityPickerActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+
+import com.zaaach.citypicker.CityPickerActivity;
+
+import static android.app.Activity.RESULT_OK;
 
 public class HomeMenuFragment extends Fragment {
 
@@ -28,8 +40,10 @@ public class HomeMenuFragment extends Fragment {
     private ViewPager vp_essence;
     private List<Fragment> fragments;
     private View view;
-
-
+    private static final int REQUEST_CODE_PICK_CITY = 233;
+    private TextView tv;
+    private Context mContext;
+    private SharedHelper sh;
 
     @Nullable
     @Override
@@ -40,11 +54,30 @@ public class HomeMenuFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_home,container,false);
         initConentView(view);
         initData();
+        mContext = getActivity().getApplicationContext();
+        sh = new SharedHelper(mContext);
 
 
-
+        TextView a= (TextView) view.findViewById(R.id.city);
+        city(a);
         return view;
     }
+
+    //城市切换
+
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_CODE_PICK_CITY && resultCode == RESULT_OK){
+            if (data != null){
+                String city = data.getStringExtra(CityPickerActivity.KEY_PICKED_CITY);
+                tv.setText(city);
+                Toast.makeText(getActivity(), city, Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
     public void initConentView(View view) {
         this.tab_essence = (TabLayout) view.findViewById(R.id.tab_essence);
         this.vp_essence = (ViewPager) view.findViewById(R.id.vp_essence);
@@ -105,13 +138,16 @@ public class HomeMenuFragment extends Fragment {
         }
     }
 
+    private void city(TextView a) {
+        Map<String,String> data = sh.readcity();
 
+        if(data.get("city") == ""){
+            a.setText("城市");
+        }else{
+            a.setText(data.get("city"));
+        }
+        Toast.makeText(getActivity(), data.get("city"), Toast.LENGTH_SHORT).show();
+    }
 
-//    public void onClickTakes(View viewContent ) {
-//
-//        TextView textView = (TextView) viewContent.findViewById(R.id.testx);
-//        textView.setText("haha");
-//
-//    }
 
 }

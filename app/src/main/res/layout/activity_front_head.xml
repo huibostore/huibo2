@@ -34,12 +34,22 @@
             </LinearLayout>
 
             <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/citytop"
+                android:layout_toLeftOf="@+id/city_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                android:text="新乡"/>
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/city_down"
                 android:layout_toLeftOf="@+id/mess"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:textSize="20dp"
-                android:text="新乡&#xe661;"/>
+                android:text="&#xe661;"/>
 
             <com.example.nwidc.huibo.View.AwsomeIconFont
                 android:id="@+id/mess"

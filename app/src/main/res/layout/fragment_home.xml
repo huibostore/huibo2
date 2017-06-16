@@ -10,56 +10,75 @@
 
     <RelativeLayout
         android:id="@+id/search_box"
-        android:layout_gravity="top"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_gravity="top"
         android:background="#ffffff"
         android:gravity="center_vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        >
-        <com.example.nwidc.huibo.View.AwsomeIconFont
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
             android:id="@+id/btn_back"
-            android:layout_width="60dp"
-            android:layout_height="30dp"
+            android:onClick="onClickcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:text="通辽&#xe661;"
-            android:textSize="16sp"
-            android:gravity="center_vertical"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            />
+            android:layout_centerVertical="true"
+            android:padding="5dp">
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="城市"
+                android:textSize="16sp" />
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/btn_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/city"
+                android:gravity="center_vertical"
+                android:text="&#xe661;"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
 
         <com.example.nwidc.huibo.View.AwsomeIconFont
             android:id="@+id/btn_mm"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentRight="true"
-            android:text="&#xe731;"
-            android:textSize="26sp"
-            android:gravity="center"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            />
-
-        <com.example.nwidc.huibo.View.AwsomeIconFont
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_menu"
-            android:layout_toRightOf="@id/btn_back"
-            android:layout_toLeftOf="@id/btn_mm"
-            android:layout_weight="1"
-            android:text="&#xe65c; 搜索商品或店家名称"
-            android:layout_marginLeft="2dp"
-            android:paddingLeft="6dp"
-            android:textColor="#9E9E9E"
-            android:gravity="center_vertical"
-            android:textSize="16sp"
-            android:background="@drawable/buttom_min"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="&#xe731;"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            />
+            android:textSize="26sp" />
 
-
+        <com.example.nwidc.huibo.View.AwsomeIconFont
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toLeftOf="@id/btn_mm"
+            android:layout_toRightOf="@id/btn_back"
+            android:layout_weight="1"
+            android:background="@drawable/buttom_min"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="&#xe65c; 搜索商品或店家名称"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#9E9E9E"
+            android:textSize="16sp" />
 
 
     </RelativeLayout>

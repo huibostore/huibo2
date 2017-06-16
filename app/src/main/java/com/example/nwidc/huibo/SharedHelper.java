@@ -42,7 +42,23 @@ public class SharedHelper {
         SharedPreferences sp = mContext.getSharedPreferences("mysp", Context.MODE_PRIVATE);
         data.put("username", sp.getString("username", ""));
         data.put("passwd", sp.getString("passwd", ""));
-        data.put("state", sp.getString("state", ""));
+        return data;
+    }
+    //定义一个保存数据的方法
+    public void savecity(String city) {
+        SharedPreferences sp = mContext.getSharedPreferences("city", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+
+        editor.putString("city", city);
+
+
+        editor.commit();//Toast.makeText(mContext, "信息已写入SharedPreference中", Toast.LENGTH_SHORT).show();
+    }
+    //定义一个读取SP文件的方法
+    public Map<String, String> readcity() {
+        Map<String, String> data = new HashMap<String, String>();
+        SharedPreferences sp = mContext.getSharedPreferences("city", Context.MODE_PRIVATE);
+        data.put("city", sp.getString("city", ""));
         return data;
     }
 
