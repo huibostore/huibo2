@@ -50,7 +50,7 @@
         <activity android:name=".WholesaleActivity" />
         <activity android:name=".Edit_orderActivity" />
         <activity android:name=".PayActivity" />
-        <activity android:name=".Check_shippingActivity" />
+        <activity android:name=".Goods_infoActivity" />
         <activity android:name=".CityActivity" />
         <activity android:name=".TakeActivity" />
 

@@ -25,11 +25,7 @@
 //
 package com.example.nwidc.huibo;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Build;
-import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
@@ -44,7 +40,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.nwidc.huibo.Util.PostUtils;
 import com.example.nwidc.huibo.fragment.BookingFragment;
 import com.example.nwidc.huibo.fragment.ChartFragment;
 import com.example.nwidc.huibo.fragment.CloudpayFragment;
@@ -60,13 +55,6 @@ import com.example.nwidc.huibo.fragment.SortFragment;
 import com.example.nwidc.huibo.fragment.TakeFragment;
 import com.example.nwidc.huibo.fragment.WholesaleFragment;
 import com.zaaach.citypicker.CityPickerActivity;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
-import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -115,11 +103,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
-
-
-
-
-
 
 
 
@@ -172,6 +155,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    //抢购
+
+    public void onClickgoods_info(View v){
+
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, Goods_infoActivity.class);
+        startActivity(intent);
+    }
 
 
     //抢购
@@ -371,7 +362,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         fTransaction.commit();
     }
-
 
 
 

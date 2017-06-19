@@ -5,13 +5,16 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:padding="30dp">
+    
     <ImageView
         android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></ImageView>
+
     <TextView
         android:id="@+id/tv_loc_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40dp" />
+
 </LinearLayout>
