@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="26dp"
+                android:text="&#xe679;"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/front_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:textColor="#ff4965"
+                    android:text="附近商家"/>
+
+            </LinearLayout>
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/citytop"
+                android:layout_toLeftOf="@+id/city_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                android:text="新乡"/>
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/city_down"
+                android:layout_toLeftOf="@+id/mess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                android:text="&#xe661;"/>
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/mess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="26dp"
+                android:text="&#xe731;"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>

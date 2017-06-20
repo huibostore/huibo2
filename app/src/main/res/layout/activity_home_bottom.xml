@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textColor="#FD4B7B"
+                    android:layout_height="wrap_content"
+                    android:text="&#xe7d5;"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FD4B7B"
+                    android:text="首页"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="&#xe794;"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="收藏"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/huibo_chart"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="&#xe7d8;"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="购物车"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="&#xe7d6;"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="会员"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/huibo_sort"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="&#xe7ad;"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="分类"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

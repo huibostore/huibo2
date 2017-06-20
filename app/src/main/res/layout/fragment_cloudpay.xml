@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:paddingBottom="70dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#ddd" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E4E4"
+                android:orientation="horizontal">
+
+                <com.youth.banner.Banner
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="142dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ff4965" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="&#xe794;"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ff4965"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:text="一元云购 惊喜无限"
+                    android:textColor="#ff4965"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#ddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="&#xe66b;"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#999"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="一元云购规则详情\u003C新手必看\u003e"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/eton_placeholder"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/yaoyiyao" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="美国华盛顿美味多汁樱桃500g 果径约26.5mm 新鲜车厘子"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价值:"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="129"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:src="@drawable/yungouline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="马上1元云购"
+                            android:textColor="#ff4965" />
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/goods_info_share"
+                            android:gravity="center"
+                            android:text="&#xe7d8;"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/eton_placeholder"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/eton_placeholder"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/yaoyiyao" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="美国华盛顿美味多汁樱桃500g 果径约26.5mm 新鲜车厘子"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价值:"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="129"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:src="@drawable/yungouline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="马上1元云购"
+                            android:textColor="#ff4965" />
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/goods_info_share"
+                            android:gravity="center"
+                            android:text="&#xe7d8;"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/eton_placeholders"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/yaoyiyao" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="美国华盛顿美味多汁樱桃500g 果径约26.5mm 新鲜车厘子"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价值:"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="129"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:src="@drawable/yungouline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="马上1元云购"
+                            android:textColor="#ff4965" />
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/goods_info_share"
+                            android:gravity="center"
+                            android:text="&#xe7d8;"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/eton_placeholders"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/eton_placeholders"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/yaoyiyao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="美国华盛顿美味多汁樱桃500g 果径约26.5mm 新鲜车厘子"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价值:"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="129"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:src="@drawable/yungouline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="马上1元云购"
+                            android:textColor="#ff4965" />
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/goods_info_share"
+                            android:gravity="center"
+                            android:text="&#xe7d8;"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/yushou" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/yushou" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/yushou" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/yushou" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/eton_placeholder1"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/yaoyiyao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="美国华盛顿美味多汁樱桃500g 果径约26.5mm 新鲜车厘子"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价值:"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="129"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:src="@drawable/yungouline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="马上1元云购"
+                            android:textColor="#ff4965" />
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/goods_info_share"
+                            android:gravity="center"
+                            android:text="&#xe7d8;"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/eton_placeholder1"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/eton_placeholder1"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/yaoyiyao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="美国华盛顿美味多汁樱桃500g 果径约26.5mm 新鲜车厘子"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价值:"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="129"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:src="@drawable/yungouline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="马上1元云购"
+                            android:textColor="#ff4965" />
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/goods_info_share"
+                            android:gravity="center"
+                            android:text="&#xe7d8;"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/eton_placeholder2"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/yaoyiyao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="美国华盛顿美味多汁樱桃500g 果径约26.5mm 新鲜车厘子"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价值:"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="129"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:src="@drawable/yungouline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="马上1元云购"
+                            android:textColor="#ff4965" />
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/goods_info_share"
+                            android:gravity="center"
+                            android:text="&#xe7d8;"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/eton_placeholder2"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/eton_placeholder2"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/yaoyiyao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="美国华盛顿美味多汁樱桃500g 果径约26.5mm 新鲜车厘子"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价值:"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="129"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:src="@drawable/yungouline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="马上1元云购"
+                            android:textColor="#ff4965" />
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/goods_info_share"
+                            android:gravity="center"
+                            android:text="&#xe7d8;"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/eton_placeholder3"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/yaoyiyao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="美国华盛顿美味多汁樱桃500g 果径约26.5mm 新鲜车厘子"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价值:"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="129"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:src="@drawable/yungouline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="马上1元云购"
+                            android:textColor="#ff4965" />
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/goods_info_share"
+                            android:gravity="center"
+                            android:text="&#xe7d8;"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/eton_placeholder3"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/eton_placeholder3"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/yaoyiyao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="美国华盛顿美味多汁樱桃500g 果径约26.5mm 新鲜车厘子"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价值:"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="129"
+                            android:textColor="#999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:src="@drawable/yungouline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="马上1元云购"
+                            android:textColor="#ff4965" />
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/goods_info_share"
+                            android:gravity="center"
+                            android:text="&#xe7d8;"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

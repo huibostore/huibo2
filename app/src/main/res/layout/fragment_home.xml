@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClickcity"
+            android:padding="5dp">
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="城市"
+                android:textSize="16sp" />
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/btn_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/city"
+                android:gravity="center_vertical"
+                android:text="&#xe661;"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttom_min"
+            android:gravity="center"
+            android:orientation="horizontal"
+            Android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_centerInParent="true">
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="0dp"
+                android:text="&#xe65c;"
+                android:textColor="#9E9E9E"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="搜索商品或店家名称"
+                android:background="@null"
+                android:textColor="#9E9E9E"
+                android:textSize="16sp" />
+
+
+
+
+        </LinearLayout>
+
+        <com.example.nwidc.huibo.View.AwsomeIconFont
+            android:id="@+id/btn_mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="&#xe731;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="26sp" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_essence"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/essence_tab_bg"
+        app:tabIndicatorColor="@color/essence_tab_text_color_press"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/essence_tab_text_color_press"
+        app:tabTextColor="@color/essence_tab_text_color_normal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_essence"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleimageview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_gravity="top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                android:text="会员中心"/>
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:text="&#xe68a;"/>
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="24sp"
+                    android:text="&#xe731;"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#ff4965"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginTop="50px"
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未登录用户"
+                    android:textColor="#fff"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#f9f9f9"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="#fff"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#e4e4e4" />-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/my_order"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true">-->
+
+                        <!--<com.example.nwidc.huibo.View.AwsomeIconFont-->
+                            <!--android:id="@+id/member_order_icon"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="4dp"-->
+                            <!--android:text="&#xe800;"-->
+                            <!--android:textSize="18sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_toRightOf="@+id/member_order_icon"-->
+                            <!--android:text="我的订单"-->
+                            <!--android:textSize="18sp" />-->
+
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true">-->
+
+                        <!--<com.example.nwidc.huibo.View.AwsomeIconFont-->
+                            <!--android:id="@+id/member_order_icon2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="&#xe6a3;"-->
+                            <!--android:textSize="24sp" />-->
+
+
+                    <!--</RelativeLayout>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#e4e4e4" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#fff"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="5dp">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<com.example.nwidc.huibo.View.AwsomeIconFont-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="&#xe673;"-->
+                            <!--android:textSize="30sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="待付款" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<com.example.nwidc.huibo.View.AwsomeIconFont-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="&#xe675;"-->
+                            <!--android:textSize="30sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="待发货" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<com.example.nwidc.huibo.View.AwsomeIconFont-->
+                            <!--android:id="@+id/awsomeIconFont"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="&#xe671;"-->
+                            <!--android:textSize="30sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="待收货" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<com.example.nwidc.huibo.View.AwsomeIconFont-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="&#xe672;"-->
+                            <!--android:textSize="30sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="待评价" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<com.example.nwidc.huibo.View.AwsomeIconFont-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="&#xe6ac;"-->
+                            <!--android:textSize="30sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:text="售后/退款" />-->
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#e4e4e4" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="#fff"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#e4e4e4" />-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true">-->
+
+                        <!--<com.example.nwidc.huibo.View.AwsomeIconFont-->
+                            <!--android:id="@+id/member_frided_icon"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="4dp"-->
+                            <!--android:text="&#xe6cc;"-->
+                            <!--android:textSize="18sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_toRightOf="@+id/member_frided_icon"-->
+                            <!--android:text="邀请好友"-->
+                            <!--android:textSize="18sp" />-->
+
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true">-->
+
+                        <!--<com.example.nwidc.huibo.View.AwsomeIconFont-->
+                            <!--android:id="@+id/member_fri_icon2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="&#xe6a3;"-->
+                            <!--android:textSize="24sp" />-->
+
+
+                    <!--</RelativeLayout>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#e4e4e4" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

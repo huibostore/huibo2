@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <com.example.nwidc.huibo.View.AwsomeIconFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="&#xe731;"
+                        android:textColor="#FF80A2"
+                        android:textSize="26sp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF80A2"
+                        android:text="交谈"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <com.example.nwidc.huibo.View.AwsomeIconFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="&#xe7b8;"
+                        android:textSize="26sp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="店铺"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <com.example.nwidc.huibo.View.AwsomeIconFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="&#xe64c;"
+                        android:textSize="26sp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收藏"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:background="@drawable/buttons_pink"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="加入购物车"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:background="@drawable/buttons_red"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="立即下单"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

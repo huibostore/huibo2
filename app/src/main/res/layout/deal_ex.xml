@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dddddd">
+
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/activity_head"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ddd"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:padding="15dp">
+
+            <TableLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        >
+                        <TextView
+                            android:id="@+id/btnleft"
+                            android:gravity="center"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="上一单"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:background="@drawable/gray"
+                            android:layout_alignParentRight  ="@id/btnright"/>
+                        <TextView
+                            android:id="@+id/btnright"
+                            android:gravity="center"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:text="下一单"
+                            android:background="@drawable/redius"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    >
+                    <com.example.nwidc.huibo.View.AwsomeIconFont
+                        android:id="@+id/btn_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:layout_margin="16dp"
+                        android:textColor="#eee"
+                        android:text="@string/check"
+                        android:background="@drawable/steal"
+                        ></com.example.nwidc.huibo.View.AwsomeIconFont>
+
+                    <ImageView
+                        android:id="@+id/check_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/chech"
+                        android:layout_toRightOf="@id/btn_check"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <TextView
+                        android:id="@+id/check_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="您要访问的页面不存在！很抱歉，您要访问的页面不存在！"
+                        />
+                    <TextView
+                        android:id="@+id/check_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff4965"
+                        android:layout_marginTop="10dp"
+                        android:text="￥ 999.1元"
+                        android:layout_below="@id/check_title"
+                        />
+                    <TextView
+                        android:id="@+id/check_x1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/check_title"
+                        android:layout_toRightOf="@id/check_money"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请选择发货方式"
+                        android:textSize="16sp"
+                        android:textColor="#333"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在线下单"
+                        android:textColor="#333"
+                        android:background="@drawable/buttom_min"
+                        android:layout_marginTop="10dp"
+                        />
+                    <EditText
+                        android:id="@+id/msg"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttom_min"
+                        android:textSize="14sp"
+                        android:padding="6dp"
+                        android:hint="请填写运单号码">
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_marginRight ="20dp"
+                    android:layout_alignParentRight ="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请选择快递公司"
+                        android:textSize="16sp"
+                        android:textColor="#333"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="申通慢递"
+                        android:textColor="#333"
+                        android:background="@drawable/buttom_min"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff4965"
+                        android:background="@drawable/border_pink_min"
+                        android:layout_marginTop="10dp"
+                        android:text="扫描单号"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <Button
+                    android:id="@+id/btn_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button2"
+                    android:textColor="#ff4965"
+                    android:text="返回"/>
+                <Button
+                    android:id="@+id/btn_f"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#ff4965"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button2"
+                    android:text="发货"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
