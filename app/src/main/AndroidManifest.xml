@@ -53,7 +53,7 @@
         <activity android:name=".Goods_infoActivity" />
         <activity android:name=".CityActivity" />
         <activity android:name=".TakeActivity" />
-
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".IdleActivity" />
         <activity android:name=".TestActivity">
 
