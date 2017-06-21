@@ -52,29 +52,33 @@
 
 
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/btn_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_back"
+            android:layout_toLeftOf="@+id/btn_mm"
             android:background="@drawable/buttom_min"
-            android:gravity="center"
-            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             Android:focusable="true"
             android:focusableInTouchMode="true"
             android:layout_centerInParent="true">
 
             <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:id="@+id/search"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:gravity="center_vertical"
                 android:paddingLeft="0dp"
-                android:text="&#xe65c;"
+                android:text=" &#xe65c; "
                 android:textColor="#9E9E9E"
-                android:textSize="16sp" />
+                android:textSize="17sp" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
                 android:layout_height="wrap_content"
                 android:hint="搜索商品或店家名称"
                 android:background="@null"
@@ -84,7 +88,7 @@
 
 
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <com.example.nwidc.huibo.View.AwsomeIconFont
             android:id="@+id/btn_mm"

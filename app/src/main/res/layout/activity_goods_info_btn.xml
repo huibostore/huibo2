@@ -12,7 +12,7 @@
         <LinearLayout
             android:layout_weight="1.5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="140px"
             android:paddingBottom="2dp"
             android:orientation="horizontal">
 
@@ -37,8 +37,8 @@
                             android:layout_height="wrap_content"
                             android:text="&#xe731;"
                             android:textColor="#FF80A2"
-                            android:textSize="18sp"
-                            android:layout_marginTop="4dp"
+                            android:textSize="22sp"
+                            android:layout_marginTop="6dp"
                             android:layout_centerHorizontal="true"
                             android:gravity="center"
                             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -68,10 +68,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="&#xe7b8;"
-                        android:textSize="18sp"
+                        android:textSize="22sp"
 
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="6dp"
                         android:gravity="center"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         />
@@ -100,8 +100,8 @@
                         android:text="&#xe64c;"
 
                         android:layout_centerHorizontal="true"
-                        android:textSize="18sp"
-                        android:layout_marginTop="4dp"
+                        android:textSize="22sp"
+                        android:layout_marginTop="6dp"
                         android:gravity="center"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         />
@@ -125,10 +125,10 @@
             android:layout_height="match_parent">
 
             <RelativeLayout
-                android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:background="@drawable/buttons_pink"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_pink">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -139,8 +139,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#fff"
-                        android:text="加入购物车"/>
+                        android:text="加入购物车"
+                        android:textColor="#fff" />
 
                 </LinearLayout>
 
