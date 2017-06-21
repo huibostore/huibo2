@@ -3,6 +3,7 @@ package com.example.nwidc.huibo;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -121,7 +122,14 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    //新用户注册
+    public void onClicknew(View v){
 
+        Intent intent = new Intent();
+        intent.setClass(LoginActivity.this,RegisterActivity.class);
+        startActivity(intent);
+
+    }
 
     @Override
     protected void onStart() {
