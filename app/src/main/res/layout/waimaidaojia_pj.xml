@@ -11,6 +11,10 @@
         android:orientation="vertical"
         android:background="#f3f3f3">
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0337b716c056c09bca7623ea4b957035ee48a2b1
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -809,6 +813,7 @@
                     android:text="2016-07-04 19:04"/>
             </LinearLayout>
         </RelativeLayout>
+<<<<<<< HEAD
 
 
 
@@ -818,6 +823,8 @@
 
 
 
+=======
+>>>>>>> 0337b716c056c09bca7623ea4b957035ee48a2b1
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
