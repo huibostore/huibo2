@@ -12,7 +12,6 @@
             android:background="#f3f3f3">
 
 
-
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -26,20 +25,9 @@
                     android:orientation="horizontal">
                     <RelativeLayout
 
-
-            <FrameLayout
+            <LinearLayout
+                android:id="@+id/goods_detail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:id="@+id/goods_detail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/shop"
-                    android:background="#ffffff"
-                    android:orientation="horizontal">
-                    <RelativeLayout
-
                 android:layout_height="wrap_content"
                 android:layout_below="@id/shop"
                 android:background="#ffffff"
@@ -73,6 +61,7 @@
                         />
                     <TextView
                         android:id="@+id/goods_category"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <ImageView
