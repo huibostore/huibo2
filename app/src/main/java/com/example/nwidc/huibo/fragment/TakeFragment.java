@@ -29,7 +29,8 @@ public class TakeFragment extends Fragment {
                 getFragmentManager().popBackStack();
             }
         });
-
+        TextView title = (TextView) view.findViewById(R.id.btn_title);
+        title.setText("外卖到家");
         return view;
     }
 
