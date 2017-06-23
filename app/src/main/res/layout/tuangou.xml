@@ -56,7 +56,7 @@
                 android:paddingRight="10dp"
                 android:textColor="#ff4965"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="惠博团购" />
         </RelativeLayout>
 
@@ -348,7 +348,7 @@
             android:background="#ffffff">
 
             <LinearLayout
-                android:layout_width="46dp"
+                android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:padding="4dp"
                 android:gravity="center"
@@ -357,7 +357,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="头条"
-                android:textSize="14sp"
+                android:textSize="10sp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="#fff"
@@ -376,7 +376,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="抢 "
-                android:textSize="14sp"
+                android:textSize="10sp"
                 android:gravity="center"
                 android:textColor="#ff4965"
                 />
@@ -384,7 +384,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="家具家装3免1，大牌低至6折....."
-                android:textSize="13sp"
+                android:textSize="9sp"
                 android:gravity="center"
                 />
         </LinearLayout>
@@ -422,7 +422,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:layout_marginLeft="2dp"
                 android:textColor="#ff4965"
                 android:text="每日开团"/>

@@ -48,7 +48,7 @@
             android:paddingRight="10dp"
             android:textColor="#ff4965"
             android:textStyle="bold"
-            android:textSize="28sp"
+            android:textSize="20sp"
             android:text="惠博团购" />
     </RelativeLayout>
 
