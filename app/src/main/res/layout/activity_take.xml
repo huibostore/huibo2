@@ -260,13 +260,14 @@
                     android:layout_weight="50">
 
                     <TextView
+                        android:id="@+id/textView9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
                         android:text="便利超市"
                         android:textColor="#ff4965"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -275,7 +276,7 @@
                         android:paddingLeft="10dp"
                         android:text="宅在家城逛超市"
                         android:textColor="#999999"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -309,7 +310,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="优质新店"
                                 android:textColor="#FFA917"
-                                android:textSize="13sp" />
+                                android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -318,7 +319,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="新开优质好店推荐"
                                 android:textColor="#999999"
-                                android:textSize="10sp" />
+                                android:textSize="9sp" />
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -351,7 +352,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="热卖美食"
                                 android:textColor="#FFA917"
-                                android:textSize="13sp" />
+                                android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -360,7 +361,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="大家都喜欢的美食"
                                 android:textColor="#999999"
-                                android:textSize="10sp" />
+                                android:textSize="9sp" />
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -390,7 +391,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="满减优惠"
                                 android:textColor="#FFA917"
-                                android:textSize="13sp" />
+                                android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -399,7 +400,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="减免店铺大集合"
                                 android:textColor="#999999"
-                                android:textSize="10sp" />
+                                android:textSize="9sp" />
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -432,7 +433,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="果蔬生鲜"
                                 android:textColor="#FFA917"
-                                android:textSize="13sp" />
+                                android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -441,7 +442,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="应季时蔬水果大搜罗"
                                 android:textColor="#999999"
-                                android:textSize="10sp" />
+                                android:textSize="9sp" />
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -462,14 +463,14 @@
                 android:background="#ffffff">
                 <LinearLayout
                     android:id="@+id/fujin_pink"
-                    android:layout_width="8dp"
+                    android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:background="#ff4455"
                     android:orientation="horizontal"></LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     android:padding="10dp"
                     android:textStyle="bold"
                     android:text="附近店家"/>
@@ -507,7 +508,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:text="周记人家(北冀街店)"
-                            android:textSize="20sp"
+                            android:textSize="14sp"
                             />
                     </LinearLayout>
                     <LinearLayout
@@ -528,7 +529,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="12dp"
                             android:text="4.4"
-                            android:textColor="#ff4965" />
+                            android:textColor="#FFA917" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -557,42 +558,42 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="20"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元起送/配送费"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="5"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元/距您"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="888"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="米"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -620,8 +621,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -629,7 +630,7 @@
                             android:layout_height="wrap_content"
                             android:text="减"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -637,7 +638,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="在线支付满30减10元"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -648,8 +649,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -657,7 +658,7 @@
                             android:layout_height="wrap_content"
                             android:text="质"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -665,7 +666,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="认证实体店铺，安全有保障"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -704,7 +705,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:text="周记人家(北冀街店)"
-                            android:textSize="20sp"
+                            android:textSize="14sp"
                             />
                     </LinearLayout>
                     <LinearLayout
@@ -725,7 +726,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="12dp"
                             android:text="4.4"
-                            android:textColor="#ff4965" />
+                            android:textColor="#FFA917" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -754,42 +755,42 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="20"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元起送/配送费"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="5"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元/距您"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="888"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="米"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -817,8 +818,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -826,7 +827,7 @@
                             android:layout_height="wrap_content"
                             android:text="减"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -834,7 +835,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="在线支付满30减10元"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -845,8 +846,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -854,7 +855,7 @@
                             android:layout_height="wrap_content"
                             android:text="质"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -862,7 +863,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="认证实体店铺，安全有保障"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -900,7 +901,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:text="周记人家(北冀街店)"
-                            android:textSize="20sp"
+                            android:textSize="14sp"
                             />
                     </LinearLayout>
                     <LinearLayout
@@ -921,7 +922,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="12dp"
                             android:text="4.4"
-                            android:textColor="#ff4965" />
+                            android:textColor="#FFA917" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -950,42 +951,42 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="20"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元起送/配送费"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="5"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元/距您"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="888"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="米"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -1013,8 +1014,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -1022,7 +1023,7 @@
                             android:layout_height="wrap_content"
                             android:text="减"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -1030,7 +1031,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="在线支付满30减10元"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -1041,8 +1042,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -1050,7 +1051,7 @@
                             android:layout_height="wrap_content"
                             android:text="质"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -1058,7 +1059,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="认证实体店铺，安全有保障"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -1096,7 +1097,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:text="周记人家(北冀街店)"
-                            android:textSize="20sp"
+                            android:textSize="14sp"
                             />
                     </LinearLayout>
                     <LinearLayout
@@ -1117,7 +1118,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="12dp"
                             android:text="4.4"
-                            android:textColor="#ff4965" />
+                            android:textColor="#FFA917" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1146,42 +1147,42 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="20"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元起送/配送费"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="5"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元/距您"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="888"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="米"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -1209,8 +1210,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -1218,7 +1219,7 @@
                             android:layout_height="wrap_content"
                             android:text="减"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -1226,7 +1227,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="在线支付满30减10元"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -1237,24 +1238,25 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
+
                         <TextView
+                            android:id="@+id/textView10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="质"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="12sp" />
                     </LinearLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="认证实体店铺，安全有保障"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -1292,7 +1294,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:text="周记人家(北冀街店)"
-                            android:textSize="20sp"
+                            android:textSize="14sp"
                             />
                     </LinearLayout>
                     <LinearLayout
@@ -1313,7 +1315,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="12dp"
                             android:text="4.4"
-                            android:textColor="#ff4965" />
+                            android:textColor="#FFA917" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1342,42 +1344,42 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="20"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元起送/配送费"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="5"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元/距您"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="888"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="米"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -1405,8 +1407,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -1414,7 +1416,7 @@
                             android:layout_height="wrap_content"
                             android:text="减"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -1422,7 +1424,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="在线支付满30减10元"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -1433,8 +1435,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -1442,7 +1444,7 @@
                             android:layout_height="wrap_content"
                             android:text="质"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -1450,7 +1452,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="认证实体店铺，安全有保障"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -1488,7 +1490,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:text="周记人家(北冀街店)"
-                            android:textSize="20sp"
+                            android:textSize="14sp"
                             />
                     </LinearLayout>
                     <LinearLayout
@@ -1509,7 +1511,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="12dp"
                             android:text="4.4"
-                            android:textColor="#ff4965" />
+                            android:textColor="#FFA917" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1538,42 +1540,42 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="20"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元起送/配送费"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="5"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="元/距您"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="888"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="米"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -1601,8 +1603,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -1610,7 +1612,7 @@
                             android:layout_height="wrap_content"
                             android:text="减"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -1618,7 +1620,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="在线支付满30减10元"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 
@@ -1629,8 +1631,8 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:gravity="center"
                         android:background="@drawable/buttons_reds">
                         <TextView
@@ -1638,7 +1640,7 @@
                             android:layout_height="wrap_content"
                             android:text="质"
                             android:textColor="#FFF"
-                            android:textSize="16sp"
+                            android:textSize="12sp"
                             />
                     </LinearLayout>
                     <TextView
@@ -1646,7 +1648,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:text="认证实体店铺，安全有保障"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         />
                 </LinearLayout>
 

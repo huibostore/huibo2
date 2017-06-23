@@ -47,7 +47,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     android:textColor="#ff4965"
                     android:text="一元摇奖 惊喜不断"
                     android:textStyle="bold"
@@ -81,7 +81,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
+                    android:textSize="12sp"
                     android:layout_marginLeft="2dp"
                     android:text="摇一摇抽奖规则详\u003C新手必看\u003e"/>
             </LinearLayout>
@@ -95,6 +95,145 @@
                 android:layout_marginTop="6dp"
                 android:padding="10dp"
                 android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/biao" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="欧米茄(OMEGA)奥运会系列机械男表"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="13sp"
+                            android:text="价值："
+                            android:textColor="#ff4965" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#ff4965"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="6dp"
+                            android:text="￥" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#ff4965"
+                            android:textSize="16sp"
+                            android:text="380" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已有"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="199"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="人参与"
+                            android:textSize="13sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/buttons_reds"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="4dp">
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:gravity="center"
+                            android:text="&#xe765;"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+
+                            android:text="摇一摇"
+                            android:textColor="#fff"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="6dp">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttons_white_red"
+                            android:textColor="#ff4965"
+                            android:textSize="13sp"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="25dp"
+
+                            android:textStyle="bold"
+                            android:text="原价购买" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginTop="6dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="200dp"
@@ -128,6 +267,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            android:textSize="13sp"
                             android:text="价值："
                             android:textColor="#ff4965" />
                         <TextView
@@ -135,6 +275,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#ff4965"
+                            android:textSize="13sp"
                             android:layout_marginLeft="6dp"
                             android:text="￥" />
                         <TextView
@@ -142,7 +283,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#ff4965"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:text="380" />
                     </LinearLayout>
                     <LinearLayout
@@ -155,63 +296,64 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="已有"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="199"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="人参与"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:paddingTop="4dp"
+                        android:background="@drawable/buttons_reds"
+                        android:paddingBottom="4dp"
                         android:paddingLeft="16dp"
                         android:paddingRight="20dp"
-                        android:paddingBottom="4dp"
-                        android:background="@drawable/buttons_reds">
+                        android:paddingTop="4dp">
 
                         <com.example.nwidc.huibo.View.AwsomeIconFont
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            android:text="&#xe765;"
-                            android:textColor="#fff"
-                            android:textSize="26sp"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
                             android:gravity="center"
+                            android:text="&#xe765;"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            />
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="摇一摇"
-
                             android:gravity="center"
-                            android:textSize="14sp"
-                            android:textStyle="bold"
+
+                            android:text="摇一摇"
                             android:textColor="#fff"
-                            />
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="42dp"
                         android:layout_marginTop="6dp">
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/buttons"
+                            android:background="@drawable/buttons_white_red"
                             android:textColor="#ff4965"
-                            android:textSize="16sp"
+                            android:textSize="13sp"
                             android:paddingLeft="26dp"
                             android:paddingRight="25dp"
                             android:paddingTop="4dp"
@@ -262,6 +404,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            android:textSize="13sp"
                             android:text="价值："
                             android:textColor="#ff4965" />
                         <TextView
@@ -269,6 +412,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#ff4965"
+                            android:textSize="13sp"
                             android:layout_marginLeft="6dp"
                             android:text="￥" />
                         <TextView
@@ -276,7 +420,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#ff4965"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:text="380" />
                     </LinearLayout>
                     <LinearLayout
@@ -289,64 +433,64 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="已有"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="199"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="人参与"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:paddingTop="4dp"
+                        android:background="@drawable/buttons_reds"
+                        android:paddingBottom="4dp"
                         android:paddingLeft="16dp"
                         android:paddingRight="20dp"
-                        android:paddingBottom="4dp"
-                        android:background="@drawable/buttons_reds">
+                        android:paddingTop="4dp">
 
                         <com.example.nwidc.huibo.View.AwsomeIconFont
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            android:text="&#xe765;"
-                            android:textColor="#fff"
-                            android:textSize="26sp"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
                             android:gravity="center"
+                            android:text="&#xe765;"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            />
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="摇一摇"
-
                             android:gravity="center"
-                            android:textSize="14sp"
-                            android:textStyle="bold"
+
+                            android:text="摇一摇"
                             android:textColor="#fff"
-                            />
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="42dp"
                         android:layout_marginTop="6dp">
-
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/buttons"
+                            android:background="@drawable/buttons_white_red"
                             android:textColor="#ff4965"
-                            android:textSize="16sp"
+                            android:textSize="13sp"
                             android:paddingLeft="26dp"
                             android:paddingRight="25dp"
                             android:paddingTop="4dp"
@@ -397,6 +541,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            android:textSize="13sp"
                             android:text="价值："
                             android:textColor="#ff4965" />
                         <TextView
@@ -404,6 +549,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#ff4965"
+                            android:textSize="13sp"
                             android:layout_marginLeft="6dp"
                             android:text="￥" />
                         <TextView
@@ -411,7 +557,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#ff4965"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:text="380" />
                     </LinearLayout>
                     <LinearLayout
@@ -424,64 +570,64 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="已有"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="199"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="人参与"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:paddingTop="4dp"
+                        android:background="@drawable/buttons_reds"
+                        android:paddingBottom="4dp"
                         android:paddingLeft="16dp"
                         android:paddingRight="20dp"
-                        android:paddingBottom="4dp"
-                        android:background="@drawable/buttons_reds">
+                        android:paddingTop="4dp">
 
                         <com.example.nwidc.huibo.View.AwsomeIconFont
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            android:text="&#xe765;"
-                            android:textColor="#fff"
-                            android:textSize="26sp"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
                             android:gravity="center"
+                            android:text="&#xe765;"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            />
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="摇一摇"
-
                             android:gravity="center"
-                            android:textSize="14sp"
-                            android:textStyle="bold"
+
+                            android:text="摇一摇"
                             android:textColor="#fff"
-                            />
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="42dp"
                         android:layout_marginTop="6dp">
-
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/buttons"
+                            android:background="@drawable/buttons_white_red"
                             android:textColor="#ff4965"
-                            android:textSize="16sp"
+                            android:textSize="13sp"
                             android:paddingLeft="26dp"
                             android:paddingRight="25dp"
                             android:paddingTop="4dp"
@@ -532,6 +678,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            android:textSize="13sp"
                             android:text="价值："
                             android:textColor="#ff4965" />
                         <TextView
@@ -539,6 +686,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#ff4965"
+                            android:textSize="13sp"
                             android:layout_marginLeft="6dp"
                             android:text="￥" />
                         <TextView
@@ -546,7 +694,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#ff4965"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:text="380" />
                     </LinearLayout>
                     <LinearLayout
@@ -559,199 +707,64 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="已有"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="199"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="人参与"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:paddingTop="4dp"
+                        android:background="@drawable/buttons_reds"
+                        android:paddingBottom="4dp"
                         android:paddingLeft="16dp"
                         android:paddingRight="20dp"
-                        android:paddingBottom="4dp"
-                        android:background="@drawable/buttons_reds">
+                        android:paddingTop="4dp">
 
                         <com.example.nwidc.huibo.View.AwsomeIconFont
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            android:text="&#xe765;"
-                            android:textColor="#fff"
-                            android:textSize="26sp"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
                             android:gravity="center"
+                            android:text="&#xe765;"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            />
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="摇一摇"
-
                             android:gravity="center"
-                            android:textSize="14sp"
-                            android:textStyle="bold"
+
+                            android:text="摇一摇"
                             android:textColor="#fff"
-                            />
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp">
-
                         <Button
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/buttons"
+                            android:layout_height="42dp"
+                            android:background="@drawable/buttons_white_red"
                             android:textColor="#ff4965"
-                            android:textSize="16sp"
-                            android:paddingLeft="26dp"
-                            android:paddingRight="25dp"
-                            android:paddingTop="4dp"
-                            android:paddingBottom="4dp"
-                            android:textStyle="bold"
-                            android:text="原价购买" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#ffffff"
-                android:layout_marginTop="6dp"
-                android:padding="10dp"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/biao"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="6dp"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="欧米茄(OMEGA)奥运会系列机械男表"
-                            android:textSize="14sp"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="8dp"
-                        android:orientation="horizontal"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="价值："
-                            android:textColor="#ff4965" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:textColor="#ff4965"
-                            android:layout_marginLeft="6dp"
-                            android:text="￥" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:textColor="#ff4965"
-                            android:textSize="18sp"
-                            android:text="380" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="4dp"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="已有"
-                            android:textSize="14sp"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                            android:text="199"
-                            android:textSize="14sp"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                            android:text="人参与"
-                            android:textSize="14sp"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:paddingTop="4dp"
-                        android:paddingLeft="16dp"
-                        android:paddingRight="20dp"
-                        android:paddingBottom="4dp"
-                        android:background="@drawable/buttons_reds">
-
-                        <com.example.nwidc.huibo.View.AwsomeIconFont
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            android:text="&#xe765;"
-                            android:textColor="#fff"
-                            android:textSize="26sp"
-                            android:gravity="center"
-                            android:textAppearance="?android:attr/textAppearanceSmall"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="摇一摇"
-
-                            android:gravity="center"
-                            android:textSize="14sp"
-                            android:textStyle="bold"
-                            android:textColor="#fff"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp">
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/buttons"
-                            android:textColor="#ff4965"
-                            android:textSize="16sp"
+                            android:textSize="13sp"
                             android:paddingLeft="26dp"
                             android:paddingRight="25dp"
                             android:paddingTop="4dp"
@@ -803,6 +816,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            android:textSize="13sp"
                             android:text="价值："
                             android:textColor="#ff4965" />
                         <TextView
@@ -810,6 +824,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#ff4965"
+                            android:textSize="13sp"
                             android:layout_marginLeft="6dp"
                             android:text="￥" />
                         <TextView
@@ -817,7 +832,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#ff4965"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:text="380" />
                     </LinearLayout>
                     <LinearLayout
@@ -830,64 +845,64 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="已有"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="199"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:text="人参与"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:paddingTop="4dp"
+                        android:background="@drawable/buttons_reds"
+                        android:paddingBottom="4dp"
                         android:paddingLeft="16dp"
                         android:paddingRight="20dp"
-                        android:paddingBottom="4dp"
-                        android:background="@drawable/buttons_reds">
+                        android:paddingTop="4dp">
 
                         <com.example.nwidc.huibo.View.AwsomeIconFont
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            android:text="&#xe765;"
-                            android:textColor="#fff"
-                            android:textSize="26sp"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
                             android:gravity="center"
+                            android:text="&#xe765;"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            />
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="摇一摇"
-
                             android:gravity="center"
-                            android:textSize="14sp"
-                            android:textStyle="bold"
+
+                            android:text="摇一摇"
                             android:textColor="#fff"
-                            />
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp">
-
                         <Button
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/buttons"
+                            android:layout_height="42dp"
+                            android:background="@drawable/buttons_white_red"
                             android:textColor="#ff4965"
-                            android:textSize="16sp"
+                            android:textSize="13sp"
                             android:paddingLeft="26dp"
                             android:paddingRight="25dp"
                             android:paddingTop="4dp"
@@ -980,16 +995,18 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:textSize="13sp"
                             android:text="价格:"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:textSize="13sp"
                             android:textColor="#ff4965"
                             android:text="￥"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="20dp"
+                            android:textSize="16dp"
                             android:textColor="#ff4965"
                             android:text="900"/>
                     </LinearLayout>
@@ -1030,16 +1047,18 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:textSize="13sp"
                             android:text="价格:"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="#ff4965"
+                            android:textSize="13sp"
                             android:text="￥"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="20dp"
+                            android:textSize="16dp"
                             android:textColor="#ff4965"
                             android:text="900"/>
                     </LinearLayout>

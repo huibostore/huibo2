@@ -95,7 +95,6 @@
                                 android:text="&#xe70b;"
                                 android:textColor="@color/white"
                                 android:textSize="32sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -109,7 +108,6 @@
                             android:layout_weight="20"
                             android:gravity="center"
                             android:orientation="vertical">
-
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
@@ -118,7 +116,6 @@
                                 android:text="&#xe719;"
                                 android:textColor="@color/white"
                                 android:textSize="32sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -127,12 +124,10 @@
                                 android:gravity="center"
                                 android:text="电影" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_weight="20"
                             android:gravity="center"
                             android:orientation="vertical">
-
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:id="@+id/zhi"
                                 android:layout_width="55dp"
@@ -142,7 +137,6 @@
                                 android:text="&#xe7b8;"
                                 android:textColor="@color/white"
                                 android:textSize="32sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -151,12 +145,10 @@
                                 android:gravity="center"
                                 android:text="酒店" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_weight="20"
                             android:gravity="center"
                             android:orientation="vertical">
-
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
@@ -165,7 +157,6 @@
                                 android:text="&#xe6b2;"
                                 android:textColor="@color/white"
                                 android:textSize="32sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -174,12 +165,10 @@
                                 android:gravity="center"
                                 android:text="KTV" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_weight="20"
                             android:gravity="center"
                             android:orientation="vertical">
-
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
@@ -188,7 +177,6 @@
                                 android:text="&#xe753;"
                                 android:textColor="@color/white"
                                 android:textSize="32sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -198,16 +186,13 @@
                                 android:text="休闲娱乐" />
                         </LinearLayout>
                     </TableRow>
-
                     <TableRow
                         android:paddingBottom="10dp"
                         android:paddingTop="10dp">
-
                         <LinearLayout
                             android:layout_weight="20"
                             android:gravity="center"
                             android:orientation="vertical">
-
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
@@ -216,7 +201,6 @@
                                 android:text="&#xe814;"
                                 android:textColor="@color/white"
                                 android:textSize="32sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -225,12 +209,10 @@
                                 android:gravity="center"
                                 android:text="旅游" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_weight="20"
                             android:gravity="center"
                             android:orientation="vertical">
-
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
@@ -239,7 +221,6 @@
                                 android:text="&#xe671;"
                                 android:textColor="@color/white"
                                 android:textSize="32sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -248,12 +229,10 @@
                                 android:gravity="center"
                                 android:text="生活服务" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_weight="20"
                             android:gravity="center"
                             android:orientation="vertical">
-
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
@@ -262,7 +241,6 @@
                                 android:text="&#xe651;"
                                 android:textColor="@color/white"
                                 android:textSize="32sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -276,7 +254,6 @@
                             android:layout_weight="20"
                             android:gravity="center"
                             android:orientation="vertical">
-
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
@@ -285,7 +262,6 @@
                                 android:text="&#xe765;"
                                 android:textColor="@color/white"
                                 android:textSize="32sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -294,12 +270,10 @@
                                 android:gravity="center"
                                 android:text="购物" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_weight="20"
                             android:gravity="center"
                             android:orientation="vertical">
-
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
@@ -308,7 +282,6 @@
                                 android:text="&#xe69f;"
                                 android:textColor="@color/white"
                                 android:textSize="32sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -321,64 +294,56 @@
                 </TableLayout>
             </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0.6dp"
-                android:background="#ddd" />
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff"
                 android:padding="10dp">
-
                 <LinearLayout
-                    android:layout_width="52dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="30dp"
+                    android:layout_height="18dp"
                     android:background="@drawable/buttons_reds"
                     android:gravity="center"
-                    android:padding="4dp">
-
+                    android:padding="2dp">
                     <TextView
+                        android:id="@+id/textView12"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="头条"
                         android:textColor="#fff"
-                        android:textSize="16sp"
+                        android:textSize="10sp"
                         android:textStyle="bold" />
                 </LinearLayout>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="："
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
+                    android:text=":"
+                    android:textSize="12sp" />
                 <TextView
+                    android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="抢 "
                     android:textColor="#ff4965"
-                    android:textSize="16sp" />
-
+                    android:textSize="12sp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="家具家装3免1，大牌低至6折....."
-                    android:textSize="16sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0.6dp"
                 android:background="#ddd" />
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#ddd" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -386,22 +351,19 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp">
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
                     <com.example.nwidc.huibo.View.AwsomeIconFont
-                        android:layout_width="26dp"
-                        android:layout_height="26dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_alignParentRight="true"
                         android:gravity="center"
                         android:text="&#xe6cf;"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="#ff4965"
-                        android:textSize="20sp" />
-
+                        android:textSize="16sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -409,10 +371,9 @@
                         android:gravity="center"
                         android:text="每日开团"
                         android:textColor="#ff4965"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
                 </LinearLayout>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -422,13 +383,10 @@
                     android:textSize="12dp" />
             </LinearLayout>
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0.6dp"
                 android:background="#ddd" />
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -441,14 +399,12 @@
                     android:layout_weight="50"
                     android:orientation="vertical"
                     android:paddingTop="10dp">
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
                         android:text="阶梯团购"
-                        android:textSize="18sp" />
-
+                        android:textSize="16sp" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -456,8 +412,7 @@
                         android:paddingLeft="10dp"
                         android:text="宅在家城逛超市"
                         android:textColor="#999999"
-                        android:textSize="13sp" />
-
+                        android:textSize="12sp" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
@@ -465,34 +420,28 @@
                         android:src="@drawable/ele_bianli" />
                 </LinearLayout>
 
-
                 <TextView
                     android:layout_width="0.6dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.1"
                     android:background="#ddd" />
-
                 <TableLayout
                     android:layout_width="0px"
                     android:layout_height="wrap_content"
                     android:layout_weight="50">
-
                     <TableRow>
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
                             android:orientation="vertical"
                             android:paddingTop="10dp">
-
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="5dp"
                                 android:text="碧浪家用装"
-                                android:textSize="13sp" />
-
+                                android:textSize="12sp" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -500,8 +449,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="洗护全年终极团购会"
                                 android:textColor="#999999"
-                                android:textSize="10sp" />
-
+                                android:textSize="9sp" />
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -514,7 +462,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1">
-
                             <TextView
                                 android:layout_width="1dp"
                                 android:layout_height="match_parent"
@@ -528,14 +475,13 @@
                             android:layout_weight="50"
                             android:orientation="vertical"
                             android:paddingTop="10dp">
-
                             <TextView
+                                android:id="@+id/textView11"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="5dp"
                                 android:text="发现好物"
-                                android:textSize="13sp" />
-
+                                android:textSize="12sp" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -543,8 +489,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="发现好物"
                                 android:textColor="#999999"
-                                android:textSize="10sp" />
-
+                                android:textSize="9sp" />
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -553,30 +498,24 @@
                                 android:src="@drawable/ys" />
                         </LinearLayout>
                     </TableRow>
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0.6dp"
                         android:layout_weight="0.1"
                         android:background="#ddd" />
-
-
                     <TableRow>
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
                             android:orientation="vertical"
                             android:paddingTop="10dp">
-
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="5dp"
                                 android:text="碧浪家用装"
-                                android:textSize="13sp" />
-
+                                android:textSize="12sp" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -584,8 +523,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="洗护全年终极团购会"
                                 android:textColor="#999999"
-                                android:textSize="10sp" />
-
+                                android:textSize="9sp" />
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -593,33 +531,28 @@
                                 android:scaleType="centerInside"
                                 android:src="@drawable/ys" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1">
-
                             <TextView
                                 android:layout_width="1dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="#ddd" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
                             android:orientation="vertical"
                             android:paddingTop="10dp">
-
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="5dp"
                                 android:text="发现好物"
-                                android:textSize="13sp" />
-
+                                android:textSize="12sp" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -627,8 +560,7 @@
                                 android:paddingLeft="5dp"
                                 android:text="发现好物"
                                 android:textColor="#999999"
-                                android:textSize="10sp" />
-
+                                android:textSize="9sp" />
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -639,34 +571,27 @@
                     </TableRow>
                 </TableLayout>
             </LinearLayout>
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0.6dp"
                 android:background="#ddd" />
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:background="#ffffff"
                 android:orientation="horizontal">
-
                 <LinearLayout
                     android:layout_width="0px"
                     android:layout_height="wrap_content"
                     android:layout_weight="50"
                     android:orientation="vertical"
                     android:paddingTop="10dp">
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="6dp"
                         android:text="热门女鞋"
                         android:textSize="14sp" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -675,20 +600,17 @@
                         android:text="开口笑"
                         android:textColor="#999999"
                         android:textSize="10sp" />
-
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:src="@drawable/xie" />
                 </LinearLayout>
-
                 <TextView
                     android:layout_width="0.6dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.1"
                     android:background="#ddd" />
-
                 <LinearLayout
                     android:layout_width="0px"
                     android:layout_height="wrap_content"
@@ -702,7 +624,6 @@
                         android:paddingLeft="6dp"
                         android:text="潮牌 手表"
                         android:textSize="14sp" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -711,7 +632,6 @@
                         android:text="rumbatime"
                         android:textColor="#999999"
                         android:textSize="10sp" />
-
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -724,21 +644,18 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.1"
                     android:background="#ddd" />
-
                 <LinearLayout
                     android:layout_width="0px"
                     android:layout_height="wrap_content"
                     android:layout_weight="50"
                     android:orientation="vertical"
                     android:paddingTop="6dp">
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="6dp"
                         android:text="北欧风情"
                         android:textSize="14sp" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -747,7 +664,6 @@
                         android:text="懒人沙发"
                         android:textColor="#999999"
                         android:textSize="10sp" />
-
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -760,21 +676,18 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.1"
                     android:background="#ddd" />
-
                 <LinearLayout
                     android:layout_width="0px"
                     android:layout_height="wrap_content"
                     android:layout_weight="50"
                     android:orientation="vertical"
                     android:paddingTop="10dp">
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="6dp"
                         android:text="简约衣帽架"
                         android:textSize="14sp" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -783,7 +696,6 @@
                         android:text="衣帽这样挂更好看"
                         android:textColor="#999999"
                         android:textSize="10sp" />
-
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -797,7 +709,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:padding="6dp">
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -806,38 +717,33 @@
                     android:src="@drawable/banners" />
             </LinearLayout>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff"
                 android:orientation="vertical"
                 android:paddingTop="16dp">
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:paddingLeft="6dp">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="left"
                         android:text="精选团购"
                         android:textColor="#ff4965"
-                        android:textSize="18sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="家具家装3免1，大牌低至6折....."
-                        android:textSize="16sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -846,20 +752,17 @@
                     android:orientation="horizontal"
                     android:paddingLeft="6dp"
                     android:paddingRight="6dp">
-
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/women" />
-
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:src="@drawable/women" />
-
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -873,7 +776,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingBottom="10dp">
-
                     <TextView
                         android:id="@+id/img1"
                         android:layout_width="wrap_content"
@@ -881,10 +783,9 @@
                         android:layout_alignParentLeft="true"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:paddingLeft="16dp"
+                        android:paddingLeft="26dp"
                         android:text="樱花浪漫蕾..."
-                        android:textSize="18sp" />
-
+                        android:textSize="14sp" />
                     <TextView
                         android:id="@+id/img2"
                         android:layout_width="wrap_content"
@@ -894,8 +795,7 @@
                         android:layout_weight="2"
                         android:gravity="center"
                         android:text="优雅浪漫连..."
-                        android:textSize="18sp" />
-
+                        android:textSize="14sp" />
                     <TextView
                         android:id="@+id/img3s"
                         android:layout_width="wrap_content"
@@ -903,12 +803,11 @@
                         android:layout_alignParentRight="true"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:paddingRight="16dp"
+                        android:paddingRight="26dp"
                         android:text="尚品露肩鱼..."
-                        android:textSize="18sp" />
+                        android:textSize="14sp" />
                 </RelativeLayout>
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -918,22 +817,19 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp">
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
                     <com.example.nwidc.huibo.View.AwsomeIconFont
-                        android:layout_width="26dp"
-                        android:layout_height="26dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_alignParentRight="true"
                         android:gravity="center"
                         android:text="&#xe7b4;"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="#ff4965"
-                        android:textSize="20sp" />
-
+                        android:textSize="16sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -941,10 +837,9 @@
                         android:gravity="center"
                         android:text="猜你喜欢"
                         android:textColor="#ff4965"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
                 </LinearLayout>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -954,14 +849,12 @@
                     android:textSize="12dp" />
             </LinearLayout>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="#ffffff"
                 android:orientation="horizontal">
-
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="160dp"
@@ -969,23 +862,18 @@
                     android:layout_marginLeft="6dp"
                     android:scaleType="centerInside"
                     android:src="@drawable/nvren" />
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:orientation="vertical">
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="6dp"
                             android:text="2017女装精品蝴蝶刺绣连衣裙"
                             android:textColor="#363636"
                             android:textSize="16sp" />
@@ -995,26 +883,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
                             android:text="买2件减5元"
                             android:textColor="#9E9E9E"
-                            android:textSize="18sp" />
+                            android:textSize="14sp" />
                     </LinearLayout>
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp">
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true">
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -1022,24 +907,21 @@
                                 android:layout_marginLeft="6dp"
                                 android:text="￥"
                                 android:textColor="#FF4965"
-                                android:textSize="18sp" />
-
+                                android:textSize="12sp" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentLeft="true"
                                 android:text="69"
                                 android:textColor="#FF4965"
-                                android:textSize="26sp" />
-
+                                android:textSize="18sp" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentLeft="true"
-
                                 android:layout_marginLeft="6dp"
                                 android:text="￥158"
-                                android:textSize="18sp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1050,15 +932,139 @@
                             android:layout_marginRight="12dp"
                             android:background="@drawable/buttons_reds"
                             android:padding="4dp">
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
                                 android:text="马上抢"
                                 android:textColor="#fff"
+                                android:textSize="12sp" />
+                            <com.example.nwidc.huibo.View.AwsomeIconFont
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="center"
+                                android:text="&#xe6a3;" android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#fff"
                                 android:textSize="16sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
 
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/tuangou_line" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:text="已抢3件"
+                                android:textColor="#ff4965" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    android:layout_marginBottom="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/nvren" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="2017女装精品蝴蝶刺绣连衣裙"
+                            android:textColor="#363636"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="买2件减5元"
+                            android:textColor="#9E9E9E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="6dp"
+                                android:text="￥"
+                                android:textColor="#FF4965"
+                                android:textSize="12sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="69"
+                                android:textColor="#FF4965"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="6dp"
+                                android:text="￥158"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/buttons_reds"
+                            android:padding="4dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="马上抢"
+                                android:textColor="#fff"
+                                android:textSize="12sp" />
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:layout_width="16dp"
                                 android:layout_height="16dp"
@@ -1073,25 +1079,22 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <ImageView
                             android:layout_width="130dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_marginTop="6dp"
                             android:src="@drawable/tuangou_line" />
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:layout_marginRight="12dp"
                             android:layout_marginTop="10dp">
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-
+                                android:textSize="12sp"
                                 android:text="已抢3件"
                                 android:textColor="#ff4965" />
                         </LinearLayout>
@@ -1099,14 +1102,12 @@
                 </LinearLayout>
             </LinearLayout>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="#ffffff"
                 android:orientation="horizontal">
-
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="160dp"
@@ -1114,23 +1115,18 @@
                     android:layout_marginLeft="6dp"
                     android:scaleType="centerInside"
                     android:src="@drawable/nvren" />
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:orientation="vertical">
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="6dp"
                             android:text="2017女装精品蝴蝶刺绣连衣裙"
                             android:textColor="#363636"
                             android:textSize="16sp" />
@@ -1140,26 +1136,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
                             android:text="买2件减5元"
                             android:textColor="#9E9E9E"
-                            android:textSize="18sp" />
+                            android:textSize="14sp" />
                     </LinearLayout>
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp">
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true">
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -1167,24 +1160,21 @@
                                 android:layout_marginLeft="6dp"
                                 android:text="￥"
                                 android:textColor="#FF4965"
-                                android:textSize="18sp" />
-
+                                android:textSize="12sp" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentLeft="true"
                                 android:text="69"
                                 android:textColor="#FF4965"
-                                android:textSize="26sp" />
-
+                                android:textSize="18sp" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentLeft="true"
-
                                 android:layout_marginLeft="6dp"
                                 android:text="￥158"
-                                android:textSize="18sp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -1195,207 +1185,53 @@
                             android:layout_marginRight="12dp"
                             android:background="@drawable/buttons_reds"
                             android:padding="4dp">
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
                                 android:text="马上抢"
                                 android:textColor="#fff"
-                                android:textSize="16sp" />
-
+                                android:textSize="12sp" />
                             <com.example.nwidc.huibo.View.AwsomeIconFont
                                 android:layout_width="16dp"
                                 android:layout_height="16dp"
                                 android:layout_gravity="center"
-                                android:text="&#xe6a3;"
-                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="&#xe6a3;" android:textAppearance="?android:attr/textAppearanceSmall"
                                 android:textColor="#fff"
                                 android:textSize="16sp" />
                         </LinearLayout>
                     </RelativeLayout>
-
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <ImageView
                             android:layout_width="130dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_marginTop="6dp"
                             android:src="@drawable/tuangou_line" />
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:layout_marginRight="12dp"
                             android:layout_marginTop="10dp">
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-
+                                android:textSize="12sp"
                                 android:text="已抢3件"
                                 android:textColor="#ff4965" />
                         </LinearLayout>
                     </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="#ffffff"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="160dp"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="6dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/nvren" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginLeft="6dp"
-                            android:text="2017女装精品蝴蝶刺绣连衣裙"
-                            android:textColor="#363636"
-                            android:textSize="16sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="买2件减5元"
-                            android:textColor="#9E9E9E"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="6dp"
-                                android:text="￥"
-                                android:textColor="#FF4965"
-                                android:textSize="18sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:text="69"
-                                android:textColor="#FF4965"
-                                android:textSize="26sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-
-                                android:layout_marginLeft="6dp"
-                                android:text="￥158"
-                                android:textSize="18sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="12dp"
-                            android:background="@drawable/buttons_reds"
-                            android:padding="4dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="马上抢"
-                                android:textColor="#fff"
-                                android:textSize="16sp" />
-
-                            <com.example.nwidc.huibo.View.AwsomeIconFont
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_gravity="center"
-                                android:text="&#xe6a3;"
-                                android:textAppearance="?android:attr/textAppearanceSmall"
-                                android:textColor="#fff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <ImageView
-                            android:layout_width="130dp"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginTop="6dp"
-                            android:src="@drawable/tuangou_line" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="12dp"
-                            android:layout_marginTop="10dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-
-                                android:text="已抢3件"
-                                android:textColor="#ff4965" />
-                        </LinearLayout>
-                    </RelativeLayout>
-                </LinearLayout>
-            </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:padding="6dp">
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1403,10 +1239,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/banners1" />
             </LinearLayout>
-
-
         </LinearLayout>
-
     </ScrollView>
 
     <RelativeLayout
@@ -1447,8 +1280,7 @@
             android:gravity="center"
             android:text="惠博团购"
             android:textColor="#ff4965"
-            android:textSize="26sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
     </RelativeLayout>
-
 </FrameLayout>
