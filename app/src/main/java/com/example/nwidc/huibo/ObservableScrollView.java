@@ -1,8 +1,10 @@
 package com.example.nwidc.huibo;
 import android.content.Context;
 import android.util.AttributeSet;
+
 import android.util.Log;
 import android.view.MotionEvent;
+
 import android.widget.ScrollView;
 
 /**
@@ -69,6 +71,7 @@ public class ObservableScrollView extends ScrollView {
         }
     }
 
+
     private static String TAG=MyScrollView.class.getName();
 
     public void setScrollListener(ScrollListener scrollListener) {
@@ -118,4 +121,5 @@ public class ObservableScrollView extends ScrollView {
         void onScroll(int scrollY);
         void notBottom();
     }
+
 }
