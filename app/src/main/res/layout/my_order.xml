@@ -376,14 +376,14 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:textSize="14sp"
                         android:text="关闭订单" />
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:layout_marginLeft="6dp"
                         android:textSize="14sp"
@@ -391,7 +391,7 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white_red"
                         android:textColor="#ff4965"
                         android:layout_marginLeft="6dp"
                         android:layout_marginRight="6dp"
@@ -588,17 +588,20 @@
                     android:paddingTop="12dp"
                     android:paddingBottom="12dp"
                     android:layout_alignParentRight="true">
+
                     <Button
+                        android:id="@+id/button"
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
+                        android:text="退款/售后"
                         android:textColor="#696969"
-                        android:textSize="14sp"
-                        android:text="退款/售后" />
+                        android:textSize="14sp" />
+
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:layout_marginLeft="6dp"
                         android:textSize="14sp"
@@ -606,7 +609,7 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white_red"
                         android:textColor="#ff4965"
                         android:layout_marginLeft="6dp"
                         android:layout_marginRight="6dp"
@@ -806,14 +809,14 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:textSize="14sp"
                         android:text="退款/售后" />
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:layout_marginLeft="6dp"
                         android:textSize="14sp"
@@ -821,7 +824,7 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:layout_marginLeft="6dp"
                         android:textSize="14sp"
@@ -829,7 +832,7 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white_red"
                         android:textColor="#ff4965"
                         android:layout_marginLeft="6dp"
                         android:layout_marginRight="6dp"
@@ -1030,14 +1033,14 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:textSize="14sp"
                         android:text="退款/售后" />
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:layout_marginLeft="6dp"
                         android:textSize="14sp"
@@ -1045,7 +1048,7 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:layout_marginLeft="6dp"
                         android:textSize="14sp"
@@ -1053,7 +1056,7 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white_red"
                         android:textColor="#ff4965"
                         android:layout_marginLeft="6dp"
                         android:layout_marginRight="6dp"
@@ -1254,14 +1257,14 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:textSize="14sp"
                         android:text="退款/售后" />
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:layout_marginLeft="6dp"
                         android:textSize="14sp"
@@ -1269,7 +1272,7 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white"
                         android:textColor="#696969"
                         android:layout_marginLeft="6dp"
                         android:textSize="14sp"
@@ -1277,7 +1280,7 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
-                        android:background="@drawable/buttons"
+                        android:background="@drawable/buttons_white_red"
                         android:textColor="#ff4965"
                         android:layout_marginLeft="6dp"
                         android:layout_marginRight="6dp"
