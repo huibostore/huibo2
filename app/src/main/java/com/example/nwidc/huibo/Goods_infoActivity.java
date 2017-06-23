@@ -25,15 +25,17 @@ public class Goods_infoActivity extends AppCompatActivity implements ObservableS
         super.onCreate(savedInstanceState);
         //设置透明状态栏
         StatusbarUtils.enableTranslucentStatusbar(this);
-        setContentView(R.layout.activity_goods_info);
+        setContentView(R.layout.activity_goods);
 
-//        //按钮返回
-//        final TextView GoBack2 = (TextView) findViewById(R.id.textView);
-//        GoBack2.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                finish();
-//            }
-//        });
+        //按钮返回
+        final TextView GoBack2 = (TextView) findViewById(R.id.textView);
+        GoBack2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
 
         //初始化控件
         mObservableScrollView = (ObservableScrollView) findViewById(R.id.sv_main_content);
