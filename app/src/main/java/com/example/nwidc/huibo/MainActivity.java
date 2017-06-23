@@ -146,6 +146,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(fg2 != null)fragmentTransaction.hide(fg2);
         if(fg3 != null)fragmentTransaction.hide(fg3);
         if(fg4 != null)fragmentTransaction.hide(fg4);
+        if(fg5 != null)fragmentTransaction.hide(fg5);
         if(fg45 != null)fragmentTransaction.hide(fg45);
         if(fg51 != null)fragmentTransaction.hide(fg51);
         if(fg52 != null)fragmentTransaction.hide(fg52);
