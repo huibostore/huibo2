@@ -88,7 +88,6 @@ public class Goods_infoActivity extends AppCompatActivity implements ObservableS
         takePhotoPopWin.showAtLocation(findViewById(R.id.main_view), Gravity.BOTTOM, 0, 0);
     }
 
-
     private View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
