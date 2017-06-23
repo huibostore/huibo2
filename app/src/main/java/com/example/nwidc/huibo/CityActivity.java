@@ -2,7 +2,10 @@ package com.example.nwidc.huibo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,60 +15,57 @@ import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 
 public class CityActivity extends AppCompatActivity {
-    private ImageView image;
-    private TextView mTv = null;
-    public LocationClient mLocationClient = null; //初始化LocationClient类
-    public MyLocationListener myListener = new MyLocationListener();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_city);
-        //在使用SDK各组件之前初始化context信息，传入ApplicationContext
-        //声明LocationClient类
-        mLocationClient = new LocationClient(getApplicationContext());
-        mLocationClient.registerLocationListener(myListener); //注册监听函数
-        image=(ImageView)findViewById(R.id.image);  //初始化图片
-        mTv = (TextView) findViewById(R.id.tv_loc_info); //初始化文本
-        setLocationOption(); //定义setLocationOption()方法
-        mLocationClient.start(); //执行定位
+
+
     }
 
-    public class MyLocationListener implements BDLocationListener {
+//    public void showPopFormBottom(View view) {
+//        TakePhotoPopWin takePhotoPopWin = new TakePhotoPopWin(this, onClickListener);
+////        设置Popupwindow显示位置（从底部弹出）
+//        takePhotoPopWin.showAtLocation(findViewById(R.id.main_view), Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0);
+//        params = getWindow().getAttributes();
+//        //当弹出Popupwindow时，背景变半透明
+//        params.alpha=0.7f;
+//        getWindow().setAttributes(params);
+//        //设置Popupwindow关闭监听，当Popupwindow关闭，背景恢复1f
+//        takePhotoPopWin.setOnDismissListener(new PopupWindow.OnDismissListener() {
+//            @Override
+//            public void onDismiss() {
+//                params = getWindow().getAttributes();
+//                params.alpha=1f;
+//                getWindow().setAttributes(params);
+//            }
+//        });
+//
+////        takePhotoPopWin.lis
+    //}
+
+
+    public void showPopFormBottom(View view) {
+        TakePhotoPopWin takePhotoPopWin = new TakePhotoPopWin(this, onClickListener);
+        //showAtLocation(View parent, int gravity, int x, int y)
+        takePhotoPopWin.showAtLocation(findViewById(R.id.main_view), Gravity.BOTTOM, 0, 0);
+    }
+
+
+    private View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
-        public void onReceiveLocation(BDLocation location) {
-            //将获取的City赋值给txt
-            /**
-             *1.国家:location.getCountry()
-             * 2.城市:location.getCity()
-             * 3.区域(例：天河区)：location.getDistrict()
-             * 4.地点(例：风信路)：location.getStreet()
-             * 5.详细地址：location.getAddrStr()
-             */
-            mTv.setText(location.getCity()+location.getDistrict());
-            Toast.makeText(CityActivity.this,"网络定位成功"+
-                    location.getDirection(),Toast.LENGTH_LONG).show();
+        public void onClick(View v) {
+
+            switch (v.getId()) {
+                case R.id.btn_take_photo:
+                    System.out.println("btn_take_photo");
+                    break;
+                case R.id.btn_pick_photo:
+                    System.out.println("btn_pick_photo");
+                    break;
+            }
         }
-        public void onReceivePoi(BDLocation arg0) {
-        }
-    }
 
-    //执行onDestroy()方法，停止定位
-    @Override
-    public void onDestroy() {
-        mLocationClient.stop();
-        super.onDestroy();
-    }
-
-    //设置相关参数
-    private void setLocationOption() {
-        LocationClientOption option = new LocationClientOption();
-        option.setOpenGps(true); //打开gps
-        option.setAddrType("all");//返回定位结果包含地址信息
-        option.setPriority(LocationClientOption.NetWorkFirst); // 设置网络优先
-        option.setPriority(LocationClientOption.GpsFirst);       //gps
-        option.disableCache(true);//禁止启用缓存定位
-        mLocationClient.setLocOption(option);
-    }
-
+    };
 }
