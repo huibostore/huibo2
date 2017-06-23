@@ -757,8 +757,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="top"
+
                 android:padding="10dp">
                 >
+
+
+
+                android:padding="10dp">
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
 
 
                 <com.example.nwidc.huibo.View.AwsomeIconFont
@@ -768,9 +778,14 @@
                     android:padding="1dp"
                     android:layout_gravity="center"
                     android:layout_centerVertical="true"
+                    android:padding="1dp"
+                    android:background="@drawable/goods_info_btn_bg"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentLeft="true"
                     android:background="@drawable/goods_info_btn_bg"
                     android:gravity="center"
+
                     android:text="&#xe679;"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="#ffffff"
@@ -783,9 +798,20 @@
                     android:padding="1dp"
                     android:layout_gravity="center"
                     android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/goods_info_btn_bg"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentRight="true"
                     android:background="@drawable/goods_info_btn_bg"
                     android:gravity="center"
+
                     android:text="&#xe7f7;"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="#ffffff"
@@ -800,8 +826,13 @@
                     android:background="@drawable/goods_info_btn_bg"
                     android:layout_centerVertical="true"
                     android:gravity="bottom|center"
+                    android:layout_centerVertical="true"
+                    android:gravity="bottom|center"
+                    android:text="&#xe7d8;"
+                    android:gravity="center"
                     android:text="&#xe7d8;"
                     android:textAppearance="?android:attr/textAppearanceSmall"
+
                     android:textColor="#ffffff"
                     android:textSize="26sp" />
             </RelativeLayout>
