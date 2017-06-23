@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:background="#fff">
 
     <LinearLayout
@@ -120,6 +121,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:onClick="showPopFormBottom"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -148,6 +150,9 @@
 
             <RelativeLayout
                 android:layout_weight="1"
+                android:id="@+id/btn_cancel"
+
+
                 android:layout_width="match_parent"
                 android:background="@drawable/buttons_red"
                 android:layout_height="match_parent">

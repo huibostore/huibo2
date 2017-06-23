@@ -80,6 +80,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private CloudpayFragment cludepay;
     private Context mContext;
     private String Login;
+    private PurchaseFragment fg51;
+    private BookingFragment fg52;
+    private CloudpayFragment fg53;
+    private TakeFragment fg54;
+    private WholesaleFragment fg55;
+    private IdleFragment fg56;
+    private NearbyFragment fg57;
+    private SnakeFragment fg58;
+
     private FragmentManager fManager;
     private SharedHelper sh;
     private String result = "";
@@ -138,7 +147,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(fg3 != null)fragmentTransaction.hide(fg3);
         if(fg4 != null)fragmentTransaction.hide(fg4);
         if(fg45 != null)fragmentTransaction.hide(fg45);
-        if(fg5 != null)fragmentTransaction.hide(fg5);
+        if(fg51 != null)fragmentTransaction.hide(fg51);
+        if(fg52 != null)fragmentTransaction.hide(fg52);
+        if(fg53 != null)fragmentTransaction.hide(fg53);
+        if(fg54 != null)fragmentTransaction.hide(fg54);
+        if(fg55 != null)fragmentTransaction.hide(fg55);
+        if(fg56 != null)fragmentTransaction.hide(fg56);
+        if(fg57 != null)fragmentTransaction.hide(fg57);
+        if(fg58 != null)fragmentTransaction.hide(fg5);
+
         if(PurchaseFragment != null)fragmentTransaction.hide(PurchaseFragment);
     }
 
@@ -177,45 +194,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //团购
     public void onClicktuangou(View v) {
 
-        PurchaseFragment = new PurchaseFragment();
+        fg51 = new PurchaseFragment();
         fManager.beginTransaction()
                 .addToBackStack(null)
-                .add(R.id.ly_content, PurchaseFragment)
+                .add(R.id.ly_content, fg51)
                 .commit();
+
+
+
 
     }
     //预售
     public void onClickBooking(View v) {
 
-        BookingFragment booking = new BookingFragment();
+        fg52 = new BookingFragment();
         fManager.beginTransaction()
                 .hide(fg1)
                 .addToBackStack(null)
-                .add(R.id.ly_content, booking)
+                .add(R.id.ly_content, fg52)
                 .commit();
 
     }
     //云购
     public void onClickCloudpay(View v){
 
-        CloudpayFragment cloudpay = new CloudpayFragment();
+        fg53 = new CloudpayFragment();
 
         fManager.beginTransaction()
                 .hide(fg1)
                 .addToBackStack(null)
-                .add(R.id.ly_content,cloudpay)
+                .add(R.id.ly_content,fg53)
                 .commit();
 
     }
     //外卖到家
     public void onClickTake(View v){
 
-        TakeFragment take = new TakeFragment();
+        fg54 = new TakeFragment();
 
         fManager.beginTransaction()
                 .hide(fg1)
                 .addToBackStack(null)
-                .add(R.id.ly_content,take)
+                .add(R.id.ly_content,fg54)
                 .commit();
 
     }
@@ -224,12 +244,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onclickWholesale(View v){
 
-        WholesaleFragment wholesale = new WholesaleFragment();
+        fg55 = new WholesaleFragment();
 
         fManager.beginTransaction()
                 .hide(fg1)
                 .addToBackStack(null)
-                .add(R.id.ly_content,wholesale)
+                .add(R.id.ly_content,fg55)
                 .commit();
 
     }
@@ -238,12 +258,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onClickIdle(View v){
 
-        IdleFragment idle = new IdleFragment();
+        fg56 = new IdleFragment();
 
         fManager.beginTransaction()
                 .hide(fg1)
                 .addToBackStack(null)
-                .add(R.id.ly_content,idle)
+                .add(R.id.ly_content,fg56)
                 .commit();
 
     }
@@ -252,11 +272,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onClickNearby(View v){
 
-        NearbyFragment nearby = new NearbyFragment();
+        fg57 = new NearbyFragment();
         fManager.beginTransaction()
                 .hide(fg1)
                 .addToBackStack(null)
-                .add(R.id.ly_content,nearby)
+                .add(R.id.ly_content,fg57)
                 .commit();
 
     }
@@ -265,11 +285,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onClickShake(View v){
 
-        SnakeFragment nearby = new SnakeFragment();
+        fg58 = new SnakeFragment();
         fManager.beginTransaction()
                 .hide(fg1)
                 .addToBackStack(null)
-                .add(R.id.ly_content,nearby)
+                .add(R.id.ly_content,fg58)
                 .commit();
 
 
