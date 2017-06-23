@@ -103,7 +103,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
+                    android:textSize="12sp"
                     android:layout_marginLeft="2dp"
                     android:text="好货预售规则详情\u003C新手必看\u003e"/>
             </LinearLayout>
@@ -140,7 +140,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="长安福特 新蒙迪欧 2013款 1.5T 自动 GTDi180 时尚型"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -192,10 +192,11 @@
                                 android:text="价格:"/>
 
                             <TextView
+                                android:id="@+id/textView14"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="12dp"
-                                android:text="￥"/>
+                                android:text="￥"
+                                android:textSize="12dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -224,7 +225,7 @@
                             android:paddingBottom="3dp"
                             android:paddingLeft="8dp"
                             android:paddingRight="8dp"
-                            android:layout_alignParentLeft="true"
+                            android:textSize="12sp"   android:layout_alignParentLeft="true"
                             android:textColor="#ff4965"
                             android:text="马上预定"/>
 
@@ -238,6 +239,7 @@
                             android:background="@drawable/oval"
                             android:layout_alignParentRight="true"
                             android:gravity="center"
+                            android:textSize="12sp"
                             android:textColor="#ff4965"
                             android:text="加购物车"/>
 
@@ -269,7 +271,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="长安福特 新蒙迪欧 2013款 1.5T 自动 GTDi180 时尚型"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -353,7 +355,7 @@
                             android:paddingBottom="3dp"
                             android:paddingLeft="8dp"
                             android:paddingRight="8dp"
-                            android:layout_alignParentLeft="true"
+                            android:textSize="12sp" android:layout_alignParentLeft="true"
                             android:textColor="#ff4965"
                             android:text="马上预定"/>
 
@@ -366,6 +368,7 @@
                             android:paddingRight="8dp"
                             android:background="@drawable/oval"
                             android:layout_alignParentRight="true"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:textColor="#ff4965"
                             android:text="加购物车"/>
@@ -402,7 +405,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="长安福特 新蒙迪欧 2013款 1.5T 自动 GTDi180 时尚型"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -483,6 +486,7 @@
                             android:paddingBottom="3dp"
                             android:paddingLeft="8dp"
                             android:paddingRight="8dp"
+                            android:textSize="12sp"
                             android:layout_alignParentLeft="true"
                             android:textColor="#ff4965"
                             android:text="马上预定"/>
@@ -496,6 +500,7 @@
                             android:paddingRight="8dp"
                             android:background="@drawable/oval"
                             android:layout_alignParentRight="true"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:textColor="#ff4965"
                             android:text="加购物车"/>
@@ -529,7 +534,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="长安福特 新蒙迪欧 2013款 1.5T 自动 GTDi180 时尚型"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -613,6 +618,7 @@
                             android:paddingBottom="3dp"
                             android:paddingLeft="8dp"
                             android:paddingRight="8dp"
+                            android:textSize="12sp"
                             android:layout_alignParentLeft="true"
                             android:textColor="#ff4965"
                             android:text="马上预定"/>
@@ -627,6 +633,7 @@
                             android:background="@drawable/oval"
                             android:layout_alignParentRight="true"
                             android:gravity="center"
+                            android:textSize="12sp"
                             android:textColor="#ff4965"
                             android:text="加购物车"/>
 
@@ -696,7 +703,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="长安福特 新蒙迪欧 2013款 1.5T 自动 GTDi180 时尚型"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -782,6 +789,7 @@
                             android:paddingRight="8dp"
                             android:layout_alignParentLeft="true"
                             android:textColor="#ff4965"
+                            android:textSize="12sp"
                             android:text="马上预定"/>
 
                         <TextView
@@ -794,6 +802,7 @@
                             android:background="@drawable/oval"
                             android:layout_alignParentRight="true"
                             android:gravity="center"
+                            android:textSize="12sp"
                             android:textColor="#ff4965"
                             android:text="加购物车"/>
 
@@ -825,7 +834,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="长安福特 新蒙迪欧 2013款 1.5T 自动 GTDi180 时尚型"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -910,6 +919,7 @@
                             android:paddingLeft="8dp"
                             android:paddingRight="8dp"
                             android:layout_alignParentLeft="true"
+                            android:textSize="12sp"
                             android:textColor="#ff4965"
                             android:text="马上预定"/>
 
@@ -922,6 +932,7 @@
                             android:paddingRight="8dp"
                             android:background="@drawable/oval"
                             android:layout_alignParentRight="true"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:textColor="#ff4965"
                             android:text="加购物车"/>
@@ -956,7 +967,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="长安福特 新蒙迪欧 2013款 1.5T 自动 GTDi180 时尚型"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -1041,6 +1052,7 @@
                             android:paddingLeft="8dp"
                             android:paddingRight="8dp"
                             android:layout_alignParentLeft="true"
+                            android:textSize="12sp"
                             android:textColor="#ff4965"
                             android:text="马上预定"/>
 
@@ -1053,6 +1065,7 @@
                             android:paddingRight="8dp"
                             android:background="@drawable/oval"
                             android:layout_alignParentRight="true"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:textColor="#ff4965"
                             android:text="加购物车"/>
@@ -1085,7 +1098,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="长安福特 新蒙迪欧 2013款 1.5T 自动 GTDi180 时尚型"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -1170,6 +1183,7 @@
                             android:paddingLeft="8dp"
                             android:paddingRight="8dp"
                             android:layout_alignParentLeft="true"
+                            android:textSize="12sp"
                             android:textColor="#ff4965"
                             android:text="马上预定"/>
 
@@ -1182,6 +1196,7 @@
                             android:paddingRight="8dp"
                             android:background="@drawable/oval"
                             android:layout_alignParentRight="true"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:textColor="#ff4965"
                             android:text="加购物车"/>
@@ -1216,7 +1231,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="长安福特 新蒙迪欧 2013款 1.5T 自动 GTDi180 时尚型"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -1301,6 +1316,7 @@
                             android:paddingLeft="8dp"
                             android:paddingRight="8dp"
                             android:layout_alignParentLeft="true"
+                            android:textSize="12sp"
                             android:textColor="#ff4965"
                             android:text="马上预定"/>
 
@@ -1314,6 +1330,7 @@
                             android:background="@drawable/oval"
                             android:layout_alignParentRight="true"
                             android:gravity="center"
+                            android:textSize="12sp"
                             android:textColor="#ff4965"
                             android:text="加购物车"/>
 
@@ -1345,7 +1362,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="长安福特 新蒙迪欧 2013款 1.5T 自动 GTDi180 时尚型"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -1430,6 +1447,7 @@
                             android:paddingLeft="8dp"
                             android:paddingRight="8dp"
                             android:layout_alignParentLeft="true"
+                            android:textSize="12sp"
                             android:textColor="#ff4965"
                             android:text="马上预定"/>
 
@@ -1443,6 +1461,7 @@
                             android:background="@drawable/oval"
                             android:layout_alignParentRight="true"
                             android:gravity="center"
+                            android:textSize="12sp"
                             android:textColor="#ff4965"
                             android:text="加购物车"/>
 
