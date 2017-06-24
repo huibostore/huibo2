@@ -55,10 +55,11 @@
         <activity android:name=".TakeActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".IdleActivity" />
-        <activity android:name=".TestActivity">
+        <activity android:name=".TestActivity"/>
+        <activity android:name=".SearchActivity"/>
 
 
-        </activity>
+
 
         <activity
             android:name="com.zaaach.citypicker.CityPickerActivity"

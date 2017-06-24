@@ -173,12 +173,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    //搜索
+    public void onClickSearch(View v){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, SearchActivity.class);
+        startActivity(intent);
+    }
+
     //抢购
 
     public void onClickgoods_info(View v){
 
         Intent intent = new Intent();
-        intent.setClass(MainActivity.this, Goods_infoActivity.class);
+        intent.setClass(MainActivity.this, BookingActivity.class);
         startActivity(intent);
     }
 
@@ -188,7 +195,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClickSnap(View v){
 
         Intent intent = new Intent();
-        intent.setClass(MainActivity.this, CityActivity.class);
+        intent.setClass(MainActivity.this, SearchActivity.class);
         startActivity(intent);
     }
 
