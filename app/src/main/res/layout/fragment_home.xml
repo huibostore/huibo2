@@ -30,7 +30,7 @@
             android:onClick="onClickcity"
             android:padding="5dp">
 
-            <com.example.nwidc.huibo.View.AwsomeIconFont
+            <TextView
                 android:id="@+id/city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -53,6 +53,7 @@
 
 
         <RelativeLayout
+            android:onClick="onClickSearch"
             android:id="@+id/btn_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,7 +76,8 @@
                 android:textColor="#9E9E9E"
                 android:textSize="17sp" />
 
-            <EditText
+            <TextView
+
                 android:layout_toRightOf="@+id/search"
                 android:layout_width="match_parent"
                 android:layout_centerVertical="true"
