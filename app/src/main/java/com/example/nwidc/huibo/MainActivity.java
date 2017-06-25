@@ -104,10 +104,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sh = new SharedHelper(mContext);
         bindViews();
 
+        //判断是否为跳转购物车
+        Intent intent = getIntent();
+        String name = intent.getStringExtra("GoCart");
+
+
         txt_channel.performClick();   //模拟一次点击，既进去后选择第一项
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             //透明状态栏
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
+
+
+        if("Cart".equals(name)){
+            txt_better.performClick();
         }
 
 
@@ -186,7 +196,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClickgoods_info(View v){
 
         Intent intent = new Intent();
-        intent.setClass(MainActivity.this, BookingActivity.class);
+        intent.setClass(MainActivity.this, Goods_infoActivity.class);
         startActivity(intent);
     }
 
@@ -196,7 +206,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClickSnap(View v){
 
         Intent intent = new Intent();
-        intent.setClass(MainActivity.this, SearchActivity.class);
+        intent.setClass(MainActivity.this, BookingActivity.class);
         startActivity(intent);
     }
 
