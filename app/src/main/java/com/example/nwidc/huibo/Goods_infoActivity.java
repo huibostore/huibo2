@@ -1,9 +1,6 @@
 package com.example.nwidc.huibo;
 
 import android.content.Context;
-
-import android.content.Intent;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -16,14 +13,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-
-import com.example.nwidc.huibo.View.GlideImageLoader;
-import com.example.nwidc.huibo.fragment.ContentFragment;
-import com.example.nwidc.huibo.fragment.SnakeFragment;
 
 import com.example.nwidc.huibo.fragment.ContentFragment;
 import com.youth.banner.Banner;
@@ -34,13 +24,11 @@ import java.util.List;
 
 public class Goods_infoActivity extends AppCompatActivity implements ObservableScrollView.OnObservableScrollViewListener {
 
-public class Goods_infoActivity extends AppCompatActivity implements ObservableScrollView.OnObservableScrollViewListener {
 
-    private int number = 0;
     private ObservableScrollView mObservableScrollView;
-    private LinearLayout mTextView;
+    private ImageView mTextView;
     private LinearLayout mHeaderContent;
-    private Intent intent;
+
     private int mHeight;
 
     @Override
@@ -58,37 +46,11 @@ public class Goods_infoActivity extends AppCompatActivity implements ObservableS
             }
         });
 
-        //收藏
-
-        RelativeLayout GoCollect = (RelativeLayout) findViewById(R.id.collect);
-        GoCollect.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                if(number == 0){
-                    TextView star = (TextView) findViewById(R.id.star);
-                    TextView startext = (TextView) findViewById(R.id.startext);
-                    star.setTextColor(Color.rgb(255,128,162));
-                    startext.setTextColor(Color.rgb(255,128,162));
-                    Toast.makeText(getApplicationContext(), "已收藏 测试", Toast.LENGTH_SHORT).show();
-                    number = 1;
-                }else if(number == 1){
-                    TextView star = (TextView) findViewById(R.id.star);
-                    TextView startext = (TextView) findViewById(R.id.startext);
-                    star.setTextColor(Color.rgb(100,100,100));
-                    startext.setTextColor(Color.rgb(100,100,100));
-                    Toast.makeText(getApplicationContext(), "已取消收藏 测试", Toast.LENGTH_SHORT).show();
-                    number = 0;
-                }
-
-
-            }
-        });
-
 
 
         //初始化控件
         mObservableScrollView = (ObservableScrollView) findViewById(R.id.sv_main_content);
-        mTextView = (LinearLayout) findViewById(R.id.imageView);
+        mTextView = (ImageView) findViewById(R.id.imageView);
         mHeaderContent = (LinearLayout) findViewById(R.id.ll_header_content);
 
         //获取标题栏高度
@@ -104,43 +66,6 @@ public class Goods_infoActivity extends AppCompatActivity implements ObservableS
 
             }
         });
-
-        Banner banner = (Banner) findViewById(R.id.banner);
-        //设置图片加载器
-        banner.setImageLoader(new GlideImageLoader());
-
-        //资源文件
-        //Integer[] images={R.drawable.ginfo_bg,R.drawable.ginfo_bg};
-        //Uri
-        //Uri uri = resourceIdToUri(context, R.mipmap.ic_launcher);
-        //Uri[] images={uri};
-        //设置图片集合
-        //本地图片数据（资源文件）
-        List<Integer> list=new ArrayList<>();
-        list.add(R.drawable.ginfo_bg);
-        list.add(R.drawable.ginfo_bg);
-        banner.setImages(list);
-        //banner设置方法全部调用完毕时最后调用
-        banner.start();
-
-
-    }
-
-    //Comment
-
-    public void onClickComment(View v){
-        intent = new Intent();
-        intent.setClass(Goods_infoActivity.this,CommentActivity.class);
-        startActivity(intent);
-    }
-
-    //cart
-    public void onClickGoCart(View v){
-
-        intent = new Intent();
-        intent.setClass(Goods_infoActivity.this,MainActivity.class);
-        intent.putExtra("GoCart","Cart");
-        startActivity(intent);
         Banner banner = (Banner) findViewById(R.id.banner);
         //设置图片加载器
         banner.setImageLoader(new GlideImageLoaders());
@@ -204,7 +129,6 @@ public class Goods_infoActivity extends AppCompatActivity implements ObservableS
     };
 
     
-
 
 
 
