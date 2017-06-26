@@ -34,8 +34,6 @@ import java.util.List;
 
 public class Goods_infoActivity extends AppCompatActivity implements ObservableScrollView.OnObservableScrollViewListener {
 
-public class Goods_infoActivity extends AppCompatActivity implements ObservableScrollView.OnObservableScrollViewListener {
-
     private int number = 0;
     private ObservableScrollView mObservableScrollView;
     private LinearLayout mTextView;

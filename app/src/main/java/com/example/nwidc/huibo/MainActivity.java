@@ -330,6 +330,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
+    //附近商家商品
+    public void onClickNearbyGoods(View v){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, NearbyGoodsActivity.class);
+        startActivity(intent);
+
+    }
 
 
     @Override
