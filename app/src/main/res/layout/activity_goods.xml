@@ -31,13 +31,20 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <LinearLayout
                         android:id="@+id/imageView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="top"
-                        android:adjustViewBounds="true"
-                        android:src="@drawable/ginfo_bg" />
+                        android:orientation="horizontal"
+                        android:background="#fff">
+
+                        <com.youth.banner.Banner
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp" />
+
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -377,6 +384,7 @@
                             android:background="#ddd" />
 
                         <LinearLayout
+                            android:onClick="onClickComment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
@@ -792,6 +800,7 @@
 
                 <com.example.nwidc.huibo.View.AwsomeIconFont
                     android:id="@+id/btn_cart"
+                    android:onClick="onClickGoCart"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="10dp"
