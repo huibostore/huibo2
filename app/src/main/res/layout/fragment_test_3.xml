@@ -284,10 +284,8 @@
                     android:textSize="16sp"
                     android:layout_marginLeft="2dp"
                     android:textColor="#ff4965"
-                    android:text="精品优选"/>
-
+                    android:text="好货闲置"/>
             </LinearLayout>
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -295,7 +293,6 @@
                 android:textSize="12dp"
                 android:layout_marginTop="6dp"
                 android:text="我们来为您解决闲置物品"/>
-
         </LinearLayout>
 
 
