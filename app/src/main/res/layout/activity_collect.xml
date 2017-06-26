@@ -60,49 +60,49 @@
     </ListView>
 
 
-    <!--<LinearLayout-->
-        <!--android:layout_marginTop="40dp"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content">-->
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal"-->
-            <!--android:padding="10dp" >-->
-            <!--<ImageView-->
-                <!--android:layout_width="100dp"-->
-                <!--android:layout_height="100dp"-->
-                <!--android:src="@drawable/goods"-->
-                <!--android:layout_marginRight="10dp"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/goods"
+                android:layout_marginRight="10dp"/>
 
-            <!--<RelativeLayout-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-                <!--&gt;-->
-                <!--<TextView-->
-                    <!--android:id="@+id/pend_img_title"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_marginBottom="10dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年"/>-->
+                >
+                <TextView
+                    android:id="@+id/pend_img_title"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年"/>
 
-                <!--<TextView-->
-                    <!--android:id="@+id/pend_img_money"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginBottom="10dp"-->
-                    <!--android:textColor="#ff4965"-->
-                    <!--android:layout_below="@id/pend_img_title"-->
-                    <!--android:text="￥123.00元"/>-->
+                <TextView
+                    android:id="@+id/pend_img_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#ff4965"
+                    android:layout_below="@id/pend_img_title"
+                    android:text="￥123.00元"/>
 
 
 
-            <!--</RelativeLayout>-->
+            </RelativeLayout>
 
-        <!--</LinearLayout>-->
+        </LinearLayout>
 
-    <!--</LinearLayout>-->
+    </LinearLayout>
 
 </FrameLayout>

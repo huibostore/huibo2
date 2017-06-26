@@ -7,7 +7,7 @@
         android:color="#FFFFFF" />
 
     <!-- 圆角 -->
-    <!-- <corners android:radius="0dp" /> -->
+     <corners android:radius="5dp" />
     <size  
         android:width="40dp"  
         android:height="40dp"/><!-- 宽度和高度 -->  
