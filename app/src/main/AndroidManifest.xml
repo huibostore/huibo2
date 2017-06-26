@@ -18,6 +18,8 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
     <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--重力感应-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -55,10 +57,12 @@
         <activity android:name=".TakeActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".IdleActivity" />
-        <activity android:name=".TestActivity">
+        <activity android:name=".TestActivity"/>
+        <activity android:name=".SearchActivity"/>
+        <activity android:name=".BookingActivity"/>
+        <activity android:name=".CommentActivity"/>
 
 
-        </activity>
 
         <activity
             android:name="com.zaaach.citypicker.CityPickerActivity"
