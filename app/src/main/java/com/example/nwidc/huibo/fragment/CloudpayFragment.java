@@ -12,8 +12,6 @@ import android.widget.TextView;
 
 import com.example.nwidc.huibo.Adapter.HomeFragmentAdapter;
 import com.example.nwidc.huibo.R;
-import com.github.ikidou.fragmentBackHandler.BackHandlerHelper;
-import com.github.ikidou.fragmentBackHandler.FragmentBackHandler;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -73,12 +71,6 @@ public class CloudpayFragment extends Fragment {
         this.tab_essence.setupWithViewPager(this.vp_essence);
     }
 
-//    //没有处理back键需求的Fragment不用实现
-//    public abstract class BackHandledFragment extends Fragment implements FragmentBackHandler {
-//        @Override
-//        public boolean onBackPressed() {
-//            return BackHandlerHelper.handleBackPress(this);
-//        }
-//    }
+
 
 }

@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/hbs.iml" filepath="$PROJECT_DIR$/hbs.iml" />
       <module fileurl="file://$PROJECT_DIR$/huibo-master.iml" filepath="$PROJECT_DIR$/huibo-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/huibo2.iml" filepath="$PROJECT_DIR$/huibo2.iml" />
     </modules>
   </component>
 </project>
