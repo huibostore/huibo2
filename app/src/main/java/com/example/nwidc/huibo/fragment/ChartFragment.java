@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import com.example.nwidc.huibo.R;
 import com.example.nwidc.huibo.View.AwsomeIconFont;
+import com.github.ikidou.fragmentBackHandler.BackHandlerHelper;
+import com.github.ikidou.fragmentBackHandler.FragmentBackHandler;
 
 /**
  * Created by hello on 2017/5/12.
@@ -61,6 +63,7 @@ public class ChartFragment extends Fragment implements View.OnClickListener{
 
 
     }
+
 
 
 

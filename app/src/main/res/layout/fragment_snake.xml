@@ -9,6 +9,7 @@
         android:layout_height="match_parent"
         >
         <LinearLayout
+            android:id="@+id/main_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -168,7 +169,8 @@
                         android:paddingBottom="4dp"
                         android:paddingLeft="16dp"
                         android:paddingRight="20dp"
-                        android:paddingTop="4dp">
+                        android:paddingTop="4dp"
+                        android:onClick="onClickShowPop">
                         <com.example.nwidc.huibo.View.AwsomeIconFont
                             android:layout_width="26dp"
                             android:layout_height="26dp"
