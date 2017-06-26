@@ -193,6 +193,4 @@ public class Goods_infoActivity extends AppCompatActivity implements ObservableS
 
 
 
-
-
     }
