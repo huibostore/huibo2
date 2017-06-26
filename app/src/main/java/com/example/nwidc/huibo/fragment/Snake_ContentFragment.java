@@ -6,12 +6,14 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.nwidc.huibo.R;
+import com.example.nwidc.huibo.TakePhotoPopWin;
 import com.youth.banner.Banner;
 import com.youth.banner.loader.ImageLoader;
 
@@ -27,10 +29,6 @@ public class Snake_ContentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
 
         View view = inflater.inflate(R.layout.fragment_snake,null);
-
-
-
-
 
         Banner banner = (Banner) view.findViewById(R.id.banner);
         //设置图片加载器
@@ -49,6 +47,8 @@ public class Snake_ContentFragment extends Fragment {
 
         return view;
     }
+
+
 
     private class GlideImageLoaders extends ImageLoader {
         @Override
