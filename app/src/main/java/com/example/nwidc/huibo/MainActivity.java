@@ -430,7 +430,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-        @Override
+    @Override
     public void onClick(View v) {
         FragmentTransaction fTransaction = fManager.beginTransaction();
         hideAllFragment(fTransaction);
