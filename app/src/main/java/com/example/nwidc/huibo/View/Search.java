@@ -8,14 +8,15 @@ public class Search {
     private String aName;
     private String aSpeak;
     private String aIcon;
-
+    private int id;
     public Search() {
     }
 
-    public Search(String aName, String aSpeak, String aIcon) {
+    public Search(String aName, String aSpeak, String aIcon, int id) {
         this.aName = aName;
         this.aSpeak = aSpeak;
         this.aIcon = aIcon;
+        this.id = id;
     }
 
     public String getaName() {
@@ -28,6 +29,10 @@ public class Search {
 
     public String getaIcon() {
         return aIcon;
+    }
+
+    public int getaid() {
+        return id;
     }
 
     public void setaName(String aName) {

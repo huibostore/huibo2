@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.example.nwidc.huibo.Adapter.SearchAdapter;
 import com.example.nwidc.huibo.Goods_infoActivity;
 import com.example.nwidc.huibo.R;
+import com.example.nwidc.huibo.Util.Config;
 import com.example.nwidc.huibo.View.Search;
 import com.google.gson.Gson;
 
@@ -45,7 +46,9 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
     //定义一个图片显示控件
     private ImageView imageView;
     private TextView result;
-    private final String GET_URL = "http://v.juhe.cn/toutiao/index";
+    private  String GET_URL = Config.Search;
+    private String keyword ;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
@@ -56,14 +59,21 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
         Context = getContext();
         list_animal = (ListView) view.findViewById(R.id.list_animal);
         result = (TextView)view.findViewById(R.id.result);
-        String [] [] list = {{"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.01元","https://gw3.alicdn.com/bao/uploaded/i1/581894172/TB2TSydq4RDOuFjSZFzXXcIipXa_!!581894172.jpg_210x210.jpg"},{"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.01元","https://img.alicdn.com/imgextra/i4/1835106055803824256/TB2Wxc3vCFmpuFjSZFrXXayOXXa_!!0-saturn_solar.jpg_210x210.jpg"},{"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.01元","https://gw3.alicdn.com/bao/uploaded/i3/TB1wR8LRpXXXXbvXVXXXXXXXXXX_!!0-item_pic.jpg_210x210.jpg"}};
+        String [] [] list = {{"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.01元","https://gw3.alicdn.com/bao/uploaded/i1/581894172/TB2TSydq4RDOuFjSZFzXXcIipXa_!!581894172.jpg_210x210.jpg","5"},
+                {"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.11元","https://img.alicdn.com/imgextra/i4/1835106055803824256/TB2Wxc3vCFmpuFjSZFrXXayOXXa_!!0-saturn_solar.jpg_210x210.jpg","6"},
+                {"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.11元","https://img.alicdn.com/imgextra/i4/1835106055803824256/TB2Wxc3vCFmpuFjSZFrXXayOXXa_!!0-saturn_solar.jpg_210x210.jpg","6"},
+                {"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.11元","https://img.alicdn.com/imgextra/i4/1835106055803824256/TB2Wxc3vCFmpuFjSZFrXXayOXXa_!!0-saturn_solar.jpg_210x210.jpg","6"},
+                {"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.11元","https://img.alicdn.com/imgextra/i4/1835106055803824256/TB2Wxc3vCFmpuFjSZFrXXayOXXa_!!0-saturn_solar.jpg_210x210.jpg","6"},
+                {"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.11元","https://img.alicdn.com/imgextra/i4/1835106055803824256/TB2Wxc3vCFmpuFjSZFrXXayOXXa_!!0-saturn_solar.jpg_210x210.jpg","6"},
+                {"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.11元","https://img.alicdn.com/imgextra/i4/1835106055803824256/TB2Wxc3vCFmpuFjSZFrXXayOXXa_!!0-saturn_solar.jpg_210x210.jpg","7"},
+                {"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123111.01元","https://gw3.alicdn.com/bao/uploaded/i3/TB1wR8LRpXXXXbvXVXXXXXXXXXX_!!0-item_pic.jpg_210x210.jpg","8"}};
 
 
 
         mData = new LinkedList<Search>();
 
         for(int i=0;i<list.length;i++){
-            mData.add(new Search(list[i][0] , list[i][1] , list[i][2]));
+            mData.add(new Search(list[i][0] , list[i][1] , list[i][2], Integer.parseInt(list[i][3])));
 
         }
 
@@ -84,6 +94,11 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
         if (BuildConfig.DEBUG) {
             RestHttp.setDebug(true, "network");
         }
+        Bundle bundle = getArguments();//从activity传过来的Bundle
+        if(bundle!=null){
+            keyword =  bundle.getString("search_con");
+            Toast.makeText(mContext,keyword, Toast.LENGTH_SHORT).show();
+        }
 
         get();
         return view;
@@ -91,20 +106,27 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Toast.makeText(mContext,"你点击了第" + position + "项", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(mContext,"你点击了第" + id + "项", Toast.LENGTH_SHORT).show();
+        int gid= new Long(id).intValue();
+
         Intent it = new Intent();
         it.setClass(getActivity(), Goods_infoActivity.class);
+        it.putExtra("gid", gid);
         startActivity(it);
     }
 
     public void get(){
-        result.setText("");
+        GET_URL = GET_URL + keyword;
         HttpRequest.getInstance().get(GET_URL, new HttpCallback() {
             @Override
             public void success(String info) {
-                result.setText(new Gson().toJson(info));
+                Toast.makeText(mContext,"你点击了第" + "项", Toast.LENGTH_SHORT).show();
+                //result.setText(new Gson().toJson(info));
+                result.setText(info+GET_URL);
             }
         });
     }
+
+
 
 }

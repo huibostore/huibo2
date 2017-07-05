@@ -39,6 +39,7 @@
                 android:layout_toRightOf="@+id/btn_back"
                 android:layout_toLeftOf="@+id/search"
                 android:textSize="15sp"
+                android:singleLine="true"
                 android:layout_centerVertical="true"/>
 
             <TextView

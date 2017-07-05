@@ -40,7 +40,8 @@ public class SearchAdapter  extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        return position;
+        return position = mData.get(position).getaid();
+        //return position;
     }
 
     @Override
