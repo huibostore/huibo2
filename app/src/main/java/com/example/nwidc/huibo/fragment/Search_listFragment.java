@@ -133,22 +133,24 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
 
         //Gson gson = new Gson();
         try {
+            Gson gson = new Gson();
+            List<Person> persons = new ArrayList<Person>();
             JSONArray jsonArray = new JSONArray(lists);
             for (int i = 0; i < jsonArray.length(); i++) {
                 result.setText(String.valueOf(jsonArray.length()));
+                Person p = new Person();
+                p.setGoods_id("id" + i);
+                p.setGoods_name("name" + i);
+                p.setGoods_price("Goods_price"+i);
+                persons.add(p);
             }
+            String str = gson.toJson(persons);
+            List<Person> ps = gson.fromJson(str, new TypeToken<List<Person>>(){}.getType());
         }catch (Exception e){e.printStackTrace();}
-        Gson gson = new Gson();
-        List<Person> persons = new ArrayList<Person>();
-        for (int i = 0; i < 10; i++) {
-            Person p = new Person();
-            p.setGoods_id("id" + i);
-            p.setGoods_name("name" + i);
-            p.setGoods_price("Goods_price"+i);
-            persons.add(p);
-        }
-        String str = gson.toJson(persons);
-        List<Person> ps = gson.fromJson(str, new TypeToken<List<Person>>(){}.getType());
+
+
+
+
         //gson.fromJson(lists, Person.class);
 
         String [] [] list = {{"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.01元","https://gw3.alicdn.com/bao/uploaded/i1/581894172/TB2TSydq4RDOuFjSZFzXXcIipXa_!!581894172.jpg_210x210.jpg","5"},
