@@ -1,6 +1,7 @@
 package com.example.nwidc.huibo;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -10,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -103,12 +105,16 @@ public class SearchActivity extends AppCompatActivity {
 //                    //fTransaction.show(list);
 //                }
 
+                InputMethodManager imm = (InputMethodManager)
+                        getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+
                 if (!list.isVisible()) {
                     Bundle bundle = new Bundle();
                     bundle.putString("search_con", strValue);
                     list.setArguments(bundle);
                     fTransaction.add(R.id.ly_content, list, "BillList");
-                    fTransaction.addToBackStack(null);
+//                    fTransaction.addToBackStack(null);
                     fTransaction.commit();
                     /* 使用接口回调的方法获取数据 */
                     history.getData(new Search_historyFragment.CallBack() {
