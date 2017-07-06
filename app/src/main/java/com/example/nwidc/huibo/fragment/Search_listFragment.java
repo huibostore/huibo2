@@ -19,11 +19,20 @@ import android.widget.Toast;
 
 import com.example.nwidc.huibo.Adapter.SearchAdapter;
 import com.example.nwidc.huibo.Goods_infoActivity;
+import com.example.nwidc.huibo.Person;
 import com.example.nwidc.huibo.R;
 import com.example.nwidc.huibo.Util.Config;
 import com.example.nwidc.huibo.View.Search;
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -48,7 +57,7 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
     private TextView result;
     private  String GET_URL = Config.Search;
     private String keyword ;
-
+    private String infos;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
@@ -57,8 +66,91 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
 
         mContext = getActivity();
         Context = getContext();
+
+        RestHttp.initialize(mContext);
+        RestHttp.setDiskCacheSize(100 * 1024 * 1024);
+        if (BuildConfig.DEBUG) {
+            RestHttp.setDebug(true, "network");
+        }
+        Bundle bundle = getArguments();//从activity传过来的Bundle
+        if(bundle!=null){
+            keyword =  bundle.getString("search_con");
+            Toast.makeText(mContext,keyword, Toast.LENGTH_SHORT).show();
+        }
+
+
+
+
         list_animal = (ListView) view.findViewById(R.id.list_animal);
         result = (TextView)view.findViewById(R.id.result);
+        get();
+//        result.setText(infos+GET_URL);
+
+
+
+
+
+        //图片资源
+//        String url = "http://m.weather.com.cn/img/b0.gif";
+//        imageView = (ImageView)view.findViewById(R.id.img_icon);
+//        Picasso.with(getContext())
+//                .load(url)
+//                .into(imageView);
+
+
+        return view;
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        int gid= new Long(id).intValue();
+
+        Intent it = new Intent();
+        it.setClass(getActivity(), Goods_infoActivity.class);
+        it.putExtra("gid", gid);
+        startActivity(it);
+    }
+
+    public void get(){
+        GET_URL = GET_URL + keyword;
+        HttpRequest.getInstance().get(GET_URL, new HttpCallback() {
+            @Override
+            public void success(String info) {
+                infos = info;
+                //result.setText(infos+GET_URL);
+                //searchList(new Gson().toJson(info));
+//                new Gson().toJson(info);
+                searchList(info);
+            }
+        });
+
+    }
+
+    public void searchList(String lists) {
+        //result.setText(lists+GET_URL);
+
+//        Person person = new Person();
+
+        //Gson gson = new Gson();
+        try {
+            JSONArray jsonArray = new JSONArray(lists);
+            for (int i = 0; i < jsonArray.length(); i++) {
+                result.setText(String.valueOf(jsonArray.length()));
+            }
+        }catch (Exception e){e.printStackTrace();}
+        Gson gson = new Gson();
+        List<Person> persons = new ArrayList<Person>();
+        for (int i = 0; i < 10; i++) {
+            Person p = new Person();
+            p.setGoods_id("id" + i);
+            p.setGoods_name("name" + i);
+            p.setGoods_price("Goods_price"+i);
+            persons.add(p);
+        }
+        String str = gson.toJson(persons);
+        List<Person> ps = gson.fromJson(str, new TypeToken<List<Person>>(){}.getType());
+        //gson.fromJson(lists, Person.class);
+
         String [] [] list = {{"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.01元","https://gw3.alicdn.com/bao/uploaded/i1/581894172/TB2TSydq4RDOuFjSZFzXXcIipXa_!!581894172.jpg_210x210.jpg","5"},
                 {"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.11元","https://img.alicdn.com/imgextra/i4/1835106055803824256/TB2Wxc3vCFmpuFjSZFrXXayOXXa_!!0-saturn_solar.jpg_210x210.jpg","6"},
                 {"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123.11元","https://img.alicdn.com/imgextra/i4/1835106055803824256/TB2Wxc3vCFmpuFjSZFrXXayOXXa_!!0-saturn_solar.jpg_210x210.jpg","6"},
@@ -80,51 +172,6 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
         mAdapter = new SearchAdapter((LinkedList<Search>) mData, mContext);
         list_animal.setAdapter(mAdapter);
         list_animal.setOnItemClickListener( this);
-
-
-        //图片资源
-//        String url = "http://m.weather.com.cn/img/b0.gif";
-//        imageView = (ImageView)view.findViewById(R.id.img_icon);
-//        Picasso.with(getContext())
-//                .load(url)
-//                .into(imageView);
-
-        RestHttp.initialize(mContext);
-        RestHttp.setDiskCacheSize(100 * 1024 * 1024);
-        if (BuildConfig.DEBUG) {
-            RestHttp.setDebug(true, "network");
-        }
-        Bundle bundle = getArguments();//从activity传过来的Bundle
-        if(bundle!=null){
-            keyword =  bundle.getString("search_con");
-            Toast.makeText(mContext,keyword, Toast.LENGTH_SHORT).show();
-        }
-
-        get();
-        return view;
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//        Toast.makeText(mContext,"你点击了第" + id + "项", Toast.LENGTH_SHORT).show();
-        int gid= new Long(id).intValue();
-
-        Intent it = new Intent();
-        it.setClass(getActivity(), Goods_infoActivity.class);
-        it.putExtra("gid", gid);
-        startActivity(it);
-    }
-
-    public void get(){
-        GET_URL = GET_URL + keyword;
-        HttpRequest.getInstance().get(GET_URL, new HttpCallback() {
-            @Override
-            public void success(String info) {
-                Toast.makeText(mContext,"你点击了第" + "项", Toast.LENGTH_SHORT).show();
-                //result.setText(new Gson().toJson(info));
-                result.setText(info+GET_URL);
-            }
-        });
     }
 
 
