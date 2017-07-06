@@ -4,15 +4,12 @@ import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -28,27 +25,20 @@ import com.example.nwidc.huibo.fragment.Search_listFragment;
 import com.example.nwidc.huibo.fragment.Sign_Fragment;
 import com.example.nwidc.huibo.fragment.SortFragment;
 
-import android.widget.TextView;
-
 /**
  * Created by root on 17-6-24.
  */
 
 public class SearchActivity extends AppCompatActivity {
-
     private FragmentManager fManager;
     private FrameLayout ly_content;
     private Search_historyFragment history;
     private Search_listFragment list;
     private EditText search_con;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-
 
         search_con = (EditText)findViewById(R.id.loginTitle);
         fManager = getSupportFragmentManager();
@@ -181,15 +171,5 @@ public class SearchActivity extends AppCompatActivity {
     }
 
 
-
-
-        TabLayout tabLayout= (TabLayout) findViewById(R.id.tab_essence);
-
-        tabLayout.addTab(tabLayout.newTab().setText("商品"));
-
-        tabLayout.addTab(tabLayout.newTab().setText("店铺"));
-
-
-    }
 
 }
