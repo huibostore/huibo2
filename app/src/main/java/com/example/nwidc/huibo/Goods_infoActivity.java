@@ -49,6 +49,7 @@ public class Goods_infoActivity extends AppCompatActivity implements ObservableS
             StatusbarUtils.enableTranslucentStatusbar(this);
             setContentView(R.layout.activity_goods);
 
+
             Intent intent = getIntent();
             int id = intent.getIntExtra("gid", 0);
 

@@ -40,8 +40,6 @@
                 android:layout_toLeftOf="@+id/search"
                 android:textSize="15sp"
                 android:singleLine="true"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
                 android:layout_centerVertical="true"/>
 
             <TextView
