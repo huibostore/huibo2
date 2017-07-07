@@ -8,6 +8,7 @@ public class Person {
     public String goods_id;
     public String goods_name;
     public String goods_price;
+    public String img_url;
     public void setGoods_id(String goods_id){
         this.goods_id = goods_id;
     }
@@ -26,6 +27,13 @@ public class Person {
     }
     public void setGoods_price(String goods_price){
         this.goods_price = goods_price;
+    }
+
+    public String getImg_url(){
+        return this.img_url;
+    }
+    public void setImg_url(String img_url){
+        this.img_url = img_url;
     }
 
     @Override

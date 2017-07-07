@@ -1,4 +1,4 @@
-package com.example.nwidc.huibo;
+package com.example.nwidc.huibo.activity;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.example.nwidc.huibo.R;
 import com.example.nwidc.huibo.View.GlideImageLoader;
 import com.youth.banner.Banner;
 import com.youth.banner.loader.ImageLoader;
