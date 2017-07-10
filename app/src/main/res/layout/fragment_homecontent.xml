@@ -695,14 +695,7 @@
                                     android:paddingTop="6dp">
 
                                     <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:paddingLeft="5dp"
-                                        android:text="附近商家"
-                                        android:textColor="#C36C80"
-                                        android:textSize="13sp" />
-
-                                    <TextView
+                                        android:id="@+id/textView15"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="2dp"
@@ -710,6 +703,14 @@
                                         android:text="发现附近优质好店"
                                         android:textColor="#999999"
                                         android:textSize="10sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:text="附近商家"
+                                        android:textColor="#C36C80"
+                                        android:textSize="13sp" />
 
                                     <ImageView
                                         android:layout_width="match_parent"
