@@ -201,7 +201,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-    //抢购
+    //新品时代会
 
     public void onClickgoods_info(View v){
 
