@@ -88,4 +88,9 @@ dependencies {
 
     //meizi
     compile files('libs/okhttp-3.2.0.jar')
+
+    //vlayout
+    compile ('com.alibaba.android:vlayout:1.0.9@aar') {
+        transitive = true
+    }
 }
