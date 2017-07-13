@@ -1,7 +1,9 @@
-package com.example.nwidc.huibo;
+package com.example.nwidc.huibo.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.nwidc.huibo.R;
 
 public class BusinessActivity extends AppCompatActivity {
 

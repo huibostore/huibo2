@@ -44,7 +44,7 @@
         </activity>
 
         <activity android:name=".MainActivity"/>
-        <activity android:name=".BusinessActivity" />
+        <activity android:name=".activity.BusinessActivity" />
         <activity android:name=".Edit_goodsActivity" />
         <activity android:name=".SortActivity" />
         <activity android:name=".LoginActivity" />
@@ -59,7 +59,7 @@
         <activity android:name=".IdleActivity" />
         <activity android:name=".TestActivity"/>
         <activity android:name=".SearchActivity"/>
-        <activity android:name=".BookingActivity"/>
+        <activity android:name=".activity.BookingActivity"/>
         <activity android:name=".CommentActivity"/>
 
 

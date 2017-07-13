@@ -35,11 +35,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
@@ -47,8 +45,8 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.nwidc.huibo.activity.BookingActivity;
 import com.example.nwidc.huibo.fragment.BookingFragment;
 import com.example.nwidc.huibo.fragment.ChartFragment;
 import com.example.nwidc.huibo.fragment.CloudpayFragment;
@@ -203,7 +201,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-    //抢购
+    //新品时代会
 
     public void onClickgoods_info(View v){
 
