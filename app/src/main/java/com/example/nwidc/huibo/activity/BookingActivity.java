@@ -22,6 +22,9 @@ import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 import com.alibaba.android.vlayout.layout.StaggeredGridLayoutHelper;
 import com.alibaba.android.vlayout.layout.StickyLayoutHelper;
 import com.example.nwidc.huibo.Adapter.HomeContextAdapter;
+import com.example.nwidc.huibo.Adapter.HomeGridAdapter;
+import com.example.nwidc.huibo.Adapter.HomeLinearAdapter;
+import com.example.nwidc.huibo.Adapter.HomeStagAdapter;
 import com.example.nwidc.huibo.R;
 import com.example.nwidc.huibo.View.ItemClick;
 
@@ -35,6 +38,12 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
     HomeContextAdapter Adapter_linearLayout,Adapter_GridLayout,Adapter_FixLayout,Adapter_ScrollFixLayout
             ,Adapter_FloatLayout,Adapter_ColumnLayout,Adapter_SingleLayout,Adapter_onePlusNLayout,
             Adapter_StickyLayout,Adapter_StaggeredGridLayout;
+    //单行线性布局
+    HomeLinearAdapter HomeLinear;
+    //宫格
+    HomeGridAdapter HomeGrid;
+    //瀑布流
+    HomeStagAdapter HomeStag;
     private ArrayList<HashMap<String, Object>> listItem;
 
     @Override
@@ -87,13 +96,13 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
         /**
          设置线性布局
          */
+
         LinearLayoutHelper linearLayoutHelper = new LinearLayoutHelper();
         // 创建对应的LayoutHelper对象
 
         // 公共属性
         linearLayoutHelper.setItemCount(1);// 设置布局里Item个数
-         linearLayoutHelper.setBgColor(Color.GRAY);// 设置背景颜色
-        linearLayoutHelper.setAspectRatio(0);// 设置设置布局内每行布局的宽与高的比
+        linearLayoutHelper.setBgColor(Color.GRAY);// 设置背景颜色
 
         // linearLayoutHelper特有属性
         linearLayoutHelper.setDividerHeight(10);
@@ -105,7 +114,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
 
 
         // 创建自定义的Adapter对象 & 绑定数据 & 绑定对应的LayoutHelper进行布局绘制
-        Adapter_linearLayout  = new HomeContextAdapter(this, linearLayoutHelper, 1, listItem) {
+        HomeLinear  = new HomeLinearAdapter(this, linearLayoutHelper, 1, listItem) {
             @Override
             public void onBindViewHolder(MainViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
@@ -115,8 +124,9 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
             }
         };
 
-        Adapter_linearLayout.setOnItemClickListener(this);
+        HomeLinear.setOnItemClickListener(this);
         // 设置每个Item的点击事件
+
 
 
 
@@ -136,7 +146,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
         gridLayoutHelper.setAutoExpand(false);//是否自动填充空白区域
         gridLayoutHelper.setSpanCount(5);// 设置每行多少个网格
 
-        Adapter_GridLayout  = new HomeContextAdapter(this, gridLayoutHelper,10, listItem) {
+        HomeGrid  = new HomeGridAdapter(this, gridLayoutHelper,10, listItem) {
             // 设置需要展示的数据总数,此处设置是8,即展示总数是8个,然后每行是4个(上面设置的)
             // 为了展示效果,通过重写onBindViewHolder()将布局的第一个数据设置为gridLayoutHelper
             @Override
@@ -159,7 +169,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
             }
         };
 
-        Adapter_GridLayout.setOnItemClickListener(this);
+        HomeGrid.setOnItemClickListener(this);
         // 设置每个Item的点击事件
 
 
@@ -199,24 +209,36 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
         /**
          设置1拖N布局
          */
-        OnePlusNLayoutHelperEx onePlusNLayoutHelper = new OnePlusNLayoutHelperEx();
-        // 在构造函数里传入显示的Item数
-        // 最多是1拖4,即5个
+//        OnePlusNLayoutHelperEx onePlusNLayoutHelper = new OnePlusNLayoutHelperEx();
+//        // 在构造函数里传入显示的Item数
+//        // 最多是1拖4,即5个
+//
+//        // 公共属性
+////        onePlusNLayoutHelper.setPadding(20, 20, 20, 20);// 设置LayoutHelper的子元素相对LayoutHelper边缘的距离
+////        onePlusNLayoutHelper.setMargin(20, 20, 20, 20);// 设置LayoutHelper边缘相对父控件（即RecyclerView）的距离
+////        onePlusNLayoutHelper.setBgColor(0xff876384);// 设置背景颜色
+//        onePlusNLayoutHelper.setMargin(0, 10, 0, 10);
+//        columnLayoutHelper.setMarginBottom(100);
+//        // 设置布局底部与下个布局的间隔
+////        onePlusNLayoutHelper.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
+//
+//
+//        Adapter_onePlusNLayout = new HomeContextAdapter(this, onePlusNLayoutHelper,5, listItem) {
+//
+//        };
+//
+//        Adapter_onePlusNLayout.setOnItemClickListener(this);
+        // 设置每个Item的点击事件
 
-        // 公共属性
-//        onePlusNLayoutHelper.setPadding(20, 20, 20, 20);// 设置LayoutHelper的子元素相对LayoutHelper边缘的距离
-//        onePlusNLayoutHelper.setMargin(20, 20, 20, 20);// 设置LayoutHelper边缘相对父控件（即RecyclerView）的距离
-//        onePlusNLayoutHelper.setBgColor(0xff876384);// 设置背景颜色
-        onePlusNLayoutHelper.setMargin(0, 10, 0, 10);
-//        onePlusNLayoutHelper.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
-
-
-        Adapter_onePlusNLayout = new HomeContextAdapter(this, onePlusNLayoutHelper,5, listItem) {
+        OnePlusNLayoutHelperEx helper = new OnePlusNLayoutHelperEx();
+        helper.setBgColor(0xff876384);
+        helper.setMargin(0, 10, 0, 10);
+        helper.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
+        Adapter_onePlusNLayout = new HomeContextAdapter(this, helper,5, listItem) {
 
         };
 
         Adapter_onePlusNLayout.setOnItemClickListener(this);
-        // 设置每个Item的点击事件
 
         /**
          设置瀑布流布局
@@ -227,32 +249,27 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
 
         // 公有属性
         staggeredGridLayoutHelper.setItemCount(20);// 设置布局里Item个数
-        staggeredGridLayoutHelper.setBgColor(Color.GRAY);// 设置背景颜色
-        staggeredGridLayoutHelper.setAspectRatio(3);// 设置设置布局内每行布局的宽与高的比
+        staggeredGridLayoutHelper.setBgColor(Color.parseColor("#f4f4f4"));// 设置背景颜色
+        staggeredGridLayoutHelper.setAspectRatio(0);// 设置设置布局内每行布局的宽与高的比
 
         // 特有属性
         staggeredGridLayoutHelper.setLane(2);// 设置控制瀑布流每行的Item数
         staggeredGridLayoutHelper.setHGap(20);// 设置子元素之间的水平间距
         staggeredGridLayoutHelper.setVGap(15);// 设置子元素之间的垂直间距
 
-        Adapter_StaggeredGridLayout = new HomeContextAdapter(this, staggeredGridLayoutHelper,20, listItem) {
+        HomeStag = new HomeStagAdapter(this, staggeredGridLayoutHelper,20, listItem) {
             // 设置需要展示的数据总数,此处设置是20
 
             // 通过重写onBindViewHolder()设置更加丰富的布局
             @Override
             public void onBindViewHolder(MainViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
-                ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,150 +position % 5 * 20);
-                holder.itemView.setLayoutParams(layoutParams);
+                //ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,150 +position % 5 * 20);
+                //holder.itemView.setLayoutParams(layoutParams);
 
                 // 为了展示效果,设置不同位置的背景色
-                if (position > 10) {
-                    holder.itemView.setBackgroundColor(0x66cc0000 + (position - 6) * 128);
-                } else if (position % 2 == 0) {
-                    holder.itemView.setBackgroundColor(0xaa22ff22);
-                } else {
-                    holder.itemView.setBackgroundColor(0xccff22ff);
-                }
+                    holder.itemView.setBackgroundColor(Color.parseColor("#ffffff"));
+
 
                 // 为了展示效果,通过将布局的第一个数据设置为staggeredGrid
                 if (position == 0) {
@@ -263,7 +280,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
             }
         };
 
-        Adapter_StaggeredGridLayout.setOnItemClickListener(this);
+        HomeStag.setOnItemClickListener(this);
         // 设置每个Item的点击事件
 
 
@@ -275,14 +292,15 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
         List<DelegateAdapter.Adapter> adapters = new LinkedList<>();
 
         // 2. 将上述创建的Adapter对象放入到DelegateAdapter.Adapter列表里
-        adapters.add(Adapter_linearLayout) ;
+//        adapters.add(Adapter_linearLayout) ;
+        adapters.add(HomeLinear) ;
 
-        adapters.add(Adapter_GridLayout) ;
+        adapters.add(HomeGrid) ;
 
         adapters.add(Adapter_ColumnLayout) ;
 
         adapters.add(Adapter_onePlusNLayout) ;
-        adapters.add(Adapter_StaggeredGridLayout) ;
+        adapters.add(HomeStag) ;
 
 
         //
