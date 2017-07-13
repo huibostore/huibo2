@@ -5,32 +5,32 @@ package com.example.nwidc.huibo;
  */
 
 public class Person {
-    private String id;
-    private String name;
-    private String age;
-    public void setId(String id){
-        this.id = id;
+    public String goods_id;
+    public String goods_name;
+    public String goods_price;
+    public void setGoods_id(String goods_id){
+        this.goods_id = goods_id;
     }
-    public String getId(){
-        return this.id;
+    public String getGoods_id(){
+        return this.goods_id;
     }
-    public void setResult(String name){
-        this.name = name;
+    public void setGoods_name(String goods_name){
+        this.goods_name = goods_name;
     }
-    public String getName(){
-        return this.name;
+    public String getGoods_name(){
+        return this.goods_name;
     }
-    public void setAge(String age){
-        this.age = age;
+
+    public String getGoods_price(){
+        return this.goods_price;
     }
-    public String getAge(){
-        return this.age;
+    public void setGoods_price(String goods_price){
+        this.goods_price = goods_price;
     }
-    public void setName(String name){
-        this.name = name;
-    }
+
     @Override
     public String toString() {
-        return this.name + "~年方：" + this.age;
+        return this.goods_name  + this.goods_price + this.goods_id;
     }
+
 }
