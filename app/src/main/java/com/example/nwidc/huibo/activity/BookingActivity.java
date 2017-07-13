@@ -24,6 +24,7 @@ import com.alibaba.android.vlayout.layout.StickyLayoutHelper;
 import com.example.nwidc.huibo.Adapter.HomeContextAdapter;
 import com.example.nwidc.huibo.Adapter.HomeGridAdapter;
 import com.example.nwidc.huibo.Adapter.HomeLinearAdapter;
+import com.example.nwidc.huibo.Adapter.HomeOneNAdapter;
 import com.example.nwidc.huibo.Adapter.HomeStagAdapter;
 import com.example.nwidc.huibo.R;
 import com.example.nwidc.huibo.View.ItemClick;
@@ -44,7 +45,10 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
     HomeGridAdapter HomeGrid;
     //瀑布流
     HomeStagAdapter HomeStag;
+    //一拖n
+    HomeOneNAdapter HomeOneNA;
     private ArrayList<HashMap<String, Object>> listItem;
+    private ArrayList<HashMap<String, Object>> gridlist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,8 +83,17 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
         for (int i = 0; i < 100; i++) {
             HashMap<String, Object> map = new HashMap<String, Object>();
             map.put("ItemTitle", "第" + i + "行");
-            map.put("ItemImage", R.mipmap.ic_launcher);
+            map.put("ItemImage", R.drawable.a2);
             listItem.add(map);
+
+        }
+
+        gridlist = new ArrayList<HashMap<String, Object>>();
+        for (int i = 0; i < 10; i++) {
+            HashMap<String, Object> map = new HashMap<String, Object>();
+            map.put("ItemTitle", "第" + i + "行");
+            map.put("ItemImage", R.drawable.daojia);
+            gridlist.add(map);
 
         }
 
@@ -141,25 +154,26 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
         gridLayoutHelper.setItemCount(10);// 设置布局里Item个数
         gridLayoutHelper.setMarginBottom(100);
         // 设置布局底部与下个布局的间隔
+//        gridLayoutHelper.setPadding(5, 5, 5, 5);
 
         // gridLayoutHelper特有属性
-        gridLayoutHelper.setAutoExpand(false);//是否自动填充空白区域
+//        gridLayoutHelper.setAutoExpand(false);//是否自动填充空白区域
         gridLayoutHelper.setSpanCount(5);// 设置每行多少个网格
 
-        HomeGrid  = new HomeGridAdapter(this, gridLayoutHelper,10, listItem) {
+        HomeGrid  = new HomeGridAdapter(this, gridLayoutHelper,10, gridlist) {
             // 设置需要展示的数据总数,此处设置是8,即展示总数是8个,然后每行是4个(上面设置的)
             // 为了展示效果,通过重写onBindViewHolder()将布局的第一个数据设置为gridLayoutHelper
             @Override
             public void onBindViewHolder(MainViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
-                // 为了展示效果,将布局里不同位置的Item进行背景颜色设置
-                if (position < 2) {
-                    holder.itemView.setBackgroundColor(0x66cc0000 + (position - 6) * 128);
-                } else if (position % 2 == 0) {
-                    holder.itemView.setBackgroundColor(0xaa22ff22);
-                } else {
-                    holder.itemView.setBackgroundColor(0xccff22ff);
-                }
+//                // 为了展示效果,将布局里不同位置的Item进行背景颜色设置
+//                if (position < 2) {
+//                    holder.itemView.setBackgroundColor(0x66cc0000 + (position - 6) * 128);
+//                } else if (position % 2 == 0) {
+//                    holder.itemView.setBackgroundColor(0xaa22ff22);
+//                } else {
+//                    holder.itemView.setBackgroundColor(0xccff22ff);
+//                }
 
 
 
@@ -209,36 +223,37 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
         /**
          设置1拖N布局
          */
-//        OnePlusNLayoutHelperEx onePlusNLayoutHelper = new OnePlusNLayoutHelperEx();
-//        // 在构造函数里传入显示的Item数
-//        // 最多是1拖4,即5个
-//
-//        // 公共属性
-////        onePlusNLayoutHelper.setPadding(20, 20, 20, 20);// 设置LayoutHelper的子元素相对LayoutHelper边缘的距离
-////        onePlusNLayoutHelper.setMargin(20, 20, 20, 20);// 设置LayoutHelper边缘相对父控件（即RecyclerView）的距离
-////        onePlusNLayoutHelper.setBgColor(0xff876384);// 设置背景颜色
-//        onePlusNLayoutHelper.setMargin(0, 10, 0, 10);
-//        columnLayoutHelper.setMarginBottom(100);
-//        // 设置布局底部与下个布局的间隔
-////        onePlusNLayoutHelper.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
-//
-//
-//        Adapter_onePlusNLayout = new HomeContextAdapter(this, onePlusNLayoutHelper,5, listItem) {
-//
-//        };
-//
-//        Adapter_onePlusNLayout.setOnItemClickListener(this);
+        OnePlusNLayoutHelperEx onePlusNLayoutHelper = new OnePlusNLayoutHelperEx();
+        // 在构造函数里传入显示的Item数
+        // 最多是1拖4,即5个
+
+        // 公共属性
+//        onePlusNLayoutHelper.setPadding(20, 20, 20, 20);// 设置LayoutHelper的子元素相对LayoutHelper边缘的距离
+//        onePlusNLayoutHelper.setMargin(20, 20, 20, 20);// 设置LayoutHelper边缘相对父控件（即RecyclerView）的距离
+//        onePlusNLayoutHelper.setBgColor(0xff876384);// 设置背景颜色
+        onePlusNLayoutHelper.setMargin(0, 10, 0, 10);
+        columnLayoutHelper.setMarginBottom(100);
+        // 设置布局底部与下个布局的间隔
+//        onePlusNLayoutHelper.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
+
+
+        Adapter_onePlusNLayout = new HomeContextAdapter(this, onePlusNLayoutHelper,5, listItem) {
+
+        };
+
+        Adapter_onePlusNLayout.setOnItemClickListener(this);
         // 设置每个Item的点击事件
 
         OnePlusNLayoutHelperEx helper = new OnePlusNLayoutHelperEx();
         helper.setBgColor(0xff876384);
         helper.setMargin(0, 10, 0, 10);
         helper.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
-        Adapter_onePlusNLayout = new HomeContextAdapter(this, helper,5, listItem) {
+
+        HomeOneNA = new HomeOneNAdapter(this, helper,5, listItem) {
 
         };
 
-        Adapter_onePlusNLayout.setOnItemClickListener(this);
+        HomeOneNA.setOnItemClickListener(this);
 
         /**
          设置瀑布流布局
@@ -270,10 +285,11 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
                 // 为了展示效果,设置不同位置的背景色
                     holder.itemView.setBackgroundColor(Color.parseColor("#ffffff"));
 
+                    holder.image.setImageResource(R.drawable.cuxiao6);
 
                 // 为了展示效果,通过将布局的第一个数据设置为staggeredGrid
                 if (position == 0) {
-                    holder.Text.setText("staggeredGrid");
+                    holder.Text.setText("staggeredGrid大神请多来点简单的谢谢， 这个 对我这种基本的 太难了。");
 
 
                 }
@@ -298,8 +314,9 @@ public class BookingActivity extends AppCompatActivity implements ItemClick {
         adapters.add(HomeGrid) ;
 
         adapters.add(Adapter_ColumnLayout) ;
+        adapters.add(HomeOneNA) ;
 
-        adapters.add(Adapter_onePlusNLayout) ;
+//        adapters.add(Adapter_onePlusNLayout) ;
         adapters.add(HomeStag) ;
 
 
