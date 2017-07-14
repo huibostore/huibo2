@@ -1,379 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal">
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_item_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#f4f4f4">
+            android:divider="@null"
+            android:scrollbars="none"></ListView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+    </LinearLayout>
 
 
-            <LinearLayout
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="wrap_content">
-
-                <ScrollView
-                    android:id="@+id/scrollView1"
-                    android:scrollbars="none"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="0dp"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort0"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="推荐分类"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:id="@+id/textView7"
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef" />
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="流行女装"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="品牌男装"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="个性化妆"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="个性化妆"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="个性化妆"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="个性化妆"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="个性化妆"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="个性化妆"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="个性化妆"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="个性化妆"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/sort_bg"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="个性化妆" />
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-                        <LinearLayout
-                            android:id="@+id/huibo_sort12"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:background="@drawable/sort_bg"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:textColor="@drawable/click_sort"
-                                android:text="个性化妆"/>
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#efefef"/>
-
-
-                    </LinearLayout>
-
-                </ScrollView>
-
-                <ScrollView
-                    android:id="@+id/scrollView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scrollbars="none">
-
-                    <FrameLayout
-                        android:id="@+id/ly_content"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    </FrameLayout>
-
-                </ScrollView>
-
-
-            </LinearLayout>
-
-
+                android:layout_height="100dp"
+                android:src="@drawable/titlet" />
 
         </LinearLayout>
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
 
+            <TextView
+                android:id="@+id/huibo_ceshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="热门分类" />
+
+            <com.example.nwidc.huibo.View.AwsomeIconFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="&#xe722;排行榜&#xe6a3;" />
+
+        </RelativeLayout>
+
+    <GridView
+        android:id="@+id/list_item_2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:numColumns="3"
+        android:background="#f4f4f4"
+        android:divider="@null"
+        android:paddingLeft="10dp"
+        android:scrollbars="none"/>
+
+    </LinearLayout>
+
+</LinearLayout>

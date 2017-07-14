@@ -49,12 +49,6 @@ public class Goods_infoActivity extends AppCompatActivity implements ObservableS
             StatusbarUtils.enableTranslucentStatusbar(this);
             setContentView(R.layout.activity_goods);
 
-
-            Intent intent = getIntent();
-            int id = intent.getIntExtra("gid", 0);
-
-            Toast.makeText(this,"你点击了第" + id + "项", Toast.LENGTH_SHORT).show();
-
             //按钮返回
             final TextView GoBack2 = (TextView) findViewById(R.id.textView);
             GoBack2.setOnClickListener(new View.OnClickListener() {
