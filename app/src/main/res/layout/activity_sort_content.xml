@@ -6,13 +6,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_marginLeft="5dp"
         android:layout_weight="999"
-=======
-        android:layout_weight="999"
-        android:layout_marginLeft="5dp"
->>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
         android:orientation="vertical"
         android:padding="5dp">
 
