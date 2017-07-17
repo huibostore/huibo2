@@ -758,15 +758,12 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
-
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="top"
                 android:padding="10dp">
                 >
-
 
                 <com.example.nwidc.huibo.View.AwsomeIconFont
                     android:id="@+id/textView"

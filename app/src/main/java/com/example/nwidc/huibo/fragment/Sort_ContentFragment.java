@@ -6,269 +6,89 @@ package com.example.nwidc.huibo.fragment;
     import android.view.LayoutInflater;
     import android.view.View;
     import android.view.ViewGroup;
+    import android.widget.AdapterView;
     import android.widget.FrameLayout;
+    import android.widget.GridView;
     import android.widget.LinearLayout;
+    import android.widget.ListView;
     import android.widget.TextView;
+
+    import com.example.nwidc.huibo.Adapter.MyListViewAdapter1;
+    import com.example.nwidc.huibo.Adapter.MyListViewAdapter2;
     import com.example.nwidc.huibo.R;
+    import com.example.nwidc.huibo.Util.ToastUtils;
 
 /**
  * Created by janiszhang on 2016/6/6.
  */
 
-public class Sort_ContentFragment extends Fragment implements View.OnClickListener{
+public class Sort_ContentFragment extends Fragment {
 
-    //UI Object
-    private LinearLayout huibo_sort0;
-    private LinearLayout huibo_sort1;
-    private LinearLayout huibo_sort2;
-    private LinearLayout huibo_sort3;
-    private LinearLayout huibo_sort4;
-    private LinearLayout huibo_sort5;
-    private LinearLayout huibo_sort6;
-    private LinearLayout huibo_sort7;
-    private LinearLayout huibo_sort8;
-    private LinearLayout huibo_sort9;
-    private LinearLayout huibo_sort10;
-    private LinearLayout huibo_sort11;
-    private LinearLayout huibo_sort12;
+
     private View viewContent;
 
-    private FragmentManager fManagers;
-    //Fragment
+    private int selectIndex=0;
 
-    private Sort_ListFragment sort_fg0;
-    private ErrorFragment sort_fg1;
-    private ErrorFragment sort_fg2;
-    private ErrorFragment sort_fg3;
-    private ErrorFragment sort_fg4;
-    private ErrorFragment sort_fg5;
-    private ErrorFragment sort_fg6;
-    private ErrorFragment sort_fg7;
-    private ErrorFragment sort_fg8;
-    private ErrorFragment sort_fg9;
-    private ErrorFragment sort_fg10;
-    private ErrorFragment sort_fg11;
-    private ErrorFragment sort_fg12;
+    private static final String[] mMenus = { "常用分类", "服饰内衣", "鞋靴", "手机",
+            "家用电器", "数码", "电脑办公", "个护化妆", "图书" ,"二手手机", "数码", "电脑办公", "个护化妆", "图书" ,"二手手机"};
+    private String[] strs1={"常用分类1","常用分类2","常用分类3","常用分类4","常用分类5","常用分类6","常用分类7","常用分类8","常用分类9","常用分类10"};
+    private String[] strs2={"服饰内衣1","服饰内衣2","服饰内衣3","服饰内衣4","服饰内衣5","服饰内衣6","服饰内衣7","服饰内衣8","服饰内衣9","服饰内衣10","服饰内衣11","服饰内衣12","服饰内衣13","服饰内衣14","服饰内衣15","服饰内衣16"};
+    private String[] strs3={"鞋靴1","鞋靴2","鞋靴3","鞋靴4","鞋靴5","鞋靴6"};
+    private String[] strs4={"手机1","手机2","手机3","手机4"};
+    private String[] strs5={"家用电器1","家用电器2","家用电器3","家用电器4","家用电器5","家用电器6","家用电器7","家用电器8"};
+    private String[][] allData={strs1,strs2,strs3,strs4,strs5,strs1,strs2,strs3,strs4,strs5,strs1,strs2,strs3,strs4,strs5};
+    private ListView mListView1;
+    private GridView mListView2;
+    private MyListViewAdapter1 adapter1;
+    private MyListViewAdapter2 adapter2;
 
-    // @Nullable
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //布局文件中只有一个居中的TextView
         viewContent = inflater.inflate(R.layout.activity_sort,container,false);
-        fManagers = getChildFragmentManager();
-        bindViews();
-        huibo_sort0.performClick();//模拟点击
-
-
+        initView();
         return viewContent;
     }
+    private void initView() {
+        mListView1= (ListView) viewContent.findViewById(R.id.list_item_1);
+        mListView2= (GridView) viewContent.findViewById(R.id.list_item_2);
 
-    //UI组件初始化与事件绑定
-    private void bindViews() {
-        huibo_sort0 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort0);
-        huibo_sort1 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort1);
-        huibo_sort2 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort2);
-        huibo_sort3 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort3);
-        huibo_sort4 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort4);
-        huibo_sort5 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort5);
-        huibo_sort6 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort6);
-        huibo_sort7 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort7);
-        huibo_sort8 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort8);
-        huibo_sort9 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort9);
-        huibo_sort10 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort10);
-        huibo_sort11 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort11);
-        huibo_sort12 = (LinearLayout) viewContent.findViewById(R.id.huibo_sort12);
+        adapter1=new MyListViewAdapter1(mMenus,getActivity(),selectIndex);
+        adapter2=new MyListViewAdapter2(allData,getActivity(),selectIndex);
+        mListView1.setAdapter(adapter1);
+        mListView2.setAdapter(adapter2);
 
+        mListView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                selectIndex=position;
+                //把下标传过去，然后刷新adapter
+                adapter1.setIndex(position);
+                adapter1.notifyDataSetChanged();
+                //当点击某个item的时候让这个item自动滑动到listview的顶部(下面item够多，如果点击的是最后一个就不能到达顶部了)
+                mListView1.smoothScrollToPositionFromTop(position,0);
 
-        huibo_sort0.setOnClickListener(this);
-        huibo_sort1.setOnClickListener(this);
-        huibo_sort2.setOnClickListener(this);
-        huibo_sort3.setOnClickListener(this);
-        huibo_sort4.setOnClickListener(this);
-        huibo_sort5.setOnClickListener(this);
-        huibo_sort6.setOnClickListener(this);
-        huibo_sort7.setOnClickListener(this);
-        huibo_sort8.setOnClickListener(this);
-        huibo_sort9.setOnClickListener(this);
-        huibo_sort10.setOnClickListener(this);
-        huibo_sort11.setOnClickListener(this);
-        huibo_sort12.setOnClickListener(this);
+                adapter2.setIndex(position);
+                mListView2.setAdapter(adapter2);
+            }
+        });
 
+        mListView2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                ToastUtils.showToast(getActivity(),allData[selectIndex][position]);
+            }
+        });
     }
 
-    //重置所有文本的选中状态
-    private void setSelected(){
-        huibo_sort0.setSelected(false);
-        huibo_sort1.setSelected(false);
-        huibo_sort2.setSelected(false);
-        huibo_sort3.setSelected(false);
-        huibo_sort4.setSelected(false);
-        huibo_sort5.setSelected(false);
-        huibo_sort6.setSelected(false);
-        huibo_sort7.setSelected(false);
-        huibo_sort8.setSelected(false);
-        huibo_sort9.setSelected(false);
-        huibo_sort10.setSelected(false);
-        huibo_sort11.setSelected(false);
-        huibo_sort12.setSelected(false);
-    }
-
-    //隐藏所有Fragment
-    private void hideSort_Fragment(FragmentTransaction fragmentTransaction){
-        if(sort_fg0 != null)fragmentTransaction.hide(sort_fg0);
-        if(sort_fg1 != null)fragmentTransaction.hide(sort_fg1);
-        if(sort_fg2 != null)fragmentTransaction.hide(sort_fg2);
-        if(sort_fg3 != null)fragmentTransaction.hide(sort_fg3);
-        if(sort_fg4 != null)fragmentTransaction.hide(sort_fg4);
-        if(sort_fg5 != null)fragmentTransaction.hide(sort_fg5);
-        if(sort_fg6 != null)fragmentTransaction.hide(sort_fg6);
-        if(sort_fg7 != null)fragmentTransaction.hide(sort_fg7);
-        if(sort_fg8 != null)fragmentTransaction.hide(sort_fg8);
-        if(sort_fg9 != null)fragmentTransaction.hide(sort_fg9);
-        if(sort_fg10 != null)fragmentTransaction.hide(sort_fg10);
-        if(sort_fg11 != null)fragmentTransaction.hide(sort_fg11);
-        if(sort_fg12 != null)fragmentTransaction.hide(sort_fg12);
 
 
-    }
 
-    public void onClick(View v) {
-        FragmentTransaction fTransactions = fManagers.beginTransaction();
-        hideSort_Fragment(fTransactions);
-        switch (v.getId()){
-            case R.id.huibo_sort0:
-                setSelected();
-                huibo_sort0.setSelected(true);
-                if(sort_fg0 == null){
-                    sort_fg0 = new Sort_ListFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg0);
-                }else{
-                    fTransactions.show(sort_fg0);
-                }
-                break;
-            case R.id.huibo_sort1:
-                setSelected();
-                huibo_sort1.setSelected(true);
-                if(sort_fg1 == null){
-                    sort_fg1 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg1);
-                }else{
-                    fTransactions.show(sort_fg1);
-                }
-                break;
-            case R.id.huibo_sort2:
-                setSelected();
-                huibo_sort2.setSelected(true);
-                if(sort_fg2 == null){
-                    sort_fg2 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg2);
-                }else{
-                    fTransactions.show(sort_fg2);
-                }
-                break;
-            case R.id.huibo_sort3:
-                setSelected();
-                huibo_sort3.setSelected(true);
-                if(sort_fg3 == null){
-                    sort_fg3 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg3);
-                }else{
-                    fTransactions.show(sort_fg3);
-                }
-                break;
-            case R.id.huibo_sort4:
-                setSelected();
-                huibo_sort4.setSelected(true);
-                if(sort_fg4 == null){
-                    sort_fg4 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg4);
-                }else{
-                    fTransactions.show(sort_fg4);
-                }
-                break;
-            case R.id.huibo_sort5:
-                setSelected();
-                huibo_sort5.setSelected(true);
-                if(sort_fg5 == null){
-                    sort_fg5 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg5);
-                }else{
-                    fTransactions.show(sort_fg5);
-                }
-                break;
-            case R.id.huibo_sort6:
-                setSelected();
-                huibo_sort6.setSelected(true);
-                if(sort_fg6 == null){
-                    sort_fg6 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg6);
-                }else{
-                    fTransactions.show(sort_fg6);
-                }
-                break;
-            case R.id.huibo_sort7:
-                setSelected();
-                huibo_sort7.setSelected(true);
-                if(sort_fg7 == null){
-                    sort_fg7 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg7);
-                }else{
-                    fTransactions.show(sort_fg7);
-                }
-                break;
-            case R.id.huibo_sort8:
-                setSelected();
-                huibo_sort8.setSelected(true);
-                if(sort_fg8 == null){
-                    sort_fg8 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg8);
-                }else{
-                    fTransactions.show(sort_fg8);
-                }
-                break;
-            case R.id.huibo_sort9:
-                setSelected();
-                huibo_sort9.setSelected(true);
-                if(sort_fg9 == null){
-                    sort_fg9 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg9);
-                }else{
-                    fTransactions.show(sort_fg9);
-                }
-                break;
-            case R.id.huibo_sort10:
-                setSelected();
-                huibo_sort10.setSelected(true);
-                if(sort_fg10 == null){
-                    sort_fg10 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg10);
-                }else{
-                    fTransactions.show(sort_fg10);
-                }
-                break;
-            case R.id.huibo_sort11:
-                setSelected();
-                huibo_sort11.setSelected(true);
-                if(sort_fg11 == null){
-                    sort_fg11 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg11);
-                }else{
-                    fTransactions.show(sort_fg11);
-                }
-                break;
-            case R.id.huibo_sort12:
-                setSelected();
-                huibo_sort12.setSelected(true);
-                if(sort_fg12 == null){
-                    sort_fg12 = new ErrorFragment();
-                    fTransactions.add(R.id.ly_content,sort_fg12);
-                }else{
-                    fTransactions.show(sort_fg12);
-                }
-                break;
-        }
-        fTransactions.commit();
-    }
+
+
+
+
 
 
 }

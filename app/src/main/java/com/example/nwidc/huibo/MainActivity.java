@@ -361,9 +361,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         takePhotoPopWin.showAtLocation(findViewById(R.id.main_view), Gravity.CENTER, 0, 0);
     }
 
-
-
-
     public class TakePhotoPopWin extends PopupWindow {
 
         private Context mContext;
@@ -377,9 +374,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             view = LayoutInflater.from(mContext).inflate(R.layout.shake_ani, null);
 
-            Typeface iconfont = Typeface.createFromAsset(getAssets(), "shake.ttf");
-            TextView textview = (TextView)view.findViewById(R.id.shake);
-            textview.setTypeface(iconfont);
+                Typeface iconfont = Typeface.createFromAsset(getAssets(), "shake.ttf");
+                TextView textview = (TextView)view.findViewById(R.id.shake);
+                textview.setTypeface(iconfont);
 
             // 设置按钮监听
 //        btn_pick_photo.setOnClickListener(itemsOnClick);
@@ -431,7 +428,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    @Override
+        @Override
     public void onClick(View v) {
         FragmentTransaction fTransaction = fManager.beginTransaction();
         hideAllFragment(fTransaction);
