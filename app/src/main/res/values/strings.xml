@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">惠博易购</string>
+    <string name="fa_down">&#xf078;</string>
+    <string name="test">&#xe827;</string>
+    <string name="back">&#xe679;</string>
+    <string name="more">&#xe684;</string>
+    <string name="close">&#xe646;</string>
+    <string name="refresh">&#xe6a4;</string>
+    <string name="check">&#xe645;</string>
+    <string name="search">&#xe7e0;</string>
+    <string name="down_fill">&#xe79b;</string>
+    <string name="activity_fill">&#xe775;</string>
+    <string name="location">&#xe651;</string>
+    <string name="ship">&#xe7cb;</string>
+    <string name="edit_light">&#xe7e9;</string>
+    <string name="square_check">&#xe6d6;</string>
+    <string name="mail">&#xe7bd;</string>
+    <string name="home_fill">&#xe6bb;</string>
+    <string name="message_light">&#xe7e3;</string>
+
+    <string name="tab_menu_alert">提醒</string>
+    <string name="tab_menu_profile">信息</string>
+    <string name="tab_menu_pay">我的</string>
+    <string name="tab_menu_setting">设置</string>
+
+
+
+    <string name="main_home_text">首页</string>
+    <string name="main_mine_text">收藏</string>
+    <string name="main_attention_text">关注</string>
+
+    <array name="home_video_tab">
+        <item>全部@dream@0</item>
+        <item>视频@dream@1</item>
+        <item>声音@dream@2</item>
+        <item>图片@dream@3</item>
+        <item>段子@dream@4</item>
+        <item>广告@dream@5</item>
+        <item>剧情@dream@6</item>
+    </array>
+
+    <array name="sort_tab">
+        <item>&#xe6cd;惠博易购@dream@0</item>
+        <item>&#xe718;惠博易购@dream@1</item>
+        <item>&#xe732;惠博易购@dream@2</item>
+        <item>&#xe732;惠博易购@dream@3</item>
+        <item>&#xe732;惠博易购@dream@4</item>
+        <item>&#xe732;惠博易购@dream@5</item>
+        <item>&#xe732;惠博易购@dream@6</item>
+    </array>
+
+    <array name="attention_video_tab">
+        <item>订阅@dream@0</item>
+        <item>关注@dream@1</item>
+    </array>
+
+    <style name="IndicateText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#33000000</item>
+    </style>
+
+</resources>

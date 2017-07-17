@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:background="#eeeeee">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:id="@+id/shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:id="@+id/chart_check"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/goods_infos_btn_bg"
+                    android:text=""
+                    android:layout_marginLeft="12dp"
+                    android:textColor="#ff4965"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="10dp"
+                    android:text="XX美伞旗舰店"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goods_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop"
+                android:background="#f8f8f8"
+                android:orientation="horizontal">
+
+                <com.example.nwidc.huibo.View.AwsomeIconFont
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/goods_infos_btn_bg"
+                    android:text=""
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center"
+                    android:textColor="#ff4965"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="110dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+
+                        android:src="@drawable/goods"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/goods_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="太阳伞防紫外线超轻防晒遮阳伞女士小黑胶"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/goods_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/goods_title"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="颜色分类：三折小清新 米白色"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/goods_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/goods_category"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:textColor="#ff4965"
+                        android:text="￥129"
+                        android:textSize="16sp"
+                        />
+                    <TextView
+                        android:id="@+id/goods_prices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/goods_category"
+                        android:layout_toRightOf="@+id/goods_price"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:text="￥299"
+                        android:textSize="16sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/goods_category"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="28dp"
+                        android:textColor="#696969"
+                        android:textSize="16sp"
+                        android:text="X1" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/love"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/goods_detail">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    >
+
+                    <com.example.nwidc.huibo.View.AwsomeIconFont
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentLeft="true"                         android:background="@drawable/goods_infos_btn_bg"
+                        android:text="&#xe668;"
+                        android:textColor="#ff4965"
+                        android:paddingTop="3dp"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/love"
+                android:paddingTop="2dp"
+                android:paddingBottom="16dp">
+
+                <TableRow android:gravity="center">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="148dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/order_pay01"
+                        />
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="148dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/order_pay02"
+                        />
+                </TableRow>
+            </TableLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f8f8f8"
+        android:layout_gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+
+        <com.example.nwidc.huibo.View.AwsomeIconFont
+            android:id="@+id/btn_mm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/goods_info_btn_bg"
+            android:text="&#xe7f7;"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+        <TextView
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn_back"
+            android:layout_toLeftOf="@+id/btn_mm"
+            android:gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:textColor="#696969"
+            android:textSize="16sp"
+            android:text="编辑" />
+        <TextView
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textColor="#696969"
+            android:textSize="20sp"
+            android:text="购物车(1)" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/detai2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#ddd"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3F3F3F"
+                    android:text="应付金额："/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FF4965"
+                    android:text="￥129.00"/>
+                <TextView
+                    android:id="@+id/txt_kuaidiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOrder"
+                    android:layout_toRightOf="@id/eton_placeholder"
+                    android:background="@drawable/buttons_red"
+                    android:text="提交订单"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+
+        android:layout_gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <com.example.nwidc.huibo.View.AwsomeIconFont
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:text="&#xe679;"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <com.example.nwidc.huibo.View.AwsomeIconFont
+            android:id="@+id/btn_mm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:text="&#xe731;"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+        <TextView
+            android:id="@+id/btn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/btn_back"
+            android:layout_toLeftOf="@id/btn_mm"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#ff4965"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="惠博团购" />
+    </RelativeLayout>
+
+</LinearLayout>
