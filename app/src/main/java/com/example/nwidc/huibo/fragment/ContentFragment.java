@@ -11,18 +11,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-<<<<<<< HEAD
 import android.widget.Toast;
 
 import com.example.nwidc.huibo.R;
 import com.example.nwidc.huibo.View.GlideImageLoader;
 import com.youth.banner.Banner;
 import com.youth.banner.listener.OnBannerListener;
-=======
-
-import com.example.nwidc.huibo.R;
-import com.youth.banner.Banner;
->>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 import com.youth.banner.loader.ImageLoader;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,11 +25,7 @@ import java.util.List;
  * Created by janiszhang on 2016/6/6.
  */
 
-<<<<<<< HEAD
 public class ContentFragment extends Fragment implements  OnBannerListener {
-=======
-public class ContentFragment extends Fragment {
->>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 
     private View viewContent;
     private int mType = 0;
@@ -61,7 +51,6 @@ public class ContentFragment extends Fragment {
 
         Banner banner = (Banner) viewContent.findViewById(R.id.banner);
         //设置图片加载器
-<<<<<<< HEAD
         banner.setImageLoader(new GlideImageLoader());
 
         List<Integer> list = new ArrayList<>();
@@ -75,43 +64,10 @@ public class ContentFragment extends Fragment {
         banner.start();
 
 
-=======
-        banner.setImageLoader(new ContentFragment.GlideImageLoaders());
-
-        List<String> list = new ArrayList<>();
-        list.add("1");
-        list.add("1");
-
-        //设置图片集合
-        banner.setImages(list);
-        //banner设置方法全部调用完毕时最后调用
-        banner.start();
-
-//        viewContent.findViewById(R.id.huibo_snap).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View arg0) {
-//                getFragmentManager()
-//                    .beginTransaction()
-//                    .addToBackStack(null)  //将当前fragment加入到返回栈中
-//                    .replace(R.id.container, new TestFragment2()).commit();
-//            }
-//        });
-//        viewContent.findViewById(R.id.home_rediu).setOnClickListener(new View.OnClickListener() {
-//
-//            public void onClick(View v) {
-//                //new HomeMenuFragment().onClickTakes();
-//                //((HomeMenuFragment)(ContentFragment.this.getParentFragment())).changeLayout();
-//                TextView textView = (TextView) viewContent.findViewById(R.id.testx);
-//               textView.setText("haha");
-//            }
-//
-//        });
->>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 
         return viewContent;
     }
 
-<<<<<<< HEAD
 
 
     // 点击事件的回调函数
@@ -123,48 +79,5 @@ public class ContentFragment extends Fragment {
 
     }
 
-=======
-    private class GlideImageLoaders extends ImageLoader {
-        @Override
-        public void displayImage(Context context, Object path, ImageView imageView) {
-            /**
-             注意：
-             1.图片加载器由自己选择，这里不限制，只是提供几种使用方法
-             2.返回的图片路径为Object类型，由于不能确定你到底使用的那种图片加载器，
-             传输的到的是什么格式，那么这种就使用Object接收和返回，你只需要强转成你传输的类型就行，
-             切记不要胡乱强转！
-             */
-
-
-            //Glide 加载图片简单用法
-            //Glide.with(context).load(path).into(imageView);
-
-            //Picasso 加载图片简单用法
-            // Picasso.with(context).load(path).into(imageView);
-
-            //用fresco加载图片简单用法，记得要写下面的createImageView方法
-            // Uri uri = Uri.parse((String) path);
-            //imageView.setImageURI(uri);
-            Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
-                    R.drawable.banner);
-            imageView.setImageBitmap(bitmap);
-        }
-
-        //提供createImageView 方法，如果不用可以不重写这个方法，主要是方便自定义ImageView的创建
-        @Override
-        public ImageView createImageView(Context context) {
-            //使用fresco，需要创建它提供的ImageView，当然你也可以用自己自定义的具有图片加载功能的ImageView
-            ImageView simpleDraweeView = new ImageView(context);
-            return simpleDraweeView;
-        }
-    }
-
-//    public void onClicktuangou (View v) {
-//       //new HomeMenuFragment().onClickTakes(viewContent);
-//        TextView textView = (TextView) viewContent.findViewById(R.id.testx);
-//        textView.setText("haha");
-//    }
-
->>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 }
 
