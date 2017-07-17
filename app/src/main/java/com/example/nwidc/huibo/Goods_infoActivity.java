@@ -27,7 +27,10 @@ import com.example.nwidc.huibo.fragment.SnakeFragment;
 
 import com.example.nwidc.huibo.fragment.ContentFragment;
 import com.youth.banner.Banner;
+<<<<<<< HEAD
 import com.youth.banner.listener.OnBannerListener;
+=======
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 import com.youth.banner.loader.ImageLoader;
 
 import java.util.ArrayList;

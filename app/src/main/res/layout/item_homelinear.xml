@@ -6,10 +6,16 @@
 
     <ImageView
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="100dp"
         android:id="@+id/Image"
 
         android:adjustViewBounds="true"
+=======
+        android:layout_height="wrap_content"
+        android:id="@+id/Image"
+
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
         android:src="@drawable/fruit"/>
 
 </LinearLayout>

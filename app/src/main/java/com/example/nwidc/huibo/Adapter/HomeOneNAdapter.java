@@ -67,7 +67,11 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
     // 绑定Item的数据
     @Override
     public void onBindViewHolder(MainViewHolder holder, int position) {
+<<<<<<< HEAD
         holder.Text.setText((String) listItem.get(position).get("ItemTitle"));
+=======
+//        holder.Text.setText((String) listItem.get(position).get("ItemTitle"));
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
         holder.image.setImageResource((Integer) listItem.get(position).get("ItemImage"));
 
 
@@ -88,14 +92,22 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
 
     //定义Viewholder
     protected class MainViewHolder extends RecyclerView.ViewHolder {
+<<<<<<< HEAD
         public TextView Text;
+=======
+//        public TextView Text;
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
         public ImageView image;
 
         public MainViewHolder(View root) {
             super(root);
 
             // 绑定视图
+<<<<<<< HEAD
             Text = (TextView) root.findViewById(R.id.Item);
+=======
+//            Text = (TextView) root.findViewById(R.id.Item);
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
             image = (ImageView) root.findViewById(R.id.Image);
 
             root.setOnClickListener(new View.OnClickListener() {
@@ -111,9 +123,15 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
 
         }
 
+<<<<<<< HEAD
         public TextView getText() {
             return Text;
         }
+=======
+//        public TextView getText() {
+//            return Text;
+//        }
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 
 
     }

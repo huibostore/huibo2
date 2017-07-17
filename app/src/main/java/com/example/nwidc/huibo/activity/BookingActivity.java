@@ -2,10 +2,15 @@ package com.example.nwidc.huibo.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -23,25 +28,37 @@ import com.alibaba.android.vlayout.layout.ScrollFixLayoutHelper;
 import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 import com.alibaba.android.vlayout.layout.StaggeredGridLayoutHelper;
 import com.alibaba.android.vlayout.layout.StickyLayoutHelper;
+<<<<<<< HEAD
 import com.example.nwidc.huibo.Adapter.BannerPagerAdapter;
 import com.example.nwidc.huibo.Adapter.HomeBannerAdapter;
+=======
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 import com.example.nwidc.huibo.Adapter.HomeContextAdapter;
 import com.example.nwidc.huibo.Adapter.HomeGridAdapter;
 import com.example.nwidc.huibo.Adapter.HomeLinearAdapter;
 import com.example.nwidc.huibo.Adapter.HomeOneNAdapter;
 import com.example.nwidc.huibo.Adapter.HomeStagAdapter;
+<<<<<<< HEAD
 import com.example.nwidc.huibo.Adapter.MainViewHolder;
 import com.example.nwidc.huibo.Adapter.SubAdapter;
 import com.example.nwidc.huibo.R;
 import com.example.nwidc.huibo.View.ItemClick;
 import com.youth.banner.listener.OnBannerListener;
+=======
+import com.example.nwidc.huibo.R;
+import com.example.nwidc.huibo.View.ItemClick;
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
+<<<<<<< HEAD
 public class BookingActivity extends AppCompatActivity implements ItemClick  {
+=======
+public class BookingActivity extends AppCompatActivity implements ItemClick {
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
     RecyclerView recyclerView;
     HomeContextAdapter Adapter_linearLayout,Adapter_GridLayout,Adapter_FixLayout,Adapter_ScrollFixLayout
             ,Adapter_FloatLayout,Adapter_ColumnLayout,Adapter_SingleLayout,Adapter_onePlusNLayout,
@@ -54,10 +71,13 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
     HomeStagAdapter HomeStag;
     //一拖n
     HomeOneNAdapter HomeOneNA;
+<<<<<<< HEAD
     //轮播
     SubAdapter sub;
     //banner
     HomeBannerAdapter HomeBanner;
+=======
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
     private ArrayList<HashMap<String, Object>> listItem;
     private ArrayList<HashMap<String, Object>> gridlist;
 
@@ -82,7 +102,11 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         /**
          * 步骤2：设置组件复用回收池
          * */
+<<<<<<< HEAD
         final RecyclerView.RecycledViewPool viewPool = new RecyclerView.RecycledViewPool();
+=======
+        RecyclerView.RecycledViewPool viewPool = new RecyclerView.RecycledViewPool();
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
         recyclerView.setRecycledViewPool(viewPool);
         viewPool.setMaxRecycledViews(0, 10);
 
@@ -116,6 +140,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
          * 步骤4:根据数据列表,创建对应的LayoutHelper
          * */
 
+<<<<<<< HEAD
         /*
         *
         * */
@@ -161,16 +186,21 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 //            }
 //        };
 
+=======
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 
         /**
          设置线性布局
          */
 
+<<<<<<< HEAD
         // 设置每个Item的点击事件
         //
         //
         //
         //
+=======
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
         LinearLayoutHelper linearLayoutHelper = new LinearLayoutHelper();
         // 创建对应的LayoutHelper对象
 
@@ -183,6 +213,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         // 设置间隔高度
         // 设置的间隔会与RecyclerView的addItemDecoration（）添加的间隔叠加.
 
+<<<<<<< HEAD
         linearLayoutHelper.setMarginBottom(10);
         // 设置布局底部与下个布局的间隔
 
@@ -229,6 +260,9 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         // 设置的间隔会与RecyclerView的addItemDecoration（）添加的间隔叠加.
 
         linearLayoutHelper.setMarginBottom(10);
+=======
+        linearLayoutHelper.setMarginBottom(100);
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
         // 设置布局底部与下个布局的间隔
 
 
@@ -238,12 +272,23 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
             public void onBindViewHolder(MainViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
                 if (position == 0) {
+<<<<<<< HEAD
                     holder.image.setImageResource(R.drawable.ad1);
+=======
+                    holder.image.setImageResource(R.drawable.fruit);
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
                 }
             }
         };
 
         HomeLinear.setOnItemClickListener(this);
+<<<<<<< HEAD
+=======
+        // 设置每个Item的点击事件
+
+
+
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 
 
         /**
@@ -290,6 +335,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
 
         /**
+<<<<<<< HEAD
          设置1拖N布局
          */
 
@@ -316,6 +362,8 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         HomeOneNA.setOnItemClickListener(this);
 
         /**
+=======
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
          设置栏格布局
          */
         ColumnLayoutHelper columnLayoutHelper = new ColumnLayoutHelper();
@@ -323,7 +371,11 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
         // 公共属性
         columnLayoutHelper.setItemCount(3);// 设置布局里Item个数
+<<<<<<< HEAD
 //        columnLayoutHelper.setBgColor(Color.GRAY);// 设置背景颜色
+=======
+        columnLayoutHelper.setBgColor(Color.GRAY);// 设置背景颜色
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
         columnLayoutHelper.setAspectRatio(6);// 设置设置布局内每行布局的宽与高的比
         columnLayoutHelper.setMarginBottom(100);
         // 设置布局底部与下个布局的间隔
@@ -346,6 +398,46 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         Adapter_ColumnLayout.setOnItemClickListener(this);
         // 设置每个Item的点击事件
 
+<<<<<<< HEAD
+=======
+
+
+        /**
+         设置1拖N布局
+         */
+        OnePlusNLayoutHelperEx onePlusNLayoutHelper = new OnePlusNLayoutHelperEx();
+        // 在构造函数里传入显示的Item数
+        // 最多是1拖4,即5个
+
+        // 公共属性
+//        onePlusNLayoutHelper.setPadding(20, 20, 20, 20);// 设置LayoutHelper的子元素相对LayoutHelper边缘的距离
+//        onePlusNLayoutHelper.setMargin(20, 20, 20, 20);// 设置LayoutHelper边缘相对父控件（即RecyclerView）的距离
+//        onePlusNLayoutHelper.setBgColor(0xff876384);// 设置背景颜色
+        onePlusNLayoutHelper.setMargin(0, 10, 0, 10);
+        columnLayoutHelper.setMarginBottom(100);
+        // 设置布局底部与下个布局的间隔
+//        onePlusNLayoutHelper.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
+
+
+        Adapter_onePlusNLayout = new HomeContextAdapter(this, onePlusNLayoutHelper,5, listItem) {
+
+        };
+
+        Adapter_onePlusNLayout.setOnItemClickListener(this);
+        // 设置每个Item的点击事件
+
+        OnePlusNLayoutHelperEx helper = new OnePlusNLayoutHelperEx();
+        helper.setBgColor(0xff876384);
+        helper.setMargin(0, 10, 0, 10);
+        helper.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
+
+        HomeOneNA = new HomeOneNAdapter(this, helper,5, listItem) {
+
+        };
+
+        HomeOneNA.setOnItemClickListener(this);
+
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
         /**
          设置瀑布流布局
          */
@@ -400,6 +492,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
         // 2. 将上述创建的Adapter对象放入到DelegateAdapter.Adapter列表里
 //        adapters.add(Adapter_linearLayout) ;
+<<<<<<< HEAD
 //        adapters.add(sub) ;
         adapters.add(HomeBanner) ;
 
@@ -409,6 +502,15 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 //
         adapters.add(HomeOneNA) ;
         adapters.add(Adapter_ColumnLayout) ;
+=======
+        adapters.add(HomeLinear) ;
+
+        adapters.add(HomeGrid) ;
+
+        adapters.add(Adapter_ColumnLayout) ;
+        adapters.add(HomeOneNA) ;
+
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 //        adapters.add(Adapter_onePlusNLayout) ;
         adapters.add(HomeStag) ;
 
@@ -436,6 +538,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
     @Override
     public void onItemClick(View view, int postion) {
         System.out.println("点击了第"+postion+"行");
+<<<<<<< HEAD
         if(postion == 0){
             Toast.makeText(this, "这是zero", Toast.LENGTH_SHORT).show();
         }else{
@@ -447,4 +550,9 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
 
 
+=======
+        Toast.makeText(this, (String) listItem.get(postion).get("ItemTitle"), Toast.LENGTH_SHORT).show();
+    }
+
+>>>>>>> 640d1af15a6e2ad719e2843e4f20708b4e00f537
 }
