@@ -18,8 +18,10 @@ import com.alibaba.android.vlayout.layout.StaggeredGridLayoutHelper;
 import com.example.nwidc.huibo.Adapter.HomeBannerAdapter;
 import com.example.nwidc.huibo.Adapter.HomeContextAdapter;
 import com.example.nwidc.huibo.Adapter.HomeGridAdapter;
+import com.example.nwidc.huibo.Adapter.HomeIntegAdapter;
 import com.example.nwidc.huibo.Adapter.HomeLinearAdapter;
 import com.example.nwidc.huibo.Adapter.HomeOneNAdapter;
+import com.example.nwidc.huibo.Adapter.HomePromotionAdapter;
 import com.example.nwidc.huibo.Adapter.HomeStagAdapter;
 import com.example.nwidc.huibo.Adapter.HomeTitleAdapter;
 import com.example.nwidc.huibo.Adapter.SubAdapter;
@@ -39,14 +41,18 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
     HomeLinearAdapter HomeLinear;
     //宫格
     HomeGridAdapter HomeGrid;
+    HomePromotionAdapter HomePromotion;
+    HomePromotionAdapter HomeHot;
     //瀑布流
     HomeStagAdapter HomeStag;
     //一拖n
     HomeOneNAdapter HomeOneNA;
     HomeOneNAdapter HomeOneNA2;
     HomeOneNAdapter HomeOneNA3;
+    HomeOneNAdapter HomeOneNA4;
     //标题
     HomeTitleAdapter HomeTitle;
+    HomeTitleAdapter HomeHotTitle;
     //轮播
     SubAdapter sub;
     //banner
@@ -84,7 +90,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
          * 步骤3:设置需要存放的数据
          * */
         listItem = new ArrayList<HashMap<String, Object>>();
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 150; i++) {
             HashMap<String, Object> map = new HashMap<String, Object>();
             map.put("ItemTitle", "第" + i + "行");
             map.put("ItemImage", R.drawable.a2);
@@ -380,18 +386,11 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
      设置线性布局
      */
         SingleLayoutHelper single = new SingleLayoutHelper();
-//        LinearLayoutHelper linearLayoutHelper = new LinearLayoutHelper();
-        // 创建对应的LayoutHelper对象
-
         // 公共属性
         single.setItemCount(1);// 设置布局里Item个数
         single.setBgColor(Color.WHITE);// 设置背景颜色
-
-
         single.setMarginTop(10);
         // 设置布局底部与下个布局的间隔
-
-        // 创建自定义的Adapter对象 & 绑定数据 & 绑定对应的LayoutHelper进行布局绘制
         HomeTitle  = new HomeTitleAdapter(this, single, 1) {
             @Override
             public void onBindViewHolder(MainViewHolder holder, int position) {
@@ -402,11 +401,203 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
             }
         };
 
+        /**
+         设置Grid布局
+         促销
+         */
+
+        GridLayoutHelper  gridb = new GridLayoutHelper(3);
+        // 在构造函数设置每行的网格个数
+
+        // 公共属性
+        gridb.setItemCount(9);// 设置布局里Item个数
+        gridb.setBgColor(Color.parseColor("#f4f4f4"));
+        gridb.setSpanCount(3);// 设置每行多少个网格
+        gridb.setPadding(0,10,0,10);
+        gridb.setAspectRatio(3);// 设置设置布局内每行布局的宽与高的比
+//        gridb.setWeights(new float[]{ 30f,30f,30f});
+
+        gridb.setVGap(20);// 控制子元素之间的垂直间距
+        gridb.setHGap(20);// 控制子元素之间的水平间距
+
+        HomePromotion  = new HomePromotionAdapter(this, gridb,9, gridlist) {
+            // 设置需要展示的数据总数,此处设置是8,即展示总数是8个,然后每行是4个(上面设置的)
+            // 为了展示效果,通过重写onBindViewHolder()将布局的第一个数据设置为gridLayoutHelper
+            @Override
+            public void onBindViewHolder(MainViewHolder holder, int position) {
+                super.onBindViewHolder(holder, position);
+                holder.itemView.setBackgroundColor(Color.parseColor("#ffffff"));
+
+            }
+        };
+
+        HomePromotion.setOnItemClickListener(this);
+        // 设置每个Item的点击事件
 
 
 
+        /**
+         设置Grid布局
+         促销
+         */
+
+        GridLayoutHelper  gridc = new GridLayoutHelper(3);
+        // 在构造函数设置每行的网格个数
+
+        // 公共属性
+        gridc.setItemCount(8);// 设置布局里Item个数
+        gridc.setBgColor(Color.parseColor("#f4f4f4"));
+        gridc.setSpanCount(4);// 设置每行多少个网格
+        gridc.setPadding(0,10,0,10);
+        gridc.setAspectRatio(3);// 设置设置布局内每行布局的宽与高的比
+//        gridb.setWeights(new float[]{ 30f,30f,30f});
+
+        gridc.setVGap(20);// 控制子元素之间的垂直间距
+        gridc.setHGap(20);// 控制子元素之间的水平间距
+
+        HomeHot  = new HomePromotionAdapter(this, gridc,8, gridlist) {
+            // 设置需要展示的数据总数,此处设置是8,即展示总数是8个,然后每行是4个(上面设置的)
+            // 为了展示效果,通过重写onBindViewHolder()将布局的第一个数据设置为gridLayoutHelper
+            @Override
+            public void onBindViewHolder(MainViewHolder holder, int position) {
+                super.onBindViewHolder(holder, position);
+                holder.itemView.setBackgroundColor(Color.parseColor("#ffffff"));
+
+            }
+        };
+
+        HomeHotTitle  = new HomeTitleAdapter(this, single, 1) {
+            @Override
+            public void onBindViewHolder(MainViewHolder holder, int position) {
+                super.onBindViewHolder(holder, position);
+                if (position == 0) {
+                    holder.Text.setText("热门市场");
+                }
+            }
+        };
+
+        HomeHot.setOnItemClickListener(this);
+        // 设置每个Item的点击事件
+
+        /**
+         设置1拖N布局
+         */
+
+        OnePlusNLayoutHelperEx helper4 = new OnePlusNLayoutHelperEx();
+        helper4.setBgColor(Color.WHITE);
+        helper4.setMargin(20, 10, 10, 20);
+//        helper4.setColWeights(new float[]{40f, 60f, 60f, 33f, 33f,33f});
+
+        HomeOneNA4 = new HomeOneNAdapter(this, helper4,6, listItem) {
+            @Override
+            public void onBindViewHolder(HomeOneNAdapter.MainViewHolder holder, int position) {
+                super.onBindViewHolder(holder, position);
 
 
+                // 为了展示效果,通过将布局的第一个数据设置为staggeredGrid
+                if (position == 0) {
+                    holder.image.setMaxHeight(1000);
+
+                    holder.image.setImageResource(R.drawable.qg);
+                }
+            }
+        };
+
+        HomeOneNA4.setOnItemClickListener(this);
+
+        HomeTitleAdapter HomeBrandTitle  = new HomeTitleAdapter(this, single, 1) {
+            @Override
+            public void onBindViewHolder(MainViewHolder holder, int position) {
+                super.onBindViewHolder(holder, position);
+                if (position == 0) {
+                    holder.Text.setText("品牌盛典");
+                }
+            }
+        };
+
+
+        /**
+         设置Grid布局
+         积分
+         */
+        GridLayoutHelper  Integ = new GridLayoutHelper(3);
+        // 公共属性
+        Integ.setItemCount(6);// 设置布局里Item个数
+        Integ.setBgColor(Color.parseColor("#f4f4f4"));
+        Integ.setSpanCount(3);// 设置每行多少个网格
+        Integ.setPadding(0,10,0,10);
+        Integ.setAspectRatio(3);// 设置设置布局内每行布局的宽与高的比
+
+        Integ.setVGap(20);// 控制子元素之间的垂直间距
+        Integ.setHGap(20);// 控制子元素之间的水平间距
+
+        HomeIntegAdapter HomeInteg  = new HomeIntegAdapter(this, Integ,6, gridlist) {
+            // 设置需要展示的数据总数,此处设置是8,即展示总数是8个,然后每行是4个(上面设置的)
+            // 为了展示效果,通过重写onBindViewHolder()将布局的第一个数据设置为gridLayoutHelper
+            @Override
+            public void onBindViewHolder(MainViewHolder holder, int position) {
+                super.onBindViewHolder(holder, position);
+                holder.itemView.setBackgroundColor(Color.parseColor("#ffffff"));
+
+            }
+        };
+
+        HomeInteg.setOnItemClickListener(this);
+        // 设置每个Item的点击事件
+
+
+
+        HomeTitleAdapter HomeIntegTitle  = new HomeTitleAdapter(this, single, 1) {
+            @Override
+            public void onBindViewHolder(MainViewHolder holder, int position) {
+                super.onBindViewHolder(holder, position);
+                if (position == 0) {
+                    holder.Text.setText("积分商城");
+                }
+            }
+        };
+
+
+        /**
+         设置Grid布局
+         发现
+         */
+        GridLayoutHelper  gride = new GridLayoutHelper(3);
+        // 公共属性
+        gride.setItemCount(9);// 设置布局里Item个数
+        gride.setBgColor(Color.parseColor("#f4f4f4"));
+        gride.setSpanCount(3);// 设置每行多少个网格
+        gride.setPadding(0,10,0,10);
+        gride.setAspectRatio(3);// 设置设置布局内每行布局的宽与高的比
+
+        gride.setVGap(20);// 控制子元素之间的垂直间距
+        gride.setHGap(20);// 控制子元素之间的水平间距
+
+        HomePromotionAdapter HomeFind  = new HomePromotionAdapter(this, gride,9, gridlist) {
+            // 设置需要展示的数据总数,此处设置是8,即展示总数是8个,然后每行是4个(上面设置的)
+            // 为了展示效果,通过重写onBindViewHolder()将布局的第一个数据设置为gridLayoutHelper
+            @Override
+            public void onBindViewHolder(MainViewHolder holder, int position) {
+                super.onBindViewHolder(holder, position);
+                holder.itemView.setBackgroundColor(Color.parseColor("#ffffff"));
+
+            }
+        };
+
+        HomeFind.setOnItemClickListener(this);
+        // 设置每个Item的点击事件
+
+
+
+        HomeTitleAdapter HomeFindTitle  = new HomeTitleAdapter(this, single, 1) {
+            @Override
+            public void onBindViewHolder(MainViewHolder holder, int position) {
+                super.onBindViewHolder(holder, position);
+                if (position == 0) {
+                    holder.Text.setText("发现好店");
+                }
+            }
+        };
 
         /**
          设置瀑布流布局
@@ -469,6 +660,15 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         adapters.add(HomeOneNA3);
 //        adapters.add(HomeLinear);
         adapters.add(HomeTitle);
+        adapters.add(HomePromotion);
+        adapters.add(HomeHotTitle);
+        adapters.add(HomeHot);
+        adapters.add(HomeBrandTitle);
+        adapters.add(HomeOneNA4);
+        adapters.add(HomeIntegTitle);
+        adapters.add(HomeInteg);
+        adapters.add(HomeFindTitle);
+        adapters.add(HomeFind);
 
 //        adapters.add(HomeCol) ;
         adapters.add(HomeStag);
