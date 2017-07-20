@@ -67,7 +67,7 @@ public class HomeGridAdapter extends DelegateAdapter.Adapter<HomeGridAdapter.Mai
     // 绑定Item的数据
     @Override
     public void onBindViewHolder(MainViewHolder holder, int position) {
-//        holder.Text.setText((String) listItem.get(position).get("ItemTitle"));
+        holder.Text.setText((String) listItem.get(position).get("ItemTitle"));
         holder.image.setImageResource((Integer) listItem.get(position).get("ItemImage"));
 
 
