@@ -97,15 +97,31 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
             listItem.add(map);
 
         }
+        String[] grid = {"热卖","垃圾","售后","淘宝","经典","条毛","哈哈","一二","你是","按住"};
+        Object[] img = {R.drawable.daojia,R.drawable.tmall,R.drawable.daojia,R.drawable.daojia,R.drawable.a2,R.drawable.a2,R.drawable.a2,
+                R.drawable.a2,R.drawable.a2,R.drawable.daojia,};
+
+        //首页格栏功能
 
         gridlist = new ArrayList<HashMap<String, Object>>();
         for (int i = 0; i < 10; i++) {
             HashMap<String, Object> map = new HashMap<String, Object>();
-            map.put("ItemTitle", "第" + i + "行");
-            map.put("ItemImage", R.drawable.daojia);
+            map.put("ItemTitle", grid[i]);
+            map.put("ItemImage", img[i]);
             gridlist.add(map);
 
         }
+
+        //时间计时抢购
+        ArrayList timelist = new ArrayList<HashMap<String, Object>>();
+        for (int i = 0; i < 150; i++) {
+            HashMap<String, Object> map = new HashMap<String, Object>();
+            map.put("ItemTitle", "第" + i + "行");
+            map.put("ItemImage", R.drawable.a2);
+            timelist.add(map);
+
+        }
+
 
 
 
@@ -167,9 +183,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
         // 设置每个Item的点击事件
         //
-        //
-        //
-        //
+
         LinearLayoutHelper linearLayoutHelper = new LinearLayoutHelper();
         // 创建对应的LayoutHelper对象
 
@@ -194,7 +208,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
                     List<Integer> list=new ArrayList<>();
                     list.add(R.drawable.ginfo_bg);
-                    list.add(R.drawable.ginfo_bg);
+                    list.add(R.drawable.bona);
                     holder.banner.setImages(list);
                     holder.banner.setOnBannerListener(this);
 
@@ -214,25 +228,15 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         /**
          设置线性布局
          */
-
-//        LinearLayoutHelper linearLayoutHelper = new LinearLayoutHelper();
-        // 创建对应的LayoutHelper对象
-
+        SingleLayoutHelper single = new SingleLayoutHelper();
         // 公共属性
-        linearLayoutHelper.setItemCount(1);// 设置布局里Item个数
-//        linearLayoutHelper.setBgColor(Color.GRAY);// 设置背景颜色
-
-        // linearLayoutHelper特有属性
-        linearLayoutHelper.setDividerHeight(10);
-        // 设置间隔高度
-        // 设置的间隔会与RecyclerView的addItemDecoration（）添加的间隔叠加.
-
-        linearLayoutHelper.setMarginBottom(10);
-        // 设置布局底部与下个布局的间隔
+        single.setItemCount(1);// 设置布局里Item个数
+        single.setBgColor(Color.WHITE);// 设置背景颜色
+        single.setMarginTop(10);
 
 
         // 创建自定义的Adapter对象 & 绑定数据 & 绑定对应的LayoutHelper进行布局绘制
-        HomeLinear  = new HomeLinearAdapter(this, linearLayoutHelper, 1, listItem) {
+        HomeLinear  = new HomeLinearAdapter(this, single, 1, listItem) {
             @Override
             public void onBindViewHolder(MainViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
@@ -263,10 +267,6 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
             public void onBindViewHolder(MainViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
 
-
-                if (position == 0) {
-                    holder.Text.setText("Grid");
-                }
             }
         };
 
@@ -283,7 +283,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         helper.setMargin(10, 10, 10, 10);
         helper.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
 
-        HomeOneNA = new HomeOneNAdapter(this, helper,5, listItem) {
+        HomeOneNA = new HomeOneNAdapter(this, helper,5, timelist) {
             @Override
             public void onBindViewHolder(HomeOneNAdapter.MainViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
@@ -314,7 +314,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         // columnLayoutHelper特有属性
         columnLayoutHelper.setWeights(new float[]{30, 40, 30});// 设置该行每个Item占该行总宽度的比例
 
-        HomeCol = new HomeContextAdapter(this, columnLayoutHelper,3, listItem) {
+        HomeCol = new HomeContextAdapter(this, columnLayoutHelper,3, timelist) {
             // 设置需要展示的数据总数,此处设置是3
             // 为了展示效果,通过重写onBindViewHolder()将布局的第一个数据设置为Column
             @Override
@@ -338,7 +338,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         helper2.setMargin(10, 10, 10, 10);
         helper2.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
 
-        HomeOneNA2 = new HomeOneNAdapter(this, helper2,5, listItem) {
+        HomeOneNA2 = new HomeOneNAdapter(this, helper2,5, timelist) {
             @Override
             public void onBindViewHolder(HomeOneNAdapter.MainViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
@@ -364,7 +364,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         helper3.setMargin(20, 10, 10, 20);
         helper3.setColWeights(new float[]{40f, 30f, 30f, 30f, 30f});
 
-        HomeOneNA3 = new HomeOneNAdapter(this, helper3,5, listItem) {
+        HomeOneNA3 = new HomeOneNAdapter(this, helper3,5, timelist) {
             @Override
             public void onBindViewHolder(HomeOneNAdapter.MainViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
@@ -385,13 +385,13 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
     /**
      设置线性布局
      */
-        SingleLayoutHelper single = new SingleLayoutHelper();
+        SingleLayoutHelper singles = new SingleLayoutHelper();
         // 公共属性
-        single.setItemCount(1);// 设置布局里Item个数
-        single.setBgColor(Color.WHITE);// 设置背景颜色
-        single.setMarginTop(10);
+        singles.setItemCount(1);// 设置布局里Item个数
+        singles.setBgColor(Color.WHITE);// 设置背景颜色
+        singles.setMarginTop(10);
         // 设置布局底部与下个布局的间隔
-        HomeTitle  = new HomeTitleAdapter(this, single, 1) {
+        HomeTitle  = new HomeTitleAdapter(this, singles , 1) {
             @Override
             public void onBindViewHolder(MainViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
@@ -633,8 +633,8 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
                 // 为了展示效果,通过将布局的第一个数据设置为staggeredGrid
                 if (position == 0) {
-                    holder.Text.setText("staggeredGrid大神请多来点简单的谢谢， 这个 对我这种基本的 太难了。");
 
+                    holder.Text.setText("staggeredGrid大神请多来点简单的谢谢， 这个 对我这种基本的 太难了。");
 
                 }
             }
@@ -658,7 +658,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         adapters.add(HomeOneNA);
         adapters.add(HomeOneNA2);
         adapters.add(HomeOneNA3);
-//        adapters.add(HomeLinear);
+        adapters.add(HomeLinear);
         adapters.add(HomeTitle);
         adapters.add(HomePromotion);
         adapters.add(HomeHotTitle);
@@ -679,8 +679,6 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
         // 4. 将DelegateAdapter.Adapter列表绑定到DelegateAdapter
         delegateAdapter.setAdapters(adapters);
-
-        // 5. 将delegateAdapter绑定到recyclerView
         recyclerView.setAdapter(delegateAdapter);
 
 
@@ -696,6 +694,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
     @Override
     public void onItemClick(View view, int postion) {
         System.out.println("点击了第"+postion+"行");
+
         if(postion == 0){
             Toast.makeText(this, "这是zero", Toast.LENGTH_SHORT).show();
         }else{

@@ -128,7 +128,6 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
         //循环遍历
         for(Person o:ps){
 
-
             mData.add(new Search(
                     o.goods_name,
                     "￥"+o.goods_price,
