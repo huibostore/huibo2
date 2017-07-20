@@ -11,4 +11,9 @@ public class Config {
 
     public static final String MUSIC_HOST = "http://route.showapi.com";
     public static final String HTTPS_URL = "https://kyfw.12306.cn/otn/";
+
+    public static final String Category_URL = "http://192.168.1.106:808/shop/?act=category_app";
+
+    public static final String Categorys_URL = "http://192.168.1.106:808/shop/?act=category_test";
+
 }
