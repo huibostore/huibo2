@@ -157,19 +157,10 @@ public class SearchActivity extends AppCompatActivity {
                     fTransaction.show(history);
 
                 }
-
-
                 fTransaction.commit();
             }
         });
-
-
         fTransaction.commit();
-
-
-
-
-
     }
 
     //隐藏所有Fragment

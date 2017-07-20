@@ -1,5 +1,6 @@
 package com.example.nwidc.huibo.fragment;
     import android.os.Bundle;
+    import android.support.annotation.Nullable;
     import android.support.v4.app.Fragment;
     import android.support.v4.app.FragmentManager;
     import android.support.v4.app.FragmentTransaction;
@@ -15,8 +16,20 @@ package com.example.nwidc.huibo.fragment;
 
     import com.example.nwidc.huibo.Adapter.MyListViewAdapter1;
     import com.example.nwidc.huibo.Adapter.MyListViewAdapter2;
+    import com.example.nwidc.huibo.Person;
     import com.example.nwidc.huibo.R;
+    import com.example.nwidc.huibo.Util.Config;
     import com.example.nwidc.huibo.Util.ToastUtils;
+    import com.google.gson.Gson;
+    import com.google.gson.reflect.TypeToken;
+
+    import java.util.ArrayList;
+    import java.util.List;
+
+    import cn.alien95.resthttp.BuildConfig;
+    import cn.alien95.resthttp.request.RestHttp;
+    import cn.alien95.resthttp.request.callback.HttpCallback;
+    import cn.alien95.resthttp.request.http.HttpRequest;
 
 /**
  * Created by janiszhang on 2016/6/6.
@@ -29,8 +42,9 @@ public class Sort_ContentFragment extends Fragment {
 
     private int selectIndex=0;
 
-    private static final String[] mMenus = { "常用分类", "服饰内衣", "鞋靴", "手机",
-            "家用电器", "数码", "电脑办公", "个护化妆", "图书" ,"二手手机", "数码", "电脑办公", "个护化妆", "图书" ,"二手手机"};
+    private String[] mMenus = null;
+
+
     private String[] strs1={"常用分类1","常用分类2","常用分类3","常用分类4","常用分类5","常用分类6","常用分类7","常用分类8","常用分类9","常用分类10"};
     private String[] strs2={"服饰内衣1","服饰内衣2","服饰内衣3","服饰内衣4","服饰内衣5","服饰内衣6","服饰内衣7","服饰内衣8","服饰内衣9","服饰内衣10","服饰内衣11","服饰内衣12","服饰内衣13","服饰内衣14","服饰内衣15","服饰内衣16"};
     private String[] strs3={"鞋靴1","鞋靴2","鞋靴3","鞋靴4","鞋靴5","鞋靴6"};
@@ -42,12 +56,21 @@ public class Sort_ContentFragment extends Fragment {
     private MyListViewAdapter1 adapter1;
     private MyListViewAdapter2 adapter2;
 
+    private  String GET_URL = Config.Category_URL;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //布局文件中只有一个居中的TextView
         viewContent = inflater.inflate(R.layout.activity_sort,container,false);
-        initView();
+        //restHttp
+        RestHttp.initialize(getActivity());
+        RestHttp.setDiskCacheSize(100 * 1024 * 1024);
+        if (BuildConfig.DEBUG) {
+            RestHttp.setDebug(true, "network");
+        }
+        get();
+
+
         return viewContent;
     }
     private void initView() {
@@ -83,12 +106,68 @@ public class Sort_ContentFragment extends Fragment {
     }
 
 
+    /*
+    * http get()请求；
+    *
+    * */
+
+    public void get(){
+
+        HttpRequest.getInstance().get(GET_URL, new HttpCallback() {
+
+            //返回http页面信息 info
+            @Override
+            public void success(String info) {
+                //搜索列表listview
+                get_category(info);
+            }
+        });
+    }
+
+    public void get_category(String info){
+
+        Gson gson = new Gson();
+
+        ArrayList<cc> ps = gson.fromJson(info,new TypeToken<List<cc>>(){}.getType());
+
+
+//        System.out.println(ps.get(2));
+
+        /*ArrayList al = new ArrayList();
+        for(int i =0; i<ps.size();i++){
+            al.add("456465");
+        }*/
+
+        ArrayList al = new ArrayList();
+        for(int i =0; i<ps.size();i++){
+            al.add(ps.get(i));
+            //System.out.println(ps.get(i));
+        }
 
 
 
 
 
 
+        mMenus = (String[])al.toArray(new String[al.size()]);
 
+        System.out.println(mMenus[2]);
+
+        initView();
+
+    }
+
+}
+
+class cc{
+    public String gc_name;
+    public void setGc_name(String gc_name){
+        this.gc_name = gc_name;
+    }
+
+    @Override
+    public String toString() {
+        return this.gc_name;
+    }
 
 }

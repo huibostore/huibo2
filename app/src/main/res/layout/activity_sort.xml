@@ -24,10 +24,6 @@
             android:background="#000000"/>
     </LinearLayout>
 
-
-
-
-
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -65,17 +61,16 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="&#xe722;排行榜&#xe6a3;" />
-
         </RelativeLayout>
 
         <GridView
             android:id="@+id/list_item_2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:numColumns="3"
-
             android:divider="@null"
-            android:scrollbars="none"/>
+            android:background="#ffffff"
+            android:numColumns="3"
+            android:scrollbars="none" />
 
     </LinearLayout>
 
