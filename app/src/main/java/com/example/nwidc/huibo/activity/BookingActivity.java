@@ -60,6 +60,8 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
     private ArrayList<HashMap<String, Object>> listItem;
     private ArrayList<HashMap<String, Object>> gridlist;
 
+    public VirtualLayoutManager layoutManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,7 +73,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         // 创建RecyclerView对象
 
-        VirtualLayoutManager layoutManager = new VirtualLayoutManager(this);
+        layoutManager = new VirtualLayoutManager(this);
         // 创建VirtualLayoutManager对象
         // 同时内部会创建一个LayoutHelperFinder对象，用来后续的LayoutHelper查找
 
@@ -97,9 +99,9 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
             listItem.add(map);
 
         }
-        String[] grid = {"热卖","垃圾","售后","淘宝","经典","条毛","哈哈","一二","你是","按住"};
+        String[] grid = {"热卖","天猫","售后","淘宝","经典","条毛","哈哈","一二","外卖","按住"};
         Object[] img = {R.drawable.daojia,R.drawable.tmall,R.drawable.daojia,R.drawable.daojia,R.drawable.a2,R.drawable.a2,R.drawable.a2,
-                R.drawable.a2,R.drawable.a2,R.drawable.daojia,};
+                R.drawable.a2,R.drawable.waimai,R.drawable.daojia,};
 
         //首页格栏功能
 
@@ -114,7 +116,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
         //时间计时抢购
         ArrayList timelist = new ArrayList<HashMap<String, Object>>();
-        for (int i = 0; i < 150; i++) {
+        for (int i = 0; i < 5; i++) {
             HashMap<String, Object> map = new HashMap<String, Object>();
             map.put("ItemTitle", "第" + i + "行");
             map.put("ItemImage", R.drawable.a2);
@@ -258,10 +260,12 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
         // 公共属性
         gridLayoutHelper.setItemCount(10);// 设置布局里Item个数
 
+
         gridLayoutHelper.setSpanCount(5);// 设置每行多少个网格
 
+        gridLayoutHelper.setPadding(10,10,10,10);
+
         HomeGrid  = new HomeGridAdapter(this, gridLayoutHelper,10, gridlist) {
-            // 设置需要展示的数据总数,此处设置是8,即展示总数是8个,然后每行是4个(上面设置的)
             // 为了展示效果,通过重写onBindViewHolder()将布局的第一个数据设置为gridLayoutHelper
             @Override
             public void onBindViewHolder(MainViewHolder holder, int position) {

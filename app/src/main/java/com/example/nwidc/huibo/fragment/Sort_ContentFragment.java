@@ -141,7 +141,7 @@ public class Sort_ContentFragment extends Fragment {
         ArrayList al = new ArrayList();
         for(int i =0; i<ps.size();i++){
             al.add(ps.get(i));
-            //System.out.println(ps.get(i));
+            System.out.println(ps.get(i));
         }
 
 
@@ -149,25 +149,27 @@ public class Sort_ContentFragment extends Fragment {
 
 
 
-        mMenus = (String[])al.toArray(new String[al.size()]);
+//        mMenus = (String[])al.toArray(new String[al.size()]);
 
-        System.out.println(mMenus[2]);
+        System.out.println(mMenus);
 
         initView();
 
     }
 
-}
+    class cc{
+        public String gc_name;
+        public void setGc_name(String gc_name){
+            this.gc_name = gc_name;
+        }
 
-class cc{
-    public String gc_name;
-    public void setGc_name(String gc_name){
-        this.gc_name = gc_name;
+        @Override
+        public String toString() {
+            return this.gc_name;
+        }
+
     }
 
-    @Override
-    public String toString() {
-        return this.gc_name;
-    }
-
 }
+
+

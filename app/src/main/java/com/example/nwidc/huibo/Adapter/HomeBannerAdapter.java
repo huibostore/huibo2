@@ -74,6 +74,21 @@ public class HomeBannerAdapter extends DelegateAdapter.Adapter<HomeBannerAdapter
     public void onBindViewHolder(MainViewHolder holder, int position) {
 //        holder.Text.setText((String) listItem.get(position).get("ItemTitle"));
 //        holder.image.setImageResource((Integer) listItem.get(position).get("ItemImage"));
+        List<String> list=new ArrayList<>();
+
+        for(int i = 0; i < listItem.size(); i++){
+            list.add((String) listItem.get(i).get("ItemImage"));
+        }
+
+
+
+
+        holder.banner.setImages(list);
+        holder.banner.setOnBannerListener(this);
+
+
+        //banner设置方法全部调用完毕时最后调用
+        holder.banner.start();
 
 
     }

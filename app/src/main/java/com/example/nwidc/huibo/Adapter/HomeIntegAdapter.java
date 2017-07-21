@@ -20,7 +20,7 @@ import java.util.HashMap;
 /**
  * Created by Carson_Ho on 17/4/26.
  */
-public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.MainViewHolder> {
+public class HomeIntegAdapter extends DelegateAdapter.Adapter<HomeIntegAdapter.MainViewHolder> {
     // 使用DelegateAdapter首先就是要自定义一个它的内部类Adapter，让LayoutHelper和需要绑定的数据传进去
     // 此处的Adapter和普通RecyclerView定义的Adapter只相差了一个onCreateLayoutHelper()方法，其他的都是一样的做法.
 
@@ -36,11 +36,11 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
     // 用于设置Item点击事件
 
     //构造函数(传入每个的数据列表 & 展示的Item数量)
-    public HomeOneNAdapter(Context context, LayoutHelper layoutHelper, int count, ArrayList<HashMap<String, Object>> listItem) {
+    public HomeIntegAdapter(Context context, LayoutHelper layoutHelper, int count, ArrayList<HashMap<String, Object>> listItem) {
         this(context, layoutHelper, count, new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 300), listItem);
     }
 
-    public HomeOneNAdapter(Context context, LayoutHelper layoutHelper, int count, @NonNull RecyclerView.LayoutParams layoutParams, ArrayList<HashMap<String, Object>> listItem) {
+    public HomeIntegAdapter(Context context, LayoutHelper layoutHelper, int count, @NonNull RecyclerView.LayoutParams layoutParams, ArrayList<HashMap<String, Object>> listItem) {
         this.context = context;
         this.layoutHelper = layoutHelper;
         this.count = count;
@@ -53,8 +53,7 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
     // 把ViewHolder绑定Item的布局
     @Override
     public MainViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        System.out.println("第"+viewType+"行");
-        return new MainViewHolder(LayoutInflater.from(context).inflate(R.layout.item_homeonen, parent, false));
+        return new MainViewHolder(LayoutInflater.from(context).inflate(R.layout.item_homepromotion, parent, false));
     }
 
 
@@ -68,9 +67,7 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
     // 绑定Item的数据
     @Override
     public void onBindViewHolder(MainViewHolder holder, int position) {
-        holder.Text.setText((String) listItem.get(position).get("ItemTitle"));
         holder.image.setImageResource((Integer) listItem.get(position).get("ItemImage"));
-
 
     }
 
@@ -89,14 +86,13 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
 
     //定义Viewholder
     protected class MainViewHolder extends RecyclerView.ViewHolder {
-        public TextView Text;
         public ImageView image;
 
         public MainViewHolder(View root) {
             super(root);
 
             // 绑定视图
-            Text = (TextView) root.findViewById(R.id.Item);
+
             image = (ImageView) root.findViewById(R.id.Image);
 
             root.setOnClickListener(new View.OnClickListener() {
@@ -111,11 +107,6 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
             );
 
         }
-
-        public TextView getText() {
-            return Text;
-        }
-
 
     }
 }
