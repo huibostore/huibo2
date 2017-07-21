@@ -6,11 +6,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.android.vlayout.DelegateAdapter;
 import com.alibaba.android.vlayout.LayoutHelper;
+import com.alibaba.android.vlayout.VirtualLayoutManager;
 import com.example.nwidc.huibo.R;
 import com.example.nwidc.huibo.View.ItemClick;
 
@@ -20,11 +20,11 @@ import java.util.HashMap;
 /**
  * Created by Carson_Ho on 17/4/26.
  */
-public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.MainViewHolder> {
+public class HomeTitleAdapter extends DelegateAdapter.Adapter<HomeTitleAdapter.MainViewHolder> {
     // 使用DelegateAdapter首先就是要自定义一个它的内部类Adapter，让LayoutHelper和需要绑定的数据传进去
     // 此处的Adapter和普通RecyclerView定义的Adapter只相差了一个onCreateLayoutHelper()方法，其他的都是一样的做法.
 
-    private ArrayList<HashMap<String, Object>> listItem;
+
     // 用于存放数据列表
 
     private Context context;
@@ -32,20 +32,17 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
     private RecyclerView.LayoutParams layoutParams;
     private int count = 0;
 
-    private ItemClick myItemClickListener;
-    // 用于设置Item点击事件
 
     //构造函数(传入每个的数据列表 & 展示的Item数量)
-    public HomeOneNAdapter(Context context, LayoutHelper layoutHelper, int count, ArrayList<HashMap<String, Object>> listItem) {
-        this(context, layoutHelper, count, new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 300), listItem);
+    public HomeTitleAdapter(Context context, LayoutHelper layoutHelper, int count) {
+        this(context, layoutHelper, count, new VirtualLayoutManager.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 300));
     }
 
-    public HomeOneNAdapter(Context context, LayoutHelper layoutHelper, int count, @NonNull RecyclerView.LayoutParams layoutParams, ArrayList<HashMap<String, Object>> listItem) {
+    public HomeTitleAdapter(Context context, LayoutHelper layoutHelper, int count, @NonNull RecyclerView.LayoutParams layoutParams) {
         this.context = context;
         this.layoutHelper = layoutHelper;
         this.count = count;
         this.layoutParams = layoutParams;
-        this.listItem = listItem;
 
 
     }
@@ -53,8 +50,7 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
     // 把ViewHolder绑定Item的布局
     @Override
     public MainViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        System.out.println("第"+viewType+"行");
-        return new MainViewHolder(LayoutInflater.from(context).inflate(R.layout.item_homeonen, parent, false));
+        return new MainViewHolder(LayoutInflater.from(context).inflate(R.layout.item_hometitle, parent, false));
     }
 
 
@@ -68,8 +64,7 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
     // 绑定Item的数据
     @Override
     public void onBindViewHolder(MainViewHolder holder, int position) {
-        holder.Text.setText((String) listItem.get(position).get("ItemTitle"));
-        holder.image.setImageResource((Integer) listItem.get(position).get("ItemImage"));
+        holder.Text.setText("ItemTitle");
 
 
     }
@@ -80,35 +75,17 @@ public class HomeOneNAdapter extends DelegateAdapter.Adapter<HomeOneNAdapter.Mai
         return count;
     }
 
-    // 设置Item的点击事件
-    // 绑定MainActivity传进来的点击监听器
-    public void setOnItemClickListener(ItemClick listener) {
-        myItemClickListener = listener;
-    }
-
 
     //定义Viewholder
     protected class MainViewHolder extends RecyclerView.ViewHolder {
         public TextView Text;
-        public ImageView image;
+
 
         public MainViewHolder(View root) {
             super(root);
 
             // 绑定视图
             Text = (TextView) root.findViewById(R.id.Item);
-            image = (ImageView) root.findViewById(R.id.Image);
-
-            root.setOnClickListener(new View.OnClickListener() {
-                                        @Override
-                                        public void onClick(View v) {
-                                            if (myItemClickListener != null)
-                                                myItemClickListener.onItemClick(v, getPosition());
-                                        }
-
-                                    }
-                    //监听到点击就回调MainActivity的onItemClick函数
-            );
 
         }
 
