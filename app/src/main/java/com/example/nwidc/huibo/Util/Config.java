@@ -13,4 +13,6 @@ public class Config {
 
     public static final String Categorys_URL = HOST +"/shop/?act=category_test";
 
+    public static final String Adver_URL = HOST +"/shop/index.php?act=adv_app&op=advshow&ap_id=1049&ad_type=";
+
 }

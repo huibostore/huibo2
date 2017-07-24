@@ -30,16 +30,28 @@ import com.example.nwidc.huibo.Adapter.HomePromotionAdapter;
 import com.example.nwidc.huibo.Adapter.HomeStagAdapter;
 import com.example.nwidc.huibo.Adapter.HomeTitleAdapter;
 import com.example.nwidc.huibo.Adapter.SubAdapter;
+import com.example.nwidc.huibo.Person;
 import com.example.nwidc.huibo.R;
+import com.example.nwidc.huibo.Util.Config;
 import com.example.nwidc.huibo.View.GlideImageLoader;
 import com.example.nwidc.huibo.View.ItemClick;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.youth.banner.Banner;
 import com.youth.banner.listener.OnBannerListener;
 import com.youth.banner.loader.ImageLoader;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+
+import cn.alien95.resthttp.BuildConfig;
+import cn.alien95.resthttp.request.RestHttp;
+import cn.alien95.resthttp.request.callback.HttpCallback;
+import cn.alien95.resthttp.request.http.HttpRequest;
 
 /**
  * Created by janiszhang on 2016/6/6.
@@ -76,10 +88,13 @@ public class ContentFragment extends Fragment implements ItemClick{
     private ArrayList<HashMap<String, Object>> listItem;
     private ArrayList<HashMap<String, Object>> gridlist;
 
+    private String[] bannerurl;
+    private List<advresult> adv;
+
     public void setType(int mType) {
         this.mType = mType;
     }
-
+    private  String GET_URL = Config.Adver_URL;
     public void setTitle(String mTitle) {
         this.mTitle = mTitle;
     }
@@ -93,18 +108,69 @@ public class ContentFragment extends Fragment implements ItemClick{
 //        viewContent = inflater.inflate(R.layout.fragment_homecontent, container, false);
         viewContent = inflater.inflate(R.layout.main_activity, container, false);
 
-
         context= getActivity();
+        //restHttp
+//        RestHttp.initialize(context);
+//        RestHttp.setDiskCacheSize(100 * 1024 * 1024);
+//        if (BuildConfig.DEBUG) {
+//            RestHttp.setDebug(true, "network");
+//        }
 
-        date();
+
+        get("1");
         return viewContent;
 
 
     }
 
+    /*
+    * http get()请求；
+    *
+    * */
+
+    public void get(String key){
+        //搜索接口+搜索值
+        GET_URL = GET_URL + key;
+        //restHttp
+        HttpRequest.getInstance().get(GET_URL, new HttpCallback() {
+
+            //返回http页面信息 info
+            @Override
+            public void success(String info) {
+                //搜索列表listview
+                advresult(info);
+
+            }
+        });
+
+    }
+
+
+    public void advresult(String info){
+
+        Gson gson = new Gson();
+
+        adv = gson.fromJson(info, new TypeToken<List<advresult>>(){}.getType());
+
+
+
+
+
+//        for(advresult o: adv){
+//
+//            System.out.println(o.adv_img);
+//        }
+
+
+        bannerurl = new String[]{"http://upload.news.cecb2b.com/2016/0327/1459067610166.jpg", "http://www.uli.com.cn/film/Article/UploadFiles/201105/2011052902361682.jpg", "http://img0.imgtn.bdimg.com/it/u=4207633120,3867175424&fm=214&gp=0.jpg"};
+
+        date();
+    }
+
 
     public void date(){
 
+        System.out.println(adv.get(1).adv_img);
         /**
          * 创建RecyclerView & VirtualLayoutManager 对象并进行绑定
          * */
@@ -139,14 +205,21 @@ public class ContentFragment extends Fragment implements ItemClick{
 
         }
 
+        /*
+        * {"adv_img":"http:\/\/192.168.1.107:808\/data\/upload\/shop\/adv\/05539679555927531.jpg","adv_url":"http:\/\/","adv_types":"","adv_typesid":""}
+        * adv_img:图片
+        * adv_url:
+        * adv_types: 1:商品、2：商家、3：活动；
+        * adv_typesid: 对应上述id；
+        * */
 
         //轮播
-        String[] bannerurl = {"http://upload.news.cecb2b.com/2016/0327/1459067610166.jpg","http://www.uli.com.cn/film/Article/UploadFiles/201105/2011052902361682.jpg","http://img0.imgtn.bdimg.com/it/u=4207633120,3867175424&fm=214&gp=0.jpg"};
+        //bannerurl = new String[]{"http://upload.news.cecb2b.com/2016/0327/1459067610166.jpg", "http://www.uli.com.cn/film/Article/UploadFiles/201105/2011052902361682.jpg", "http://img0.imgtn.bdimg.com/it/u=4207633120,3867175424&fm=214&gp=0.jpg"};
         ArrayList bannerlist = new ArrayList<HashMap<String, String>>();
-        for (int i = 0; i < bannerurl.length; i++) {
+        for (int i = 0; i < adv.size(); i++) {
             HashMap<String, Object> map = new HashMap<String, Object>();
             map.put("ItemTitle", bannerurl[i]);
-            map.put("ItemImage", bannerurl[i]);
+            map.put("ItemImage", adv.get(i).adv_img);
             bannerlist.add(map);
 
         }
@@ -308,6 +381,7 @@ public class ContentFragment extends Fragment implements ItemClick{
 
 
 
+
     /**
      *实现Item点击事件
      **/
@@ -321,6 +395,22 @@ public class ContentFragment extends Fragment implements ItemClick{
         }else{
 
             Toast.makeText(context, (String) listItem.get(postion).get("ItemTitle"), Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+    public class advresult{
+
+
+        public String adv_img;
+        public String adv_url;
+        public String adv_types;
+        public String adv_typesid;
+
+
+        @Override
+        public String toString() {
+            return this.adv_img  + this.adv_types + this.adv_typesid;
         }
 
     }
