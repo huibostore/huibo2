@@ -79,7 +79,9 @@ public class HomeBannerAdapter extends DelegateAdapter.Adapter<HomeBannerAdapter
         List<String> list=new ArrayList<>();
 
         for(int i = 0; i < listItem.size(); i++){
+
             list.add((String) listItem.get(i).get("adv_img"));
+
         }
 
 

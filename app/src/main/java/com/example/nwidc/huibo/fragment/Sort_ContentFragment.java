@@ -135,7 +135,11 @@ public class Sort_ContentFragment extends Fragment {
 
         mMenus = new ArrayList();
         for(int i =0; i<ps.size();i++){
+
             mMenus.add(ps.get(i));
+
+
+
         }
 
 
