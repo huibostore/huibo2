@@ -9,24 +9,26 @@ import android.widget.TextView;
 
 import com.example.nwidc.huibo.R;
 
+import java.util.ArrayList;
+
 
 /**
  * Created by a on 2016/5/12.
  */
 public class MyListViewAdapter1 extends BaseAdapter{
 
-    private final String[] mMenus;
+    private final ArrayList mMenus;
     private final Context context;
     private int selectIndex;
 
-    public MyListViewAdapter1(String[] mMenus, Context context, int selectIndex){
+    public MyListViewAdapter1(ArrayList mMenus, Context context, int selectIndex){
         this.mMenus=mMenus;
         this.context=context;
         this.selectIndex=selectIndex;
     }
     @Override
     public int getCount() {
-        return mMenus.length;
+        return mMenus.size();
     }
 
     @Override
@@ -69,7 +71,9 @@ public class MyListViewAdapter1 extends BaseAdapter{
         }
 
 
-        vh.tv.setText(mMenus[position]);
+
+//        vh.tv.setText("sty"+position);
+        vh.tv.setText(mMenus.get(position).toString());
         return convertView;
     }
 

@@ -189,7 +189,7 @@
                             <com.example.nwidc.huibo.View.AwsomeIconFont android:layout_width="55dp"
                                 android:layout_height="55dp"
                                 android:text="&#xe6b2;"
-                                android:background="@drawable/beforesale"
+                                android:background="@drawable/wholesale"
                                 android:gravity="center"
                                 android:textColor="@color/white"
                                 android:textSize="32sp"/>

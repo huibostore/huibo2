@@ -1,6 +1,7 @@
 package com.example.nwidc.huibo.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import com.alibaba.android.vlayout.DelegateAdapter;
 import com.alibaba.android.vlayout.LayoutHelper;
 import com.example.nwidc.huibo.R;
 import com.example.nwidc.huibo.View.ItemClick;
+import com.example.nwidc.huibo.activity.BookingActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -53,7 +55,7 @@ public class HomeGridAdapter extends DelegateAdapter.Adapter<HomeGridAdapter.Mai
     // 把ViewHolder绑定Item的布局
     @Override
     public MainViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new MainViewHolder(LayoutInflater.from(context).inflate(R.layout.item_homegrid, parent, false));
+        return new MainViewHolder(LayoutInflater.from(context).inflate(R.layout.item_homegrid, parent, false),viewType);
     }
 
 
@@ -90,10 +92,10 @@ public class HomeGridAdapter extends DelegateAdapter.Adapter<HomeGridAdapter.Mai
     protected class MainViewHolder extends RecyclerView.ViewHolder {
         public TextView Text;
         public ImageView image;
-
-        public MainViewHolder(View root) {
+        public Intent intent;
+        public MainViewHolder(View root,final int  position) {
             super(root);
-
+            intent = new Intent();
             // 绑定视图
             Text = (TextView) root.findViewById(R.id.Item);
             image = (ImageView) root.findViewById(R.id.Image);
@@ -103,12 +105,26 @@ public class HomeGridAdapter extends DelegateAdapter.Adapter<HomeGridAdapter.Mai
                                         public void onClick(View v) {
                                             if (myItemClickListener != null)
                                                 myItemClickListener.onItemClick(v, getPosition());
+                                            ItemId(position);
                                         }
 
                                     }
                     //监听到点击就回调MainActivity的onItemClick函数
             );
 
+        }
+
+        public void ItemId(int position){
+            System.out.println(getPosition()+"grid");
+            switch(getPosition()){
+                //跳转
+                case 1:
+                    intent = new Intent();
+                    intent.setClass(context, BookingActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+            }
         }
 
         public TextView getText() {

@@ -51,12 +51,13 @@ public class LaunchActivity extends Activity {
                 public void run() {
                     Map<String,String> data = sh.read();
                     String id = data.get("passwd");
+
                     result = PostUtils.LoginSessionId(id);
 
                     handler.sendEmptyMessage(0x123);
                     String Login = "Login";
                     LoginChenge.getInstance().setLoginInfo(Login);
-
+                    System.out.println(Login);
 
                 }
             }.start();

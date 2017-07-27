@@ -42,7 +42,7 @@ public class Sort_ContentFragment extends Fragment {
 
     private int selectIndex=0;
 
-    private String[] mMenus = null;
+    private ArrayList mMenus = null;
 
 
     private String[] strs1={"常用分类1","常用分类2","常用分类3","常用分类4","常用分类5","常用分类6","常用分类7","常用分类8","常用分类9","常用分类10"};
@@ -131,17 +131,11 @@ public class Sort_ContentFragment extends Fragment {
         ArrayList<cc> ps = gson.fromJson(info,new TypeToken<List<cc>>(){}.getType());
 
 
-//        System.out.println(ps.get(2));
 
-        /*ArrayList al = new ArrayList();
-        for(int i =0; i<ps.size();i++){
-            al.add("456465");
-        }*/
 
-        ArrayList al = new ArrayList();
+        mMenus = new ArrayList();
         for(int i =0; i<ps.size();i++){
-            al.add(ps.get(i));
-            System.out.println(ps.get(i));
+            mMenus.add(ps.get(i));
         }
 
 
