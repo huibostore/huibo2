@@ -27,6 +27,7 @@ public class MemberFragment  extends Fragment {
         //view = inflater.inflate(R.layout.fragment_member,null);
 
         result = LoginChenge.getInstance().getLoginInfo();
+        System.out.println("menber"+result);
 
         view = inflater.inflate(R.layout.fragment_member,null);
 

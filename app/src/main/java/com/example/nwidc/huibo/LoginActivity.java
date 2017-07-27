@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     private Context mContext;
     private TextView password;
     private TextView user;
-
+    private Intent intent;
 
 
     @Override
@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
-
+        intent = new Intent();
 
 
 
@@ -125,7 +125,7 @@ public class LoginActivity extends AppCompatActivity {
     //新用户注册
     public void onClicknew(View v){
 
-        Intent intent = new Intent();
+
         intent.setClass(LoginActivity.this,RegisterActivity.class);
         startActivity(intent);
 
@@ -137,6 +137,7 @@ public class LoginActivity extends AppCompatActivity {
         Map<String,String> data = sh.read();
         user.setText(data.get("username"));
         password.setText(data.get("passwd"));
+        System.out.println(data.get("username")+"loginActivity"+data.get("passwd"));
     }
 
     private Handler handler = new Handler() {
@@ -153,6 +154,9 @@ public class LoginActivity extends AppCompatActivity {
     };
 
     protected void chenge(){
+        intent.setClass(LoginActivity.this,MainActivity.class);
+        startActivity(intent);
+
         finish();
     }
 

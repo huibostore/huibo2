@@ -51,7 +51,8 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.5.2'
     compile 'com.android.support:support-v4:22.0.0'
 
-
+    //倒计时
+    compile 'com.daidingkang:snapupcountdowntimerview:1.0.0'
 
     //picasso
     compile 'com.squareup.picasso:picasso:2.5.2'

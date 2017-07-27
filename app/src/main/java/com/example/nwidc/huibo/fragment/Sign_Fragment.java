@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.nwidc.huibo.LoginActivity;
 import com.example.nwidc.huibo.LoginChenge;
@@ -19,6 +20,7 @@ import com.example.nwidc.huibo.R;
 public class Sign_Fragment extends Fragment {
     View view;
     String result;
+    Button btn;
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
         //view = inflater.inflate(R.layout.fragment_member,null);
 
@@ -37,12 +39,22 @@ public class Sign_Fragment extends Fragment {
 //            }
 //        });
 
-        if(result == "null"){
-            Intent intent = new Intent();
-            intent.setClass(getActivity(),LoginActivity.class);
-            startActivity(intent);
+        btn = (Button) view.findViewById(R.id.login);
+        btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
 
-        }
+            }
+        });
+
+//        if(result == "null"){
+//            Intent intent = new Intent();
+//            intent.setClass(getActivity(),LoginActivity.class);
+//            startActivity(intent);
+//
+//        }
 
         return view;
     }

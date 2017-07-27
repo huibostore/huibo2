@@ -203,27 +203,27 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
 
         // 创建自定义的Adapter对象 & 绑定数据 & 绑定对应的LayoutHelper进行布局绘制
-        HomeBanner  = new HomeBannerAdapter(this, linearLayoutHelper, 1, listItem) {
-            @Override
-            public void onBindViewHolder(MainViewHolder holder, int position) {
-                super.onBindViewHolder(holder, position);
+//        HomeBanner  = new HomeBannerAdapter(this, linearLayoutHelper, 1, listItem) {
+//            @Override
+//            public void onBindViewHolder(MainViewHolder holder, int position) {
+//                super.onBindViewHolder(holder, position);
+//
+//                    List<Integer> list=new ArrayList<>();
+//                    list.add(R.drawable.ginfo_bg);
+//                    list.add(R.drawable.bona);
+//                    holder.banner.setImages(list);
+//                    holder.banner.setOnBannerListener(this);
+//
+//
+//                    //banner设置方法全部调用完毕时最后调用
+//                    holder.banner.start();
+//
+//            }
+//
+//
+//        };
 
-                    List<Integer> list=new ArrayList<>();
-                    list.add(R.drawable.ginfo_bg);
-                    list.add(R.drawable.bona);
-                    holder.banner.setImages(list);
-                    holder.banner.setOnBannerListener(this);
-
-
-                    //banner设置方法全部调用完毕时最后调用
-                    holder.banner.start();
-
-            }
-
-
-        };
-
-        HomeBanner.setOnItemClickListener(this);
+//        HomeBanner.setOnItemClickListener(this);
         // 设置每个Item的点击事件
 
 
@@ -657,7 +657,7 @@ public class BookingActivity extends AppCompatActivity implements ItemClick  {
 
         // 2. 将上述创建的Adapter对象放入到DelegateAdapter.Adapter列表里
 
-        adapters.add(HomeBanner);
+//        adapters.add(HomeBanner);
         adapters.add(HomeGrid);
         adapters.add(HomeOneNA);
         adapters.add(HomeOneNA2);

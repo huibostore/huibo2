@@ -58,11 +58,11 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
         Context = getContext();
 
         //restHttp
-        RestHttp.initialize(mContext);
-        RestHttp.setDiskCacheSize(100 * 1024 * 1024);
-        if (BuildConfig.DEBUG) {
-            RestHttp.setDebug(true, "network");
-        }
+//        RestHttp.initialize(mContext);
+//        RestHttp.setDiskCacheSize(100 * 1024 * 1024);
+//        if (BuildConfig.DEBUG) {
+//            RestHttp.setDebug(true, "network");
+//        }
 
         Bundle bundle = getArguments();//从activity传过来的Bundle
 
@@ -99,6 +99,7 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
     public void get(){
         //搜索接口+搜索值
         GET_URL = GET_URL + keyword;
+//        System.out.println(GET_URL);
         //restHttp
         HttpRequest.getInstance().get(GET_URL, new HttpCallback() {
 
@@ -107,7 +108,7 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
             public void success(String info) {
                 //搜索列表listview
                 searchList(info);
-
+//                System.out.println(info);
             }
         });
 
@@ -122,6 +123,7 @@ public class Search_listFragment  extends Fragment implements AdapterView.OnItem
         /*
         *String [] [] list = {{"广东商人出资百万助人上位 操控村委决策8年广东商人出资百万助人上位 操控村委决策8年","￥123111.01元","https://gw3.alicdn.com/bao/uploaded/i3/TB1wR8LRpXXXXbvXVXXXXXXXXXX_!!0-item_pic.jpg_210x210.jpg","8"}};
         */
+
 
         mData = new LinkedList<Search>();
 

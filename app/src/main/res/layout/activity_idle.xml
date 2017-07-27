@@ -188,13 +188,17 @@
                         android:layout_weight="20"
                         android:orientation="vertical"
                         android:gravity="center">
-                        <com.example.nwidc.huibo.View.AwsomeIconFont android:layout_width="55dp"
+
+                        <com.example.nwidc.huibo.View.AwsomeIconFont
+                            android:id="@+id/awsomeIconFont2"
+                            android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:text="&#xe6b2;"
-                            android:background="@drawable/beforesale"
+                            android:background="@drawable/cloudbuy"
                             android:gravity="center"
+                            android:text="&#xe6b2;"
                             android:textColor="@color/white"
-                            android:textSize="32sp"/>
+                            android:textSize="32sp" />
+
                         <TextView
                             android:layout_marginTop="10dp" android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

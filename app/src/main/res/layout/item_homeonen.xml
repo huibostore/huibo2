@@ -8,13 +8,34 @@
 
 
 
-
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="New Text"
-        android:id="@+id/Item" />
+        android:orientation="horizontal">
+
+        <com.example.nwidc.huibo.View.AwsomeIconFont
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="&#xe794;"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="4dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="New Text"
+            android:id="@+id/Item" />
+
+    </LinearLayout>
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,6 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Image"
+        android:adjustViewBounds="true"
         android:layout_gravity="center"
         android:src="@drawable/a2"/>
 

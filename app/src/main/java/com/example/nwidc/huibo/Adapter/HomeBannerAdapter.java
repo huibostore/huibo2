@@ -22,6 +22,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import static java.lang.Integer.parseInt;
+
 /**
  * Created by Carson_Ho on 17/4/26.
  */
@@ -29,7 +31,7 @@ public class HomeBannerAdapter extends DelegateAdapter.Adapter<HomeBannerAdapter
     // 使用DelegateAdapter首先就是要自定义一个它的内部类Adapter，让LayoutHelper和需要绑定的数据传进去
     // 此处的Adapter和普通RecyclerView定义的Adapter只相差了一个onCreateLayoutHelper()方法，其他的都是一样的做法.
 
-    private ArrayList<HashMap<String, Object>> listItem;
+    private ArrayList<HashMap<String, String>> listItem;
     // 用于存放数据列表
 
     private Context context;
@@ -41,11 +43,11 @@ public class HomeBannerAdapter extends DelegateAdapter.Adapter<HomeBannerAdapter
     // 用于设置Item点击事件
 
     //构造函数(传入每个的数据列表 & 展示的Item数量)
-    public HomeBannerAdapter(Context context, LayoutHelper layoutHelper, int count, ArrayList<HashMap<String, Object>> listItem) {
+    public HomeBannerAdapter(Context context, LayoutHelper layoutHelper, int count, ArrayList<HashMap<String, String>> listItem) {
         this(context, layoutHelper, count, new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 300), listItem);
     }
 
-    public HomeBannerAdapter(Context context, LayoutHelper layoutHelper, int count, @NonNull RecyclerView.LayoutParams layoutParams, ArrayList<HashMap<String, Object>> listItem) {
+    public HomeBannerAdapter(Context context, LayoutHelper layoutHelper, int count, @NonNull RecyclerView.LayoutParams layoutParams, ArrayList<HashMap<String, String>> listItem) {
         this.context = context;
         this.layoutHelper = layoutHelper;
         this.count = count;
@@ -77,7 +79,9 @@ public class HomeBannerAdapter extends DelegateAdapter.Adapter<HomeBannerAdapter
         List<String> list=new ArrayList<>();
 
         for(int i = 0; i < listItem.size(); i++){
-            list.add((String) listItem.get(i).get("ItemImage"));
+
+            list.add((String) listItem.get(i).get("adv_img"));
+
         }
 
 
@@ -150,9 +154,38 @@ public class HomeBannerAdapter extends DelegateAdapter.Adapter<HomeBannerAdapter
     }
     @Override
     // 点击事件的回调函数
+    /*
+        * adv_types: 1:商品、2：商家、3：活动；
+        * adv_typesid: 对应上述id；
+        * */
     public void OnBannerClick(int position) {
 
-        System.out.println("点击了第"+position+"行");
+        System.out.println("点了第"+position+"行");
+        System.out.println("goods_id"+listItem.get(position).get("goods_id")+"行");
+        System.out.println("广告类型"+listItem.get(position).get("adv_types")+"行");
+
+
+        switch (parseInt(listItem.get(position).get("adv_types"))){
+            case 0 :
+                //跳转商品页
+                break;
+
+            case 1 :
+                    //跳转商品页
+                break;
+
+            case 2:
+                //跳转商家
+                break;
+
+            case 3:
+                //跳转活动页
+                break;
+
+
+        }
+
+
 
     }
 }

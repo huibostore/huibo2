@@ -64,6 +64,9 @@ import com.example.nwidc.huibo.fragment.WholesaleFragment;
 import com.github.ikidou.fragmentBackHandler.BackHandlerHelper;
 import com.zaaach.citypicker.CityPickerActivity;
 
+import cn.alien95.resthttp.*;
+import cn.alien95.resthttp.request.RestHttp;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -130,6 +133,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             txt_settings.performClick();
         }
 
+
+        //restHttp
+        RestHttp.initialize(this);
+        RestHttp.setDiskCacheSize(100 * 1024 * 1024);
+        if (cn.alien95.resthttp.BuildConfig.DEBUG) {
+            RestHttp.setDebug(true, "network");
+        }
 
     }
 
